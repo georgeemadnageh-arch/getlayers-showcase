@@ -401,18 +401,173 @@ Key Requirements:
     }, 120);
   });
 
-  // Keyboard Shortcuts
+  // Keyboard Shortcuts ('/' and '⌘K' to search, 'Esc' to close any modal)
   window.addEventListener('keydown', (e) => {
-    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+    const activeEl = document.activeElement;
+    const isTyping = activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA');
+
+    // Pressing '/' or 'Cmd+K' focuses search input
+    if ((e.key === '/' || ((e.metaKey || e.ctrlKey) && e.key === 'k')) && !isTyping) {
       e.preventDefault();
-      searchInput.focus();
-    }
-    if (e.key === 'Escape') {
-      if (!detailModal.classList.contains('hidden')) {
-        closeModal();
+      if (searchInput) {
+        searchInput.focus();
+        searchInput.select();
       }
     }
+
+    // Escape closes any open modal
+    if (e.key === 'Escape') {
+      closeModal();
+      [pricingModal, docsModal, mcpModal, figmaModal, signInModal].forEach(m => {
+        if (m) closeSimpleModal(m);
+      });
+    }
   });
+
+  // Nav Links and Modals Wiring (Authentic GetLayers)
+  const navLinkLibrary = document.getElementById('navLinkLibrary');
+  const navLinkTools = document.getElementById('navLinkTools');
+  const navLinkPricing = document.getElementById('navLinkPricing');
+  const navLinkDocs = document.getElementById('navLinkDocs');
+  const navLinkAffiliate = document.getElementById('navLinkAffiliate');
+  const navLinkContact = document.getElementById('navLinkContact');
+  const btnMcp = document.getElementById('btnMcp');
+  const btnFigma = document.getElementById('btnFigma');
+  const btnSignIn = document.getElementById('btnSignIn');
+  const brandLogo = document.getElementById('brandLogo');
+
+  const pricingModal = document.getElementById('pricingModal');
+  const docsModal = document.getElementById('docsModal');
+  const mcpModal = document.getElementById('mcpModal');
+  const figmaModal = document.getElementById('figmaModal');
+  const signInModal = document.getElementById('signInModal');
+
+  const heroTitle = document.getElementById('heroTitle');
+  const heroSubtitle = document.getElementById('heroSubtitle');
+  const heroPillText = document.getElementById('heroPillText');
+  const filtersNav = document.getElementById('filtersNav');
+
+  function openSimpleModal(modal) {
+    if (!modal) return;
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSimpleModal(modal) {
+    if (!modal) return;
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  // Setup close buttons and backdrops
+  [
+    [pricingModal, 'pricingCloseBtn'],
+    [docsModal, 'docsCloseBtn'],
+    [mcpModal, 'mcpCloseBtn'],
+    [figmaModal, 'figmaCloseBtn'],
+    [signInModal, 'signInCloseBtn']
+  ].forEach(([modal, btnId]) => {
+    if (!modal) return;
+    const btn = document.getElementById(btnId);
+    if (btn) btn.addEventListener('click', () => closeSimpleModal(modal));
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeSimpleModal(modal);
+    });
+  });
+
+  // Switch between Library and Tools Mode
+  function setViewMode(mode) {
+    if (mode === 'tools') {
+      currentCategory = 'tools';
+      if (navLinkTools) navLinkTools.classList.add('active');
+      if (navLinkLibrary) navLinkLibrary.classList.remove('active');
+      
+      document.querySelectorAll('.filter-tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.category === 'tools');
+      });
+
+      if (heroTitle) heroTitle.innerHTML = 'Next-Gen Creative<br><span class="gradient-text">3D Web Tools</span>';
+      if (heroSubtitle) heroSubtitle.textContent = '13 interactive WebGL & Three.js design studios. Simulate physics, generate holographic shaders, and export production code.';
+      if (heroPillText) heroPillText.textContent = 'Live Interactive Creative Studios';
+
+      render();
+    } else {
+      currentCategory = 'all';
+      if (navLinkLibrary) navLinkLibrary.classList.add('active');
+      if (navLinkTools) navLinkTools.classList.remove('active');
+
+      document.querySelectorAll('.filter-tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.category === 'all');
+      });
+
+      if (heroTitle) heroTitle.innerHTML = 'Cinematic AI sites,<br><span class="gradient-text">made easy</span>';
+      if (heroSubtitle) heroSubtitle.textContent = 'Explore 758 production-ready templates, 3D WebGL scenes, interactive sections, tools, and high-res video backgrounds.';
+      if (heroPillText) heroPillText.textContent = 'Curated Web Experience for AI Builders';
+
+      render();
+    }
+  }
+
+  if (navLinkLibrary) navLinkLibrary.addEventListener('click', (e) => {
+    e.preventDefault();
+    setViewMode('library');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  if (brandLogo) brandLogo.addEventListener('click', (e) => {
+    e.preventDefault();
+    setViewMode('library');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  if (navLinkTools) navLinkTools.addEventListener('click', (e) => {
+    e.preventDefault();
+    setViewMode('tools');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Modals Triggers
+  if (navLinkPricing) navLinkPricing.addEventListener('click', (e) => {
+    e.preventDefault();
+    openSimpleModal(pricingModal);
+  });
+
+  if (navLinkDocs) navLinkDocs.addEventListener('click', (e) => {
+    e.preventDefault();
+    openSimpleModal(docsModal);
+  });
+
+  if (btnMcp) btnMcp.addEventListener('click', () => openSimpleModal(mcpModal));
+  if (btnFigma) btnFigma.addEventListener('click', () => openSimpleModal(figmaModal));
+  if (btnSignIn) btnSignIn.addEventListener('click', () => openSimpleModal(signInModal));
+
+  if (navLinkAffiliate) navLinkAffiliate.addEventListener('click', (e) => {
+    e.preventDefault();
+    showToast('Affiliate Program: Earn 30% recurring commission on all referrals.');
+  });
+
+  if (navLinkContact) navLinkContact.addEventListener('click', (e) => {
+    e.preventDefault();
+    showToast('Creative Engineering Support: team@getlayers.ai');
+  });
+
+  // Copy MCP Config
+  const btnCopyMcp = document.getElementById('btnCopyMcp');
+  if (btnCopyMcp) {
+    btnCopyMcp.addEventListener('click', () => {
+      const json = JSON.stringify({
+        mcpServers: {
+          getlayers: {
+            command: "npx",
+            args: ["-y", "@getlayers/mcp-server@latest"],
+            env: { GETLAYERS_API_KEY: "gl_live_partner_access" }
+          }
+        }
+      }, null, 2);
+      navigator.clipboard.writeText(json).then(() => showToast('Copied MCP config!'));
+    });
+  }
+
 
   function escapeHtml(str) {
     if (!str) return '';

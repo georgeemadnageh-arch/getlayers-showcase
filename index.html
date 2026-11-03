@@ -3,88 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GetLayers — Cinematic AI Web Templates & 3D Library</title>
-  <meta name="description" content="A curated library of cinematic web templates, 3D WebGL scenes, interactive sections, and animated video backgrounds." />
+  <title>GetLayers — Cinematic AI Web Templates & 3D Tools</title>
+  <meta name="description" content="Curated library of cinematic web templates, 3D WebGL scenes, interactive sections, tools, and high-res video backgrounds." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header / Navigation -->
+  <!-- Header / Navigation (100% Authentic GetLayers Architecture) -->
   <header class="header">
     <div class="header-container">
-      <div class="brand">
-        <div class="logo-mark">
-          <svg viewBox="0 0 28 28" fill="none" class="logo-svg">
+      
+      <!-- Brand & Search Left Group -->
+      <div class="header-left">
+        <a href="#library" class="brand" id="brandLogo" aria-label="getlayers — home">
+          <svg class="logo-svg" viewBox="0 0 28 28" fill="none" aria-hidden="true">
             <defs>
               <linearGradient id="brand-grad" x1="3" y1="2" x2="25" y2="26" gradientUnits="userSpaceOnUse">
-                <stop offset="0%" stop-color="#00f2fe" />
-                <stop offset="50%" stop-color="#4facfe" />
-                <stop offset="100%" stop-color="#7367f0" />
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="50%" stop-color="#818cf8" />
+                <stop offset="100%" stop-color="#c084fc" />
               </linearGradient>
             </defs>
-            <path d="M14 16 24.5 21 14 26 3.5 21Z" fill="url(#brand-grad)" fill-opacity="0.3" />
-            <path d="M14 9 24.5 14 14 19 3.5 14Z" fill="url(#brand-grad)" fill-opacity="0.6" />
-            <path d="M14 2 24.5 7 14 12 3.5 7Z" fill="url(#brand-grad)" />
+            <path d="M14 16 24.5 21 14 26 3.5 21Z" fill="url(#brand-grad)" fill-opacity="0.3"></path>
+            <path d="M14 9 24.5 14 14 19 3.5 14Z" fill="url(#brand-grad)" fill-opacity="0.6"></path>
+            <path d="M14 2 24.5 7 14 12 3.5 7Z" fill="url(#brand-grad)"></path>
           </svg>
+          <span class="logo-word"><span class="logo-word-dim">get</span>layers</span>
+        </a>
+
+        <!-- Fast Search Pill with '/' Shortcut Indicator -->
+        <div class="search-pill-nav" id="searchNavWrap">
+          <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="searchInput" placeholder="Search..." autocomplete="off" />
+          <kbd class="shortcut-badge">/</kbd>
         </div>
-        <span class="brand-text">GetLayers <span class="badge-edition">Clone Edition</span></span>
       </div>
 
-      <!-- Search Input in Header -->
-      <div class="search-box">
-        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
-        <input type="text" id="searchInput" placeholder="Search templates, 3D scenes, shaders..." autocomplete="off" />
-        <span class="shortcut">⌘K</span>
+      <!-- Main Navigation Menu (Center) -->
+      <nav class="nav-menu" id="mainNav">
+        <a href="#library" class="nav-link active" id="navLinkLibrary">Library</a>
+        <a href="#tools" class="nav-link nav-link-tools" id="navLinkTools">
+          Tools
+          <span class="new-badge">New</span>
+        </a>
+        <a href="#pricing" class="nav-link" id="navLinkPricing">Pricing</a>
+        <a href="#docs" class="nav-link" id="navLinkDocs">Docs</a>
+        <a href="#affiliate" class="nav-link" id="navLinkAffiliate">Affiliate</a>
+        <a href="#contact" class="nav-link" id="navLinkContact">Contact</a>
+      </nav>
+
+      <!-- External Integrations & Account Controls (Right) -->
+      <div class="header-right">
+        <button type="button" class="btn-nav-action btn-mcp" id="btnMcp" title="Model Context Protocol Integration">
+          <span class="sparkle-symbol">✦</span>
+          <span>MCP</span>
+        </button>
+
+        <button type="button" class="btn-nav-action btn-figma" id="btnFigma" title="GetLayers Figma Plugin">
+          <svg class="figma-svg" width="10" height="15" viewBox="0 0 38 57" fill="none">
+            <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0Z" fill="#1ABCFE"></path>
+            <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0Z" fill="#0ACF83"></path>
+            <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19Z" fill="#F24E1E"></path>
+            <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z" fill="#FF7262"></path>
+            <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z" fill="#A259FF"></path>
+          </svg>
+          <span>Figma</span>
+          <span class="new-badge">New</span>
+        </button>
+
+        <button type="button" class="btn-signin" id="btnSignIn">
+          <span class="avatar-ring">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span>Sign in</span>
+        </button>
       </div>
 
-      <div class="header-actions">
-        <span class="stat-badge"><span class="pulse-dot"></span> <span id="headerTotalCount">771</span> Cinematic Assets</span>
-      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="heroSection">
     <div class="hero-content">
-      <div class="hero-pill">
+      <div class="hero-pill" id="heroPill">
         <span class="pill-sparkle">✦</span>
-        <span>Curated Web Experience for AI Builders</span>
+        <span id="heroPillText">Curated Web Experience for AI Builders</span>
       </div>
-      <h1 class="hero-title">Cinematic AI sites,<br><span class="gradient-text">made easy</span></h1>
-      <p class="hero-subtitle">
-        Explore 771 production-ready templates, 3D WebGL scenes, interactive sections, tools, and high-res video backgrounds.
+      <h1 class="hero-title" id="heroTitle">Cinematic AI sites,<br><span class="gradient-text">made easy</span></h1>
+      <p class="hero-subtitle" id="heroSubtitle">
+        Explore 758 production-ready templates, 3D WebGL scenes, interactive sections, tools, and high-res video backgrounds.
       </p>
     </div>
   </section>
 
-  <!-- Filter Navigation Tabs -->
-  <nav class="filters-nav">
+  <!-- Filter Navigation Tabs (Only visible in Library Mode) -->
+  <nav class="filters-nav" id="filtersNav">
     <div class="filters-container" id="categoryTabs">
       <button class="filter-tab active" data-category="all">
-        All <span class="tab-count" id="count-all">771</span>
+        All <span class="tab-count" id="count-all">758</span>
       </button>
       <button class="filter-tab" data-category="templates">
-        Templates <span class="tab-count" id="count-templates">85</span>
+        Templates <span class="tab-count" id="count-templates">55</span>
       </button>
       <button class="filter-tab" data-category="3d_scenes">
-        3D Scenes <span class="tab-count" id="count-3d_scenes">114</span>
+        3D Scenes <span class="tab-count" id="count-3d_scenes">108</span>
       </button>
       <button class="filter-tab" data-category="backgrounds">
-        Backgrounds <span class="tab-count" id="count-backgrounds">476</span>
+        Backgrounds <span class="tab-count" id="count-backgrounds">470</span>
       </button>
       <button class="filter-tab" data-category="gradients">
-        Gradients <span class="tab-count" id="count-gradients">73</span>
+        Gradients <span class="tab-count" id="count-gradients">121</span>
       </button>
       <button class="filter-tab" data-category="sections">
-        Sections <span class="tab-count" id="count-sections">10</span>
+        Sections <span class="tab-count" id="count-sections">4</span>
       </button>
-      <button class="filter-tab" data-category="tools">
-        Tools <span class="tab-count" id="count-tools">13</span>
+      <button class="filter-tab tab-tools-trigger" data-category="tools">
+        Tools <span class="new-badge new-badge-sm">New</span> <span class="tab-count" id="count-tools">13</span>
       </button>
     </div>
   </nav>
@@ -149,8 +191,180 @@
     </div>
   </div>
 
+  <!-- Pricing Modal (Authentic GetLayers Tier Structure) -->
+  <div id="pricingModal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card modal-card-wide">
+      <button class="modal-close" id="pricingCloseBtn">✕</button>
+      <div class="modal-padded">
+        <div class="text-center mb-8">
+          <span class="modal-badge">Pricing Plans</span>
+          <h2 class="text-2xl font-bold text-white mt-2">Unlimited access to cinematic web assets</h2>
+          <p class="text-slate-400 text-sm mt-1">One annual membership for all 758+ templates, 3D scenes, tools, and MCP keys.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- All-Access Pass -->
+          <div class="pricing-card pricing-featured">
+            <div class="pricing-badge">Most Popular</div>
+            <h3 class="pricing-tier-name">All-Access Pass</h3>
+            <p class="pricing-tier-desc">Complete freedom to build cinematic client and product sites.</p>
+            <div class="pricing-price-row">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">149</span>
+              <span class="pricing-period">/ year</span>
+            </div>
+            <ul class="pricing-checklist">
+              <li>✓ Instant access to all 758+ templates & scenes</li>
+              <li>✓ 4K uncompressed video loops & WebGL shaders</li>
+              <li>✓ Full commercial license for unlimited client sites</li>
+              <li>✓ 13 Interactive 3D WebGL Design Studios</li>
+              <li>✓ Private MCP Server integration for Claude & Cursor</li>
+              <li>✓ Figma source UI files & design tokens</li>
+            </ul>
+            <button class="btn-pricing-action btn-pricing-highlight">Get All-Access Pass</button>
+          </div>
+
+          <!-- Studio / Team -->
+          <div class="pricing-card">
+            <h3 class="pricing-tier-name">Agency & Studio</h3>
+            <p class="pricing-tier-desc">For design studios shipping high-volume bespoke web experiences.</p>
+            <div class="pricing-price-row">
+              <span class="pricing-currency">$</span>
+              <span class="pricing-amount">499</span>
+              <span class="pricing-period">/ year</span>
+            </div>
+            <ul class="pricing-checklist">
+              <li>✓ Everything in All-Access for up to 10 team seats</li>
+              <li>✓ Priority custom GLSL shader requests</li>
+              <li>✓ Dedicated MCP concurrent server slots</li>
+              <li>✓ Next.js 16 + React 19 source code repositories</li>
+              <li>✓ White-label client deliverables</li>
+              <li>✓ 1-on-1 Creative Developer onboarding support</li>
+            </ul>
+            <button class="btn-pricing-action">Choose Agency Tier</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Docs Modal -->
+  <div id="docsModal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card modal-card-wide">
+      <button class="modal-close" id="docsCloseBtn">✕</button>
+      <div class="modal-padded">
+        <span class="modal-badge">Documentation</span>
+        <h2 class="text-2xl font-bold text-white mt-2">How to build with GetLayers</h2>
+        <div class="docs-content mt-4">
+          <div class="docs-block">
+            <h3>1. The Vibe-Coding Workflow</h3>
+            <p>Every asset on GetLayers provides an exact AI Engineering Specification. Copy the prompt directly into <strong>Claude Code, Cursor, or Hermes Twin</strong> to produce pixel-perfect Next.js 16 and Three.js code in seconds.</p>
+          </div>
+          <div class="docs-block">
+            <h3>2. Using 4K Video Backgrounds</h3>
+            <p>Background assets are pre-rendered seamless loops. Drop them into any standard HTML5 <code>&lt;video autoPlay loop muted playsInline&gt;</code> element with an aspect-ratio container for instant Stripe/Apple caliber aesthetics.</p>
+          </div>
+          <div class="docs-block">
+            <h3>3. Three.js & GLSL Shaders</h3>
+            <p>Our 3D scenes use React Three Fiber and Three.js. Shader code uses standard WebGL 2 fragment and vertex pipelines, compatible with any modern bundler.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MCP Modal -->
+  <div id="mcpModal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="mcpCloseBtn">✕</button>
+      <div class="modal-padded">
+        <span class="modal-badge">MCP Integration</span>
+        <h2 class="text-2xl font-bold text-white mt-2">Connect GetLayers to AI Agents</h2>
+        <p class="text-slate-400 text-sm mt-1">Plug the GetLayers library directly into Claude Desktop, Cursor, or Hermes Twin via Model Context Protocol.</p>
+        
+        <div class="code-box mt-4">
+          <div class="code-box-header">
+            <span>claude_desktop_config.json</span>
+            <button class="btn-copy-code" id="btnCopyMcp">Copy JSON</button>
+          </div>
+          <pre><code>{
+  "mcpServers": {
+    "getlayers": {
+      "command": "npx",
+      "args": ["-y", "@getlayers/mcp-server@latest"],
+      "env": {
+        "GETLAYERS_API_KEY": "gl_live_partner_access"
+      }
+    }
+  }
+}</code></pre>
+        </div>
+        <p class="text-xs text-slate-500 mt-3">Allows Claude Code / Cursor to search 758+ templates, fetch GLSL code, and inject animations directly into your codebase.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Figma Modal -->
+  <div id="figmaModal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="figmaCloseBtn">✕</button>
+      <div class="modal-padded">
+        <div class="flex items-center gap-2">
+          <svg width="18" height="27" viewBox="0 0 38 57" fill="none">
+            <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0Z" fill="#1ABCFE"></path>
+            <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0Z" fill="#0ACF83"></path>
+            <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19Z" fill="#F24E1E"></path>
+            <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z" fill="#FF7262"></path>
+            <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z" fill="#A259FF"></path>
+          </svg>
+          <span class="modal-badge">Figma Integration</span>
+        </div>
+        <h2 class="text-2xl font-bold text-white mt-2">GetLayers for Figma</h2>
+        <p class="text-slate-400 text-sm mt-1">Design in Figma, import directly from GetLayers, or export layers into 3D WebGL scenes.</p>
+        <div class="figma-preview-box mt-4">
+          <div class="figma-tile">
+            <span class="figma-pill">Plugin</span>
+            <h4>Official Figma Community Plugin</h4>
+            <p>Access the entire vector asset catalog, typography tokens, and section wireframes directly in your canvas.</p>
+            <button class="btn-primary mt-3" onclick="window.open('https://figma.com/@getlayers', '_blank')">Open in Figma Community ↗</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign In Modal -->
+  <div id="signInModal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card modal-card-sm">
+      <button class="modal-close" id="signInCloseBtn">✕</button>
+      <div class="modal-padded text-center">
+        <span class="modal-badge">Account</span>
+        <h2 class="text-xl font-bold text-white mt-2">Sign in to GetLayers</h2>
+        <p class="text-slate-400 text-xs mt-1">Access your saved favorites, private MCP keys, and downloads.</p>
+        
+        <div class="auth-buttons mt-6">
+          <button class="btn-auth-provider" id="btnAuthGithub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            <span>Continue with GitHub</span>
+          </button>
+          <button class="btn-auth-provider mt-2" id="btnAuthGoogle">
+            <svg width="18" height="18" viewBox="0 0 24 24">
+              <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
+              <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"/>
+              <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+              <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+            </svg>
+            <span>Continue with Google</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Toast Notification -->
-  <div id="toast" class="toast hidden">Copied prompt to clipboard!</div>
+  <div id="toast" class="toast hidden">Copied to clipboard!</div>
 
   <!-- Scripts -->
   <script src="data.js"></script>
