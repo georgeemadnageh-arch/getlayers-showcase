@@ -594,4 +594,77 @@ Key Requirements:
 
   // Initial render
   render();
+
+  // =========================================================================
+  // Step 4: Custom Cursor Follower Engine & Card Ambient Glow (Spring Physics)
+  // =========================================================================
+  const cursorDot = document.getElementById('cursorDot');
+  const cursorRing = document.getElementById('cursorRing');
+  let mouseX = -100, mouseY = -100;
+  let ringX = -100, ringY = -100;
+  let isCursorVisible = false;
+
+  if (cursorDot && cursorRing) {
+    cursorDot.style.opacity = '0';
+    cursorRing.style.opacity = '0';
+
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (!isCursorVisible) {
+        isCursorVisible = true;
+        cursorDot.style.opacity = '1';
+        cursorRing.style.opacity = '1';
+      }
+      cursorDot.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+    });
+
+    window.addEventListener('mousedown', () => document.body.classList.add('cursor-active'));
+    window.addEventListener('mouseup', () => document.body.classList.remove('cursor-active'));
+
+    function animateCursorRing() {
+      // Spring lerp factor 0.18 for buttery smooth lag
+      ringX += (mouseX - ringX) * 0.18;
+      ringY += (mouseY - ringY) * 0.18;
+      cursorRing.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
+      requestAnimationFrame(animateCursorRing);
+    }
+    requestAnimationFrame(animateCursorRing);
+
+    // Hover state detections
+    document.addEventListener('mouseover', (e) => {
+      const card = e.target.closest('.card');
+      const clickable = e.target.closest('button, a, input, .filter-tab, [role="button"]');
+      
+      if (card) {
+        document.body.classList.add('cursor-hover-card');
+        document.body.classList.remove('cursor-hover');
+      } else if (clickable) {
+        document.body.classList.add('cursor-hover');
+        document.body.classList.remove('cursor-hover-card');
+      } else {
+        document.body.classList.remove('cursor-hover', 'cursor-hover-card');
+      }
+    });
+
+    document.addEventListener('mouseleave', () => {
+      isCursorVisible = false;
+      cursorDot.style.opacity = '0';
+      cursorRing.style.opacity = '0';
+    });
+  }
+
+  // Card Ambient Glow Mouse Tracking
+  if (cardsGrid) {
+    cardsGrid.addEventListener('mousemove', (e) => {
+      const card = e.target.closest('.card');
+      if (!card) return;
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
+    });
+  }
+
 });
