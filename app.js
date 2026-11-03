@@ -170,8 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
           <p class="card-desc">${escapeHtml(item.description)}</p>
           <div class="tool-tech-row">${techTags}</div>
           <div class="card-footer">
-            <span class="btn-card-action">
-              <span>Inspect Tool Specs</span>
+            <span class="btn-card-action btn-tool-action">
+              <span>${item.id === 'holographic-cloth' ? 'Launch 3D Studio ↗' : 'Inspect Tool Specs'}</span>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
@@ -181,7 +181,13 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
       `;
 
-      card.addEventListener('click', () => openModal(item, 195));
+      card.addEventListener('click', () => {
+        if (item.id === 'holographic-cloth') {
+          window.location.href = 'tools/holographic-cloth/index.html';
+        } else {
+          openModal(item, 195);
+        }
+      });
       return card;
     }
 
@@ -299,6 +305,13 @@ document.addEventListener('DOMContentLoaded', () => {
     modalMedia.innerHTML = '';
     const videoUrl = item.posterVideo || item.previewVideo || '';
     const imageUrl = item.image || item.previewImage || '';
+
+    const studioLaunchBtn = document.getElementById('modalStudioLaunchLink');
+    if (item.id === 'holographic-cloth') {
+      if (studioLaunchBtn) studioLaunchBtn.classList.remove('hidden');
+    } else {
+      if (studioLaunchBtn) studioLaunchBtn.classList.add('hidden');
+    }
 
     if (videoUrl) {
       const video = document.createElement('video');
