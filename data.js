@@ -21,7 +21,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/soda-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/soda-preview.mp4",
     "likes": 386,
-    "createdAt": "2026-06-07"
+    "createdAt": "2026-06-07",
+    "mediaType": "video"
   },
   {
     "id": "kimi",
@@ -48,7 +49,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/kimi-04a9449ab2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/kimi-04a9449ab2-preview.mp4",
     "likes": 371,
-    "createdAt": "2026-09-09"
+    "createdAt": "2026-09-09",
+    "mediaType": "video"
   },
   {
     "id": "lumora",
@@ -73,7 +75,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/lumora-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/lumora-preview.mp4",
     "likes": 359,
-    "createdAt": "2026-05-14"
+    "createdAt": "2026-05-14",
+    "mediaType": "video"
   },
   {
     "id": "laocoon",
@@ -98,7 +101,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/laocoon-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/laocoon-preview.mp4",
     "likes": 244,
-    "createdAt": "2026-06-07"
+    "createdAt": "2026-06-07",
+    "mediaType": "video"
   },
   {
     "id": "baseline",
@@ -123,7 +127,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/baseline-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/baseline-preview.mp4",
     "likes": 226,
-    "createdAt": "2026-05-09"
+    "createdAt": "2026-05-09",
+    "mediaType": "video"
   },
   {
     "id": "lumi-re",
@@ -150,7 +155,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/lumi-re-9893947dfd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/lumi-re-9893947dfd-preview.mp4",
     "likes": 18,
-    "createdAt": "2026-10-30"
+    "createdAt": "2026-10-30",
+    "mediaType": "video"
   },
   {
     "id": "prisma",
@@ -177,7 +183,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/prisma-164a6483c4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/prisma-164a6483c4-preview.mp4",
     "likes": 6,
-    "createdAt": "2026-10-30"
+    "createdAt": "2026-10-30",
+    "mediaType": "video"
   },
   {
     "id": "relay",
@@ -204,7 +211,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/relay-4ee0729d77-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/relay-4ee0729d77-preview.mp4",
     "likes": 288,
-    "createdAt": "2026-09-26"
+    "createdAt": "2026-09-26",
+    "mediaType": "video"
   },
   {
     "id": "ai-studio",
@@ -231,7 +239,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/ai-studio-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/ai-studio-preview.mp4",
     "likes": 271,
-    "createdAt": "2026-06-28"
+    "createdAt": "2026-06-28",
+    "mediaType": "video"
   },
   {
     "id": "artefakt",
@@ -258,7 +267,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/artefakt-5f7a0c9962-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/artefakt-5f7a0c9962-preview.mp4",
     "likes": 256,
-    "createdAt": "2026-08-28"
+    "createdAt": "2026-08-28",
+    "mediaType": "video"
   },
   {
     "id": "held-mint",
@@ -283,7 +293,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/held-mint-78f917a508-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/held-mint-78f917a508-preview.mp4",
     "likes": 248,
-    "createdAt": "2026-10-11"
+    "createdAt": "2026-10-11",
+    "mediaType": "video"
   },
   {
     "id": "brewns",
@@ -310,7 +321,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/brewns-b9f02b6657-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/brewns-b9f02b6657-preview.mp4",
     "likes": 247,
-    "createdAt": "2026-09-12"
+    "createdAt": "2026-09-12",
+    "mediaType": "video"
   },
   {
     "id": "house",
@@ -335,7 +347,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/house-22508188f8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/house-22508188f8-preview.mp4",
     "likes": 241,
-    "createdAt": "2026-09-14"
+    "createdAt": "2026-09-14",
+    "mediaType": "video"
   },
   {
     "id": "vesper",
@@ -362,7 +375,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/vesper-06e69bbad0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/vesper-06e69bbad0-preview.mp4",
     "likes": 232,
-    "createdAt": "2026-07-12"
+    "createdAt": "2026-07-12",
+    "mediaType": "video"
   },
   {
     "id": "stride",
@@ -389,7 +403,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/stride-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/stride-preview.mp4",
     "likes": 201,
-    "createdAt": "2026-07-05"
+    "createdAt": "2026-07-05",
+    "mediaType": "video"
   },
   {
     "id": "flowstate",
@@ -414,7 +429,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/flowstate-4c494408e1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/flowstate-4c494408e1-preview.mp4",
     "likes": 140,
-    "createdAt": "2026-07-19"
+    "createdAt": "2026-07-19",
+    "mediaType": "video"
   },
   {
     "id": "creative-director",
@@ -439,7 +455,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/creative-director-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/creative-director-preview.mp4",
     "likes": 146,
-    "createdAt": "2026-06-25"
+    "createdAt": "2026-06-25",
+    "mediaType": "video"
   },
   {
     "id": "seed",
@@ -466,7 +483,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/seed-0c0d9637a5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/seed-0c0d9637a5-preview.mp4",
     "likes": 193,
-    "createdAt": "2026-10-24"
+    "createdAt": "2026-10-24",
+    "mediaType": "video"
   },
   {
     "id": "nexus",
@@ -493,7 +511,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/nexus-4d86deb149-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/nexus-4d86deb149-preview.mp4",
     "likes": 201,
-    "createdAt": "2026-10-24"
+    "createdAt": "2026-10-24",
+    "mediaType": "video"
   },
   {
     "id": "herbier-blanc",
@@ -518,7 +537,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/herbier-blanc-16cf9a3827-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/herbier-blanc-16cf9a3827-preview.mp4",
     "likes": 207,
-    "createdAt": "2026-10-16"
+    "createdAt": "2026-10-16",
+    "mediaType": "video"
   },
   {
     "id": "aerra",
@@ -545,7 +565,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/aerra-1ac2dea4cb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/aerra-1ac2dea4cb-preview.mp4",
     "likes": 139,
-    "createdAt": "2026-08-10"
+    "createdAt": "2026-08-10",
+    "mediaType": "video"
   },
   {
     "id": "ai-creator",
@@ -572,7 +593,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/ai-creator-507c4a0834-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/ai-creator-507c4a0834-preview.mp4",
     "likes": 171,
-    "createdAt": "2026-09-07"
+    "createdAt": "2026-09-07",
+    "mediaType": "video"
   },
   {
     "id": "altitude",
@@ -597,7 +619,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/altitude-6a55d25c1e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/altitude-6a55d25c1e-preview.mp4",
     "likes": 126,
-    "createdAt": "2026-07-20"
+    "createdAt": "2026-07-20",
+    "mediaType": "video"
   },
   {
     "id": "antipode",
@@ -618,13 +641,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Two masses of light leaning against each other, brightest where they still disagree and black where neither reaches.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/antipode-88350af1c9.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/antipode-88350af1c9.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/antipode-88350af1c9.mp4",
-    "previewVideo": "/home/gradients/antipode.mp4",
-    "posterVideoPreview": "/home/gradients/antipode.mp4",
+    "previewVideo": "https://storage.getlayers.ai/gradients/antipode-88350af1c9-preview.mp4",
+    "posterVideoPreview": "https://storage.getlayers.ai/gradients/antipode-88350af1c9-preview.mp4",
     "likes": 27,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "artist",
@@ -649,7 +673,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/artist-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/artist-preview.mp4",
     "likes": 60,
-    "createdAt": "2026-06-16"
+    "createdAt": "2026-06-16",
+    "mediaType": "video"
   },
   {
     "id": "ascend",
@@ -676,7 +701,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/ascend-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/ascend-preview.mp4",
     "likes": 185,
-    "createdAt": "2026-05-20"
+    "createdAt": "2026-05-20",
+    "mediaType": "video"
   },
   {
     "id": "auralis",
@@ -703,7 +729,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/auralis-7725b062e5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/auralis-7725b062e5-preview.mp4",
     "likes": 152,
-    "createdAt": "2026-07-27"
+    "createdAt": "2026-07-27",
+    "mediaType": "video"
   },
   {
     "id": "aurum-peak",
@@ -730,7 +757,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/aurum-peak-58d377aea3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/aurum-peak-58d377aea3-preview.mp4",
     "likes": 8,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "cards-almanac",
@@ -757,7 +785,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/cards-almanac-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/cards-almanac-preview.mp4",
     "likes": 67,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "carousel-under-the-radar",
@@ -786,7 +815,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/carousel-under-the-radar-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/carousel-under-the-radar-preview.mp4",
     "likes": 64,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "clair",
@@ -813,7 +843,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/clair-809ec0c996-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/clair-809ec0c996-preview.mp4",
     "likes": 79,
-    "createdAt": "2026-07-12"
+    "createdAt": "2026-07-12",
+    "mediaType": "video"
   },
   {
     "id": "clarix",
@@ -838,7 +869,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/clarix-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/clarix-preview.mp4",
     "likes": 127,
-    "createdAt": "2026-06-26"
+    "createdAt": "2026-06-26",
+    "mediaType": "video"
   },
   {
     "id": "codescan",
@@ -865,7 +897,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/codescan-a4075f0387-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/codescan-a4075f0387-preview.mp4",
     "likes": 159,
-    "createdAt": "2026-08-10"
+    "createdAt": "2026-08-10",
+    "mediaType": "video"
   },
   {
     "id": "colonnade",
@@ -890,7 +923,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/colonnade-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/colonnade-preview.mp4",
     "likes": 54,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "cortex",
@@ -917,7 +951,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/cortex-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/cortex-preview.mp4",
     "likes": 84,
-    "createdAt": "2026-07-02"
+    "createdAt": "2026-07-02",
+    "mediaType": "video"
   },
   {
     "id": "creative-studio",
@@ -944,7 +979,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/creative-studio-12920d9ef2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/creative-studio-12920d9ef2-preview.mp4",
     "likes": 93,
-    "createdAt": "2026-07-06"
+    "createdAt": "2026-07-06",
+    "mediaType": "video"
   },
   {
     "id": "dantora",
@@ -971,7 +1007,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/dantora-ee8f83f9a3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/dantora-ee8f83f9a3-preview.mp4",
     "likes": 155,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "dringle",
@@ -998,7 +1035,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/dringle-bb20d16939-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/dringle-bb20d16939-preview.mp4",
     "likes": 91,
-    "createdAt": "2026-07-10"
+    "createdAt": "2026-07-10",
+    "mediaType": "video"
   },
   {
     "id": "epoxy-drift",
@@ -1025,7 +1063,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/epoxy-drift-cc596ce8fc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/epoxy-drift-cc596ce8fc-preview.mp4",
     "likes": 46,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "evolve",
@@ -1052,7 +1091,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/evolve-f940e12f08-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/evolve-f940e12f08-preview.mp4",
     "likes": 120,
-    "createdAt": "2026-08-04"
+    "createdAt": "2026-08-04",
+    "mediaType": "video"
   },
   {
     "id": "flora",
@@ -1079,7 +1119,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/flora-64f6bceab5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/flora-64f6bceab5-preview.mp4",
     "likes": 238,
-    "createdAt": "2026-09-26"
+    "createdAt": "2026-09-26",
+    "mediaType": "video"
   },
   {
     "id": "forma",
@@ -1104,7 +1145,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/forma-d3bf1b0d2d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/forma-d3bf1b0d2d-preview.mp4",
     "likes": 122,
-    "createdAt": "2026-07-21"
+    "createdAt": "2026-07-21",
+    "mediaType": "video"
   },
   {
     "id": "fromzero",
@@ -1131,7 +1173,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/fromzero-b5f0a96b6f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/fromzero-b5f0a96b6f-preview.mp4",
     "likes": 118,
-    "createdAt": "2026-07-28"
+    "createdAt": "2026-07-28",
+    "mediaType": "video"
   },
   {
     "id": "glowing-dunes",
@@ -1156,7 +1199,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glowing-dunes-d77d97d180-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glowing-dunes-d77d97d180-preview.mp4",
     "likes": 52,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "gravity-webgl",
@@ -1183,7 +1227,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/gravity-webgl-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/gravity-webgl-preview.mp4",
     "likes": 110,
-    "createdAt": "2026-06-07"
+    "createdAt": "2026-06-07",
+    "mediaType": "video"
   },
   {
     "id": "green-vertical-blinds",
@@ -1206,7 +1251,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/green-vertical-blinds-c135fa68c2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/green-vertical-blinds-c135fa68c2-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "gring-x",
@@ -1233,7 +1279,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/gring-x-066eecc455-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/gring-x-066eecc455-preview.mp4",
     "likes": 103,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "halcyon",
@@ -1260,7 +1307,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/halcyon-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/halcyon-preview.mp4",
     "likes": 83,
-    "createdAt": "2026-06-30"
+    "createdAt": "2026-06-30",
+    "mediaType": "video"
   },
   {
     "id": "halden",
@@ -1285,7 +1333,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/halden-5875ef9537-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/halden-5875ef9537-preview.mp4",
     "likes": 208,
-    "createdAt": "2026-09-14"
+    "createdAt": "2026-09-14",
+    "mediaType": "video"
   },
   {
     "id": "helion",
@@ -1312,7 +1361,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/helion-13ce08fa77-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/helion-13ce08fa77-preview.mp4",
     "likes": 110,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "video"
   },
   {
     "id": "ichor",
@@ -1333,13 +1383,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A pool with a lip â the liquid stands proud at its own edge and bulges where it is touched.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/ichor-8fce71b2c0.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/ichor-8fce71b2c0.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/ichor-8fce71b2c0.mp4",
-    "previewVideo": "/home/gradients/ichor.mp4",
-    "posterVideoPreview": "/home/gradients/ichor.mp4",
+    "previewVideo": "https://storage.getlayers.ai/gradients/ichor-8fce71b2c0-preview.mp4",
+    "posterVideoPreview": "https://storage.getlayers.ai/gradients/ichor-8fce71b2c0-preview.mp4",
     "likes": 25,
-    "createdAt": "2026-08-23"
+    "createdAt": "2026-08-23",
+    "mediaType": "video"
   },
   {
     "id": "kindle-001",
@@ -1360,13 +1411,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A fire front creeping across a field â char behind it, an ember line, licks above.",
-    "image": "",
-    "previewImage": "",
-    "posterVideo": "/home/gradients/kindle-001.mp4",
-    "previewVideo": "/home/gradients/kindle-001.mp4",
-    "posterVideoPreview": "/home/gradients/kindle-001.mp4",
+    "image": "https://storage.getlayers.ai/gradients/kindle-3c6e7dd5cd/9a608d2c.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/kindle-3c6e7dd5cd/9a608d2c.webp",
+    "posterVideo": "https://storage.getlayers.ai/gradients/kindle-3c6e7dd5cd/9a608d2c.mp4",
+    "previewVideo": "https://storage.getlayers.ai/gradients/kindle-3c6e7dd5cd/9a608d2c-preview.mp4",
+    "posterVideoPreview": "https://storage.getlayers.ai/gradients/kindle-3c6e7dd5cd/9a608d2c-preview.mp4",
     "likes": 21,
-    "createdAt": "2026-08-23"
+    "createdAt": "2026-08-23",
+    "mediaType": "video"
   },
   {
     "id": "komorebi",
@@ -1387,13 +1439,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Leaf shadow where the coarse canopy casts the softest edge and the small gaps project discs of the sun; the hand moves through it like a breeze.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/komorebi-02ac4b08ee.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/komorebi-02ac4b08ee.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/komorebi-02ac4b08ee.mp4",
-    "previewVideo": "/home/gradients/komorebi.mp4",
-    "posterVideoPreview": "/home/gradients/komorebi.mp4",
+    "previewVideo": "https://storage.getlayers.ai/gradients/komorebi-02ac4b08ee-preview.mp4",
+    "posterVideoPreview": "https://storage.getlayers.ai/gradients/komorebi-02ac4b08ee-preview.mp4",
     "likes": 31,
-    "createdAt": "2026-08-19"
+    "createdAt": "2026-08-19",
+    "mediaType": "video"
   },
   {
     "id": "kumo",
@@ -1418,7 +1471,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/kumo-0d94304971-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/kumo-0d94304971-preview.mp4",
     "likes": 215,
-    "createdAt": "2026-10-08"
+    "createdAt": "2026-10-08",
+    "mediaType": "video"
   },
   {
     "id": "laminar",
@@ -1439,13 +1493,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A uniform stream flowing past bodies that are never drawn â the streamlines are exact everywhere, so they crowd where the flow crowds and have no edge to find.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/laminar-19e73557af.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/laminar-19e73557af.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/laminar-19e73557af.mp4",
-    "previewVideo": "/home/gradients/laminar.mp4",
-    "posterVideoPreview": "/home/gradients/laminar.mp4",
+    "previewVideo": "https://storage.getlayers.ai/gradients/laminar-19e73557af-preview.mp4",
+    "posterVideoPreview": "https://storage.getlayers.ai/gradients/laminar-19e73557af-preview.mp4",
     "likes": 31,
-    "createdAt": "2026-08-23"
+    "createdAt": "2026-08-23",
+    "mediaType": "video"
   },
   {
     "id": "longplay",
@@ -1472,7 +1527,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/longplay-6cc706c729-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/longplay-6cc706c729-preview.mp4",
     "likes": 202,
-    "createdAt": "2026-09-14"
+    "createdAt": "2026-09-14",
+    "mediaType": "video"
   },
   {
     "id": "loopstack",
@@ -1495,7 +1551,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/loopstack-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/loopstack-preview.mp4",
     "likes": 172,
-    "createdAt": "2026-06-07"
+    "createdAt": "2026-06-07",
+    "mediaType": "video"
   },
   {
     "id": "lumea",
@@ -1522,7 +1579,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/lumea-e7c8ac2bce-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/lumea-e7c8ac2bce-preview.mp4",
     "likes": 127,
-    "createdAt": "2026-07-30"
+    "createdAt": "2026-07-30",
+    "mediaType": "video"
   },
   {
     "id": "lumen",
@@ -1549,7 +1607,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/lumen-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/lumen-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-07-03"
+    "createdAt": "2026-07-03",
+    "mediaType": "video"
   },
   {
     "id": "marcus-vane",
@@ -1574,7 +1633,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/marcus-vane-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/marcus-vane-preview.mp4",
     "likes": 159,
-    "createdAt": "2026-06-16"
+    "createdAt": "2026-06-16",
+    "mediaType": "video"
   },
   {
     "id": "mirror-hall",
@@ -1605,7 +1665,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/mirror-hall-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/mirror-hall-preview.mp4",
     "likes": 148,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "negantropy",
@@ -1632,7 +1693,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/negantropy-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/negantropy-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-06-07"
+    "createdAt": "2026-06-07",
+    "mediaType": "video"
   },
   {
     "id": "neural-monitor",
@@ -1659,7 +1721,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/neural-monitor-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/neural-monitor-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-06-10"
+    "createdAt": "2026-06-10",
+    "mediaType": "video"
   },
   {
     "id": "new-era",
@@ -1686,7 +1749,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/new-era-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/new-era-preview.mp4",
     "likes": 189,
-    "createdAt": "2026-06-28"
+    "createdAt": "2026-06-28",
+    "mediaType": "video"
   },
   {
     "id": "night-flowers",
@@ -1711,7 +1775,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/night-flowers-c8cf6ff972-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/night-flowers-c8cf6ff972-preview.mp4",
     "likes": 24,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "noema",
@@ -1736,7 +1801,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/noema-656d33b840-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/noema-656d33b840-preview.mp4",
     "likes": 113,
-    "createdAt": "2026-07-24"
+    "createdAt": "2026-07-24",
+    "mediaType": "video"
   },
   {
     "id": "northwall",
@@ -1761,7 +1827,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/northwall-aab9fcbef2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/northwall-aab9fcbef2-preview.mp4",
     "likes": 161,
-    "createdAt": "2026-09-17"
+    "createdAt": "2026-09-17",
+    "mediaType": "video"
   },
   {
     "id": "orb",
@@ -1788,7 +1855,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/orb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/orb-preview.mp4",
     "likes": 80,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "pharos",
@@ -1809,13 +1877,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A lighthouse turning inside sea fog â the blades die out where the banks are thick because the light is dimmed by what it crossed, not by how far it came, and a hand held up casts a real shadow that widens and fades as it falls away.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/pharos-c305723330.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/pharos-c305723330.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/pharos-c305723330.mp4",
-    "previewVideo": "/home/gradients/pharos.mp4",
-    "posterVideoPreview": "/home/gradients/pharos.mp4",
+    "previewVideo": "https://storage.getlayers.ai/gradients/pharos-c305723330-preview.mp4",
+    "posterVideoPreview": "https://storage.getlayers.ai/gradients/pharos-c305723330-preview.mp4",
     "likes": 34,
-    "createdAt": "2026-08-20"
+    "createdAt": "2026-08-20",
+    "mediaType": "video"
   },
   {
     "id": "pinwheel-galaxy",
@@ -1840,7 +1909,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/pinwheel-galaxy-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/pinwheel-galaxy-preview.mp4",
     "likes": 35,
-    "createdAt": "2026-06-08"
+    "createdAt": "2026-06-08",
+    "mediaType": "video"
   },
   {
     "id": "pixel-glass",
@@ -1867,7 +1937,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/pixel-glass-a9ff4b0b3d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/pixel-glass-a9ff4b0b3d-preview.mp4",
     "likes": 79,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "purple-dream",
@@ -1892,7 +1963,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-dream-d538aaf63f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-dream-d538aaf63f-preview.mp4",
     "likes": 59,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "ridgeline",
@@ -1917,7 +1989,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/ridgeline-503273343d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/ridgeline-503273343d-preview.mp4",
     "likes": 179,
-    "createdAt": "2026-09-22"
+    "createdAt": "2026-09-22",
+    "mediaType": "video"
   },
   {
     "id": "rift-stone",
@@ -1944,7 +2017,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/rift-stone-1362d8751b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/rift-stone-1362d8751b-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "shoal",
@@ -1965,13 +2039,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Pale light refracted through a slow swell â an airy caustic field that gathers and drifts under the pointer.",
-    "image": "",
-    "previewImage": "",
-    "posterVideo": "/home/gradients/shoal.mp4",
-    "previewVideo": "/home/gradients/shoal.mp4",
-    "posterVideoPreview": "/home/gradients/shoal.mp4",
+    "image": "https://storage.getlayers.ai/gradients/shoal-51145dcff8.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/shoal-51145dcff8.webp",
+    "posterVideo": "https://storage.getlayers.ai/gradients/shoal-51145dcff8.mp4",
+    "previewVideo": "https://storage.getlayers.ai/gradients/shoal-51145dcff8-preview.mp4",
+    "posterVideoPreview": "https://storage.getlayers.ai/gradients/shoal-51145dcff8-preview.mp4",
     "likes": 15,
-    "createdAt": "2026-08-23"
+    "createdAt": "2026-08-23",
+    "mediaType": "video"
   },
   {
     "id": "showcase-equator",
@@ -2000,7 +2075,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/showcase-equator-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/showcase-equator-preview.mp4",
     "likes": 36,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "slider-slipstream",
@@ -2029,7 +2105,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/slider-slipstream-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/slider-slipstream-preview.mp4",
     "likes": 76,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "stackside",
@@ -2054,7 +2131,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/stackside-5953d030cb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/stackside-5953d030cb-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "video"
   },
   {
     "id": "starry-night",
@@ -2079,7 +2157,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/starry-night-a81971c4d2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/starry-night-a81971c4d2-preview.mp4",
     "likes": 49,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "stride-nine",
@@ -2104,7 +2183,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/stride-nine-a6fc990c1f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/stride-nine-a6fc990c1f-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-06"
+    "createdAt": "2026-08-06",
+    "mediaType": "video"
   },
   {
     "id": "strigil",
@@ -2125,13 +2205,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A warm and a cool field dragged sideways until they smear â five taps along an axis that fans across the frame.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/strigil-2d6bad8900.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/strigil-2d6bad8900.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/strigil-2d6bad8900.mp4",
-    "previewVideo": "/home/gradients/strigil.mp4",
-    "posterVideoPreview": "/home/gradients/strigil.mp4",
+    "previewVideo": "https://storage.getlayers.ai/gradients/strigil-2d6bad8900-preview.mp4",
+    "posterVideoPreview": "https://storage.getlayers.ai/gradients/strigil-2d6bad8900-preview.mp4",
     "likes": 38,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "vexon",
@@ -2158,7 +2239,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/vexon-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/vexon-preview.mp4",
     "likes": 113,
-    "createdAt": "2026-06-07"
+    "createdAt": "2026-06-07",
+    "mediaType": "video"
   },
   {
     "id": "vivid-sunset",
@@ -2183,7 +2265,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/vivid-sunset-c3d76c9ffb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/vivid-sunset-c3d76c9ffb-preview.mp4",
     "likes": 46,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "voxelia",
@@ -2210,7 +2293,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/voxelia-b5b84db9f1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/voxelia-b5b84db9f1-preview.mp4",
     "likes": 98,
-    "createdAt": "2026-07-31"
+    "createdAt": "2026-07-31",
+    "mediaType": "video"
   },
   {
     "id": "wanderlust",
@@ -2235,7 +2319,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/templates/wanderlust-555800a518-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/templates/wanderlust-555800a518-preview.mp4",
     "likes": 216,
-    "createdAt": "2026-08-23"
+    "createdAt": "2026-08-23",
+    "mediaType": "video"
   },
   {
     "id": "twisted-glass-ribbon",
@@ -2262,7 +2347,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/twisted-glass-ribbon-65eed01ac7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/twisted-glass-ribbon-65eed01ac7-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "acid-rain",
@@ -2289,7 +2375,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/acid-rain-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/acid-rain-preview.mp4",
     "likes": 20,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "aether-flux",
@@ -2316,7 +2403,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/aether-flux-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/aether-flux-preview.mp4",
     "likes": 33,
-    "createdAt": "2026-06-30"
+    "createdAt": "2026-06-30",
+    "mediaType": "video"
   },
   {
     "id": "argent-massif",
@@ -2343,7 +2431,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/argent-massif-7c33e26814-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/argent-massif-7c33e26814-preview.mp4",
     "likes": 9,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "aureole",
@@ -2370,7 +2459,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/aureole-1d3902b0a7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/aureole-1d3902b0a7-preview.mp4",
     "likes": 8,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "azure-reeds",
@@ -2397,7 +2487,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/azure-reeds-4c6dafe193-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/azure-reeds-4c6dafe193-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "blob",
@@ -2422,7 +2513,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/blob-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/blob-preview.mp4",
     "likes": 23,
-    "createdAt": "2026-03-27"
+    "createdAt": "2026-03-27",
+    "mediaType": "video"
   },
   {
     "id": "blocky-grid",
@@ -2449,7 +2541,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/blocky-grid-c7d14e9231-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/blocky-grid-c7d14e9231-preview.mp4",
     "likes": 68,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "brain",
@@ -2474,7 +2567,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/brain-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/brain-preview.mp4",
     "likes": 58,
-    "createdAt": "2026-06-04"
+    "createdAt": "2026-06-04",
+    "mediaType": "video"
   },
   {
     "id": "candle-aurora",
@@ -2501,7 +2595,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/candle-aurora-468bb7217a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/candle-aurora-468bb7217a-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "chroma-lattice",
@@ -2528,7 +2623,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/chroma-lattice-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/chroma-lattice-preview.mp4",
     "likes": 21,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "container-yard",
@@ -2555,7 +2651,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/container-yard-fcde0a4101-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/container-yard-fcde0a4101-preview.mp4",
     "likes": 6,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "contour-anatomy",
@@ -2582,7 +2679,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/contour-anatomy-abaf77cef6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/contour-anatomy-abaf77cef6-preview.mp4",
     "likes": 92,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "corner-flames",
@@ -2607,7 +2705,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/corner-flames-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/corner-flames-preview.mp4",
     "likes": 12,
-    "createdAt": "2026-04-22"
+    "createdAt": "2026-04-22",
+    "mediaType": "video"
   },
   {
     "id": "cosmic-web",
@@ -2634,7 +2733,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/cosmic-web-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/cosmic-web-preview.mp4",
     "likes": 22,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "court-bounce",
@@ -2661,7 +2761,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/court-bounce-d698cd054d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/court-bounce-d698cd054d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "crimson-contour",
@@ -2688,7 +2789,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/crimson-contour-b97251a239-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/crimson-contour-b97251a239-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "crimson-halftone",
@@ -2715,7 +2817,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/crimson-halftone-d96fbc3a7b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/crimson-halftone-d96fbc3a7b-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "crimson-silence",
@@ -2742,7 +2845,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/crimson-silence-6f299c473a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/crimson-silence-6f299c473a-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "cubic-gradient",
@@ -2769,7 +2873,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/cubic-gradient-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/cubic-gradient-preview.mp4",
     "likes": 31,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "dither-field",
@@ -2796,7 +2901,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/dither-field-3b5c6caba3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/dither-field-3b5c6caba3-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "dna-helix",
@@ -2821,7 +2927,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/dna-helix-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/dna-helix-preview.mp4",
     "likes": 18,
-    "createdAt": "2026-06-06"
+    "createdAt": "2026-06-06",
+    "mediaType": "video"
   },
   {
     "id": "dna-ink",
@@ -2848,7 +2955,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/dna-ink-3aed3b59a6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/dna-ink-3aed3b59a6-preview.mp4",
     "likes": 70,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "einstein-rosen-lattice",
@@ -2875,7 +2983,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/einstein-rosen-lattice-2b24e3c5d4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/einstein-rosen-lattice-2b24e3c5d4-preview.mp4",
     "likes": 84,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "elliptical-galaxy",
@@ -2900,7 +3009,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/elliptical-galaxy-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/elliptical-galaxy-preview.mp4",
     "likes": 65,
-    "createdAt": "2026-05-09"
+    "createdAt": "2026-05-09",
+    "mediaType": "video"
   },
   {
     "id": "field-sphere",
@@ -2927,7 +3037,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/field-sphere-60add306bf-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/field-sphere-60add306bf-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "filament-star",
@@ -2954,7 +3065,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/filament-star-fa496d7f1e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/filament-star-fa496d7f1e-preview.mp4",
     "likes": 7,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "flame",
@@ -2979,7 +3091,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/flame-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/flame-preview.mp4",
     "likes": 7,
-    "createdAt": "2026-05-03"
+    "createdAt": "2026-05-03",
+    "mediaType": "video"
   },
   {
     "id": "flow-wave",
@@ -3004,7 +3117,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/flow-wave-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/flow-wave-preview.mp4",
     "likes": 121,
-    "createdAt": "2026-05-15"
+    "createdAt": "2026-05-15",
+    "mediaType": "video"
   },
   {
     "id": "fluted-veil",
@@ -3031,7 +3145,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/fluted-veil-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/fluted-veil-preview.mp4",
     "likes": 5,
-    "createdAt": "2026-06-30"
+    "createdAt": "2026-06-30",
+    "mediaType": "video"
   },
   {
     "id": "flying-dust",
@@ -3056,7 +3171,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/flying-dust-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/flying-dust-preview.mp4",
     "likes": 55,
-    "createdAt": "2026-04-27"
+    "createdAt": "2026-04-27",
+    "mediaType": "video"
   },
   {
     "id": "frozen-globe",
@@ -3083,7 +3199,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/frozen-globe-da17792c55-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/frozen-globe-da17792c55-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "funnel",
@@ -3108,7 +3225,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/funnel-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/funnel-preview.mp4",
     "likes": 7,
-    "createdAt": "2026-06-02"
+    "createdAt": "2026-06-02",
+    "mediaType": "video"
   },
   {
     "id": "gilded-gyre",
@@ -3135,7 +3253,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/gilded-gyre-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/gilded-gyre-preview.mp4",
     "likes": 51,
-    "createdAt": "2026-06-30"
+    "createdAt": "2026-06-30",
+    "mediaType": "video"
   },
   {
     "id": "glass-bust",
@@ -3162,7 +3281,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/glass-bust-caebbd87ce-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/glass-bust-caebbd87ce-preview.mp4",
     "likes": 67,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "glass-card-pinwheel",
@@ -3189,7 +3309,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/glass-card-pinwheel-f8bb00047c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/glass-card-pinwheel-f8bb00047c-preview.mp4",
     "likes": 6,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "glass-halo",
@@ -3216,7 +3337,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/glass-halo-507c10acd1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/glass-halo-507c10acd1-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "glyph-grid",
@@ -3243,7 +3365,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/glyph-grid-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/glyph-grid-preview.mp4",
     "likes": 41,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "golden-parthenon",
@@ -3270,7 +3393,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/golden-parthenon-5f801ade67-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/golden-parthenon-5f801ade67-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "grain-cubes",
@@ -3297,7 +3421,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/grain-cubes-ec7af1e3e0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/grain-cubes-ec7af1e3e0-preview.mp4",
     "likes": 92,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "grass-shader",
@@ -3324,7 +3449,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/grass-shader-19ee40cf2d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/grass-shader-19ee40cf2d-preview.mp4",
     "likes": 91,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "halcyon-gate",
@@ -3351,7 +3477,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/halcyon-gate-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/halcyon-gate-preview.mp4",
     "likes": 43,
-    "createdAt": "2026-06-30"
+    "createdAt": "2026-06-30",
+    "mediaType": "video"
   },
   {
     "id": "halcyon-night",
@@ -3378,7 +3505,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/halcyon-night-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/halcyon-night-preview.mp4",
     "likes": 109,
-    "createdAt": "2026-06-30"
+    "createdAt": "2026-06-30",
+    "mediaType": "video"
   },
   {
     "id": "halftone-genesis",
@@ -3405,7 +3533,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/halftone-genesis-1138b77092-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/halftone-genesis-1138b77092-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "halftone-iris",
@@ -3432,7 +3561,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/halftone-iris-13de4fe90e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/halftone-iris-13de4fe90e-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "halftone-lens-field",
@@ -3459,7 +3589,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/halftone-lens-field-9b7c629070-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/halftone-lens-field-9b7c629070-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "holo-hand",
@@ -3486,7 +3617,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/holo-hand-964c6b7933-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/holo-hand-964c6b7933-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "hourglass-galaxy",
@@ -3511,7 +3643,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/hourglass-galaxy-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/hourglass-galaxy-preview.mp4",
     "likes": 20,
-    "createdAt": "2026-04-24"
+    "createdAt": "2026-04-24",
+    "mediaType": "video"
   },
   {
     "id": "ink-brush",
@@ -3538,7 +3671,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/ink-brush-b1da20153f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/ink-brush-b1da20153f-preview.mp4",
     "likes": 83,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "ink-ticker",
@@ -3565,7 +3699,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/ink-ticker-3d1b51ab48-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/ink-ticker-3d1b51ab48-preview.mp4",
     "likes": 5,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "iridescent-clouds",
@@ -3592,7 +3727,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/iridescent-clouds-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/iridescent-clouds-preview.mp4",
     "likes": 39,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "jade-cipher",
@@ -3619,7 +3755,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/jade-cipher-2945f70459-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/jade-cipher-2945f70459-preview.mp4",
     "likes": 79,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "jade-tide",
@@ -3646,7 +3783,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/jade-tide-a465b28254-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/jade-tide-a465b28254-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "jenga-tower",
@@ -3673,7 +3811,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/jenga-tower-ae3b1f9ec5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/jenga-tower-ae3b1f9ec5-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "jungle-canopy",
@@ -3700,7 +3839,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/jungle-canopy-482eafc835-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/jungle-canopy-482eafc835-preview.mp4",
     "likes": 109,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "lego-bloom",
@@ -3727,7 +3867,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/lego-bloom-1e5ee75d95-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/lego-bloom-1e5ee75d95-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "lens-refraction",
@@ -3754,7 +3895,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/lens-refraction-10d7b32859-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/lens-refraction-10d7b32859-preview.mp4",
     "likes": 9,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "liquid-aurora",
@@ -3781,7 +3923,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/liquid-aurora-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/liquid-aurora-preview.mp4",
     "likes": 33,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "liquid-glass-drops",
@@ -3808,7 +3951,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/liquid-glass-drops-c06c200318-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/liquid-glass-drops-c06c200318-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "lumen-grid",
@@ -3835,7 +3979,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/lumen-grid-17de6e96f5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/lumen-grid-17de6e96f5-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "luminous-saucer",
@@ -3862,7 +4007,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/luminous-saucer-99c74c8ce4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/luminous-saucer-99c74c8ce4-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "maelstrom",
@@ -3889,7 +4035,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/maelstrom-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/maelstrom-preview.mp4",
     "likes": 16,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "molecule",
@@ -3914,7 +4061,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/molecule-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/molecule-preview.mp4",
     "likes": 23,
-    "createdAt": "2026-04-07"
+    "createdAt": "2026-04-07",
+    "mediaType": "video"
   },
   {
     "id": "mosaic-hands",
@@ -3941,7 +4089,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/mosaic-hands-23973eecdb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/mosaic-hands-23973eecdb-preview.mp4",
     "likes": 52,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "nebula",
@@ -3968,7 +4117,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/nebula-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/nebula-preview.mp4",
     "likes": 21,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "neon-totem",
@@ -3995,7 +4145,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/neon-totem-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/neon-totem-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-06-30"
+    "createdAt": "2026-06-30",
+    "mediaType": "video"
   },
   {
     "id": "neural-pulse",
@@ -4022,7 +4173,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/neural-pulse-7121432ff6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/neural-pulse-7121432ff6-preview.mp4",
     "likes": 5,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "onyx-cubes",
@@ -4049,7 +4201,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/onyx-cubes-9b26cc5ac9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/onyx-cubes-9b26cc5ac9-preview.mp4",
     "likes": 97,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "opaline",
@@ -4076,7 +4229,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/opaline-3ad164b20c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/opaline-3ad164b20c-preview.mp4",
     "likes": 48,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "orange-monolith-grove",
@@ -4103,7 +4257,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/orange-monolith-grove-b456103725-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/orange-monolith-grove-b456103725-preview.mp4",
     "likes": 60,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "pin-drop",
@@ -4130,7 +4285,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/pin-drop-2282d98a9e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/pin-drop-2282d98a9e-preview.mp4",
     "likes": 63,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "planet",
@@ -4155,7 +4311,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/planet-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/planet-preview.mp4",
     "likes": 30,
-    "createdAt": "2026-06-01"
+    "createdAt": "2026-06-01",
+    "mediaType": "video"
   },
   {
     "id": "plasma-burst",
@@ -4182,7 +4339,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/plasma-burst-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/plasma-burst-preview.mp4",
     "likes": 23,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "plume",
@@ -4209,7 +4367,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/plume-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/plume-preview.mp4",
     "likes": 12,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "pressed-gold",
@@ -4236,7 +4395,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/pressed-gold-02a9d711f4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/pressed-gold-02a9d711f4-preview.mp4",
     "likes": 99,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "prism-bubbles",
@@ -4263,7 +4423,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/prism-bubbles-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/prism-bubbles-preview.mp4",
     "likes": 18,
-    "createdAt": "2026-07-01"
+    "createdAt": "2026-07-01",
+    "mediaType": "video"
   },
   {
     "id": "prism-streaks",
@@ -4290,7 +4451,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/prism-streaks-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/prism-streaks-preview.mp4",
     "likes": 49,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "ring-galaxy",
@@ -4315,7 +4477,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/ring-galaxy-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/ring-galaxy-preview.mp4",
     "likes": 15,
-    "createdAt": "2026-05-27"
+    "createdAt": "2026-05-27",
+    "mediaType": "video"
   },
   {
     "id": "ring-light",
@@ -4342,7 +4505,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/ring-light-aa838a546c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/ring-light-aa838a546c-preview.mp4",
     "likes": 8,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "scroll-terrain",
@@ -4367,7 +4531,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/scroll-terrain-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/scroll-terrain-preview.mp4",
     "likes": 66,
-    "createdAt": "2026-04-16"
+    "createdAt": "2026-04-16",
+    "mediaType": "video"
   },
   {
     "id": "sea-sparkle",
@@ -4394,7 +4559,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/sea-sparkle-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/sea-sparkle-preview.mp4",
     "likes": 19,
-    "createdAt": "2026-07-01"
+    "createdAt": "2026-07-01",
+    "mediaType": "video"
   },
   {
     "id": "signal-array",
@@ -4421,7 +4587,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/signal-array-5f1bb05d2e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/signal-array-5f1bb05d2e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "silver-veil",
@@ -4448,7 +4615,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/silver-veil-b8322ad1ae-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/silver-veil-b8322ad1ae-preview.mp4",
     "likes": 79,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "slipstream",
@@ -4475,7 +4643,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/slipstream-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/slipstream-preview.mp4",
     "likes": 6,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "solaris",
@@ -4502,7 +4671,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/solaris-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/solaris-preview.mp4",
     "likes": 95,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "spectral-figure",
@@ -4529,7 +4699,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/spectral-figure-943a651396-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/spectral-figure-943a651396-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "spectral-warp",
@@ -4556,7 +4727,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/spectral-warp-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/spectral-warp-preview.mp4",
     "likes": 6,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "sphere",
@@ -4581,7 +4753,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/sphere-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/sphere-preview.mp4",
     "likes": 34,
-    "createdAt": "2026-05-29"
+    "createdAt": "2026-05-29",
+    "mediaType": "video"
   },
   {
     "id": "spiral-galaxy",
@@ -4606,7 +4779,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/spiral-galaxy-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/spiral-galaxy-preview.mp4",
     "likes": 13,
-    "createdAt": "2026-04-03"
+    "createdAt": "2026-04-03",
+    "mediaType": "video"
   },
   {
     "id": "spiral-network",
@@ -4631,7 +4805,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/spiral-network-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/spiral-network-preview.mp4",
     "likes": 14,
-    "createdAt": "2026-05-01"
+    "createdAt": "2026-05-01",
+    "mediaType": "video"
   },
   {
     "id": "spline-glass-shapes",
@@ -4658,7 +4833,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/spline-glass-shapes-1e3d4914f5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/spline-glass-shapes-1e3d4914f5-preview.mp4",
     "likes": 79,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "sputnik-drift",
@@ -4685,7 +4861,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/sputnik-drift-9926f9b763-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/sputnik-drift-9926f9b763-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "starfield-close",
@@ -4710,7 +4887,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/starfield-close-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/starfield-close-preview.mp4",
     "likes": 105,
-    "createdAt": "2026-03-25"
+    "createdAt": "2026-03-25",
+    "mediaType": "video"
   },
   {
     "id": "stone-drift",
@@ -4737,7 +4915,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/stone-drift-75ad8c35a2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/stone-drift-75ad8c35a2-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "storm",
@@ -4762,7 +4941,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/storm-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/storm-preview.mp4",
     "likes": 86,
-    "createdAt": "2026-05-16"
+    "createdAt": "2026-05-16",
+    "mediaType": "video"
   },
   {
     "id": "studio-car",
@@ -4789,7 +4969,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/studio-car-04caef6a4e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/studio-car-04caef6a4e-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "tentacle-star",
@@ -4814,7 +4995,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/tentacle-star-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/tentacle-star-preview.mp4",
     "likes": 12,
-    "createdAt": "2026-05-25"
+    "createdAt": "2026-05-25",
+    "mediaType": "video"
   },
   {
     "id": "thorned-halo",
@@ -4841,7 +5023,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/thorned-halo-9185129f94-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/thorned-halo-9185129f94-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-08-22"
+    "createdAt": "2026-08-22",
+    "mediaType": "video"
   },
   {
     "id": "tidal-contours",
@@ -4868,7 +5051,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/tidal-contours-f1de2cbcb5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/tidal-contours-f1de2cbcb5-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "tree-of-life",
@@ -4895,7 +5079,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/tree-of-life-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/tree-of-life-preview.mp4",
     "likes": 26,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "tunnel",
@@ -4920,7 +5105,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/tunnel-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/tunnel-preview.mp4",
     "likes": 105,
-    "createdAt": "2026-03-21"
+    "createdAt": "2026-03-21",
+    "mediaType": "video"
   },
   {
     "id": "universe",
@@ -4945,7 +5131,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/universe-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/universe-preview.mp4",
     "likes": 74,
-    "createdAt": "2026-06-08"
+    "createdAt": "2026-06-08",
+    "mediaType": "video"
   },
   {
     "id": "vega-funnel",
@@ -4972,7 +5159,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/vega-funnel-06eb1f56ba-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/vega-funnel-06eb1f56ba-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "verdant-glass",
@@ -4999,7 +5187,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/verdant-glass-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/verdant-glass-preview.mp4",
     "likes": 13,
-    "createdAt": "2026-07-01"
+    "createdAt": "2026-07-01",
+    "mediaType": "video"
   },
   {
     "id": "vertigo-corridor",
@@ -5026,7 +5215,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/vertigo-corridor-a21836a98d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/vertigo-corridor-a21836a98d-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-08-11"
+    "createdAt": "2026-08-11",
+    "mediaType": "video"
   },
   {
     "id": "vortex",
@@ -5053,7 +5243,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/vortex-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/vortex-preview.mp4",
     "likes": 58,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "wave-galaxy",
@@ -5078,7 +5269,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/wave-galaxy-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/wave-galaxy-preview.mp4",
     "likes": 57,
-    "createdAt": "2026-05-31"
+    "createdAt": "2026-05-31",
+    "mediaType": "video"
   },
   {
     "id": "wormhole",
@@ -5105,7 +5297,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/3d_scenes/wormhole-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/3d_scenes/wormhole-preview.mp4",
     "likes": 9,
-    "createdAt": "2026-06-29"
+    "createdAt": "2026-06-29",
+    "mediaType": "video"
   },
   {
     "id": "cards-cascade",
@@ -5132,7 +5325,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/cards-cascade-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/cards-cascade-preview.mp4",
     "likes": 89,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "carousel-spotlight",
@@ -5161,7 +5355,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/carousel-spotlight-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/carousel-spotlight-preview.mp4",
     "likes": 67,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "roadmap-ascent",
@@ -5188,7 +5383,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/roadmap-ascent-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/roadmap-ascent-preview.mp4",
     "likes": 41,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "slider-spectra",
@@ -5217,7 +5413,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/sections/slider-spectra-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/sections/slider-spectra-preview.mp4",
     "likes": 29,
-    "createdAt": "2026-07-04"
+    "createdAt": "2026-07-04",
+    "mediaType": "video"
   },
   {
     "id": "aerograph",
@@ -5242,7 +5439,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/aerograph-4445c6559f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/aerograph-4445c6559f-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "aigrette",
@@ -5267,7 +5465,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/aigrette-7af8146bec-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/aigrette-7af8146bec-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "airlight",
@@ -5292,7 +5491,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/airlight-eeda8af860-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/airlight-eeda8af860-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "antumbra",
@@ -5317,7 +5517,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/antumbra-d7f6402b94-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/antumbra-d7f6402b94-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "astragal",
@@ -5342,7 +5543,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/astragal-7bbb39451f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/astragal-7bbb39451f-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "aurulent",
@@ -5367,7 +5569,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/aurulent-701a8afdee-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/aurulent-701a8afdee-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "bisque",
@@ -5392,7 +5595,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/bisque-e766205381-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/bisque-e766205381-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "bornite",
@@ -5417,7 +5621,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/bornite-2ab872330a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/bornite-2ab872330a-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "cannelure",
@@ -5442,7 +5647,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/cannelure-7199fe7da0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/cannelure-7199fe7da0-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "catenary",
@@ -5467,7 +5673,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/catenary-9475e5899f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/catenary-9475e5899f-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "censer",
@@ -5492,7 +5699,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/censer-a3c37044be-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/censer-a3c37044be-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "charmeuse",
@@ -5517,7 +5725,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/charmeuse-aa95298dd1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/charmeuse-aa95298dd1-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "chatoyance",
@@ -5538,13 +5747,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A bundle of fibres lying almost parallel, lit from one side â the sheen is drawn by where each fibre points, and the cursor combs them.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/chatoyance-733996919c.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/chatoyance-733996919c.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/chatoyance-733996919c.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/chatoyance-733996919c-preview.mp4",
     "posterVideoPreview": "",
     "likes": 27,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "cirrus",
@@ -5569,7 +5779,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/cirrus-0e53904f08-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/cirrus-0e53904f08-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "clinker",
@@ -5594,7 +5805,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/clinker-1f4fc1fea4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/clinker-1f4fc1fea4-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "crenel",
@@ -5619,7 +5831,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/crenel-ffed477c0f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/crenel-ffed477c0f-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "cyanotype",
@@ -5640,13 +5853,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A hand-coated print: the brush that laid the sensitizer, the dry edge of the coat, and the tooth of the sheet.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/cyanotype-4b6e611a02.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/cyanotype-4b6e611a02.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/cyanotype-4b6e611a02.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/cyanotype-4b6e611a02-preview.mp4",
     "posterVideoPreview": "",
     "likes": 16,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "cynosure",
@@ -5671,7 +5885,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/cynosure-43fb3070f8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/cynosure-43fb3070f8-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "demilune",
@@ -5696,7 +5911,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/demilune-f02e933223-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/demilune-f02e933223-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "dilute",
@@ -5721,7 +5937,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/dilute-ba0bf00e24-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/dilute-ba0bf00e24-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "diorama",
@@ -5746,7 +5963,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/diorama-77876d73c0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/diorama-77876d73c0-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "drape",
@@ -5771,7 +5989,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/drape-0cc63057d2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/drape-0cc63057d2-preview.mp4",
     "likes": 80,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "facula",
@@ -5796,7 +6015,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/facula-8500a01567-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/facula-8500a01567-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "feather",
@@ -5821,7 +6041,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/feather-6e42b5a466-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/feather-6e42b5a466-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "fenestra",
@@ -5842,13 +6063,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Shafts through a slatted window, made visible by dust smeared along the light rather than speckled across it.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/fenestra-6aec75e9a2.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/fenestra-6aec75e9a2.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/fenestra-6aec75e9a2.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/fenestra-6aec75e9a2-preview.mp4",
     "posterVideoPreview": "",
     "likes": 28,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "ferment",
@@ -5873,7 +6095,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/ferment-777170dff7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/ferment-777170dff7-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "fetch",
@@ -5894,13 +6117,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Ocean swell under a low sun â three long trains fanned off the heading, and what is drawn is the slope of the water rather than its height, which is why the sea is bands of light and no waves.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/fetch-a9e593e101.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/fetch-a9e593e101.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/fetch-a9e593e101.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/fetch-a9e593e101-preview.mp4",
     "posterVideoPreview": "",
     "likes": 29,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "firmament",
@@ -5925,7 +6149,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/firmament-6aa1c70da8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/firmament-6aa1c70da8-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "flambeau",
@@ -5950,7 +6175,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/flambeau-75a45442d4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/flambeau-75a45442d4-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "flue",
@@ -5975,7 +6201,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/flue-537a924199-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/flue-537a924199-preview.mp4",
     "likes": 73,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "fondant",
@@ -6000,7 +6227,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/fondant-f8aa81a70b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/fondant-f8aa81a70b-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "foolscap",
@@ -6025,7 +6253,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/foolscap-67018f6481-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/foolscap-67018f6481-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "fresco",
@@ -6050,7 +6279,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/fresco-4c0d52ab0b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/fresco-4c0d52ab0b-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "frit",
@@ -6075,7 +6305,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/frit-16dd321529-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/frit-16dd321529-preview.mp4",
     "likes": 73,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "fulgurite",
@@ -6100,7 +6331,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/fulgurite-b8a75f65d7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/fulgurite-b8a75f65d7-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "fumage",
@@ -6125,7 +6357,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/fumage-48e6c598ee-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/fumage-48e6c598ee-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "glassine",
@@ -6150,7 +6383,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/glassine-fba1b84811-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/glassine-fba1b84811-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "glister",
@@ -6175,7 +6409,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/glister-233e2da512-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/glister-233e2da512-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "gnomon",
@@ -6200,7 +6435,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/gnomon-a09cd90e3b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/gnomon-a09cd90e3b-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "godroon",
@@ -6225,7 +6461,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/godroon-9d7d650584-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/godroon-9d7d650584-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "gorget",
@@ -6250,7 +6487,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/gorget-62c2216a72-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/gorget-62c2216a72-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "gouache",
@@ -6275,7 +6513,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/gouache-e3256deb7d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/gouache-e3256deb7d-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "harmattan",
@@ -6300,7 +6539,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/harmattan-10ea96dc25-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/harmattan-10ea96dc25-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "hearth",
@@ -6325,7 +6565,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/hearth-d1bb9911fa-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/hearth-d1bb9911fa-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "hyaline",
@@ -6346,13 +6587,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Refraction through a height field with one index per channel â the split is in the glass, not painted on.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/hyaline-9971eaaef9.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/hyaline-9971eaaef9.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/hyaline-9971eaaef9.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/hyaline-9971eaaef9-preview.mp4",
     "posterVideoPreview": "",
     "likes": 25,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "interference",
@@ -6373,13 +6615,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Three slow emitters trading standing waves â bright fringes where the crests agree, black where nothing reaches.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/interference-7c3ad594ea.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/interference-7c3ad594ea.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/interference-7c3ad594ea.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/interference-7c3ad594ea-preview.mp4",
     "posterVideoPreview": "",
     "likes": 23,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "iridule",
@@ -6404,7 +6647,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/iridule-7197e0297d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/iridule-7197e0297d-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "kindle",
@@ -6425,13 +6669,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A fire front creeping across a field â char behind it, an ember line, licks above.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/kindle-3c6e7dd5cd.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/kindle-3c6e7dd5cd.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/kindle-3c6e7dd5cd.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/kindle-3c6e7dd5cd-preview.mp4",
     "posterVideoPreview": "",
     "likes": 21,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "kirlian",
@@ -6452,13 +6697,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A body ringed by its own corona, spikes crawling around the edge where the field is tightest.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/kirlian-2c14484c18.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/kirlian-2c14484c18.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/kirlian-2c14484c18.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/kirlian-2c14484c18-preview.mp4",
     "posterVideoPreview": "",
     "likes": 22,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "loupe",
@@ -6483,7 +6729,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/loupe-146f4f2cb0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/loupe-146f4f2cb0-preview.mp4",
     "likes": 80,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "mere",
@@ -6508,7 +6755,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/mere-6841809887-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/mere-6841809887-preview.mp4",
     "likes": 73,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "meridian",
@@ -6533,7 +6781,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/meridian-239bb7ae5e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/meridian-239bb7ae5e-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "moraine",
@@ -6558,7 +6807,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/moraine-181c83e63c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/moraine-181c83e63c-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "murmuration",
@@ -6583,7 +6833,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/murmuration-eb57821db1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/murmuration-eb57821db1-preview.mp4",
     "likes": 122,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "nacarat",
@@ -6608,7 +6859,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/nacarat-7f48b7ad3d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/nacarat-7f48b7ad3d-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "nacre",
@@ -6629,13 +6881,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Thin-film colour over a stretched shell grain â the orders slide as the pointer glances across, pearl one way and blush the other.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/nacre-966242ba17.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/nacre-966242ba17.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/nacre-966242ba17.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/nacre-966242ba17-preview.mp4",
     "posterVideoPreview": "",
     "likes": 20,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "nappe",
@@ -6660,7 +6913,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/nappe-aa33b0dd75-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/nappe-aa33b0dd75-preview.mp4",
     "likes": 80,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "nigrosine",
@@ -6685,7 +6939,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/nigrosine-f62a98c0d8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/nigrosine-f62a98c0d8-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "occultation",
@@ -6706,13 +6961,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A dark body in front of a light, and only the part of the limb facing the source burns.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/occultation-4963c3ba12.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/occultation-4963c3ba12.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/occultation-4963c3ba12.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/occultation-4963c3ba12-preview.mp4",
     "posterVideoPreview": "",
     "likes": 32,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "opalesce",
@@ -6733,13 +6989,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A film a few wavelengths thick over a slow flowing ground â the interference tint multiplies the palette instead of replacing it, and the cursor thickens the film so colour travels out behind the hand.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/opalesce-ca69ff929f.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/opalesce-ca69ff929f.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/opalesce-ca69ff929f.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/opalesce-ca69ff929f-preview.mp4",
     "posterVideoPreview": "",
     "likes": 18,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "orpiment",
@@ -6760,13 +7017,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Marbled pigment with the warp fed back into itself, veins at one level set and dust drifting along the filaments.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/orpiment-8b902e1442.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/orpiment-8b902e1442.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/orpiment-8b902e1442.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/orpiment-8b902e1442-preview.mp4",
     "posterVideoPreview": "",
     "likes": 19,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "overspray",
@@ -6791,7 +7049,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/overspray-4890e5ca15-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/overspray-4890e5ca15-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "planckian",
@@ -6812,13 +7071,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "The colour of a temperature: hot metal lights one channel at a time, red then green then blue, and the whole sequence from deep cherry through orange to white falls out of the order they switch on in.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/planckian-35aedb233d.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/planckian-35aedb233d.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/planckian-35aedb233d.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/planckian-35aedb233d-preview.mp4",
     "posterVideoPreview": "",
     "likes": 33,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "pollen",
@@ -6843,7 +7103,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/pollen-1845837747-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/pollen-1845837747-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "prism",
@@ -6868,7 +7129,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/prism-3ca5323c31-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/prism-3ca5323c31-preview.mp4",
     "likes": 80,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "pyrometer",
@@ -6893,7 +7155,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/pyrometer-17c71b7443-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/pyrometer-17c71b7443-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "quicksilver",
@@ -6914,13 +7177,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Liquid metal gathering and breaking, holding its own edge the way mercury does.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/quicksilver-93bd52cf7f.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/quicksilver-93bd52cf7f.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/quicksilver-93bd52cf7f.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/quicksilver-93bd52cf7f-preview.mp4",
     "posterVideoPreview": "",
     "likes": 35,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "raking",
@@ -6941,13 +7205,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "One broad shaft laid across the frame â the distance to an oriented axis through a tight core and a wide spill, with the far end giving out â and the hand turns the axis.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/raking-83dff4a536.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/raking-83dff4a536.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/raking-83dff4a536.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/raking-83dff4a536-preview.mp4",
     "posterVideoPreview": "",
     "likes": 36,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "reeded",
@@ -6972,7 +7237,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/reeded-05211b82cb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/reeded-05211b82cb-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "riffle",
@@ -6997,7 +7263,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/riffle-4f0cb41ceb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/riffle-4f0cb41ceb-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "roscid",
@@ -7022,7 +7289,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/roscid-b913da3574-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/roscid-b913da3574-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "schiller",
@@ -7047,7 +7315,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/schiller-622db4444d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/schiller-622db4444d-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "scumble",
@@ -7072,7 +7341,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/scumble-ddebee89ef-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/scumble-ddebee89ef-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "serigraph",
@@ -7093,13 +7363,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "A print rather than a ramp: five screens, one flat colour each, and what keeps it from reading as banding is where they stop â not at a level line but wherever a coarse mesh says.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/serigraph-a6248bb220.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/serigraph-a6248bb220.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/serigraph-a6248bb220.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/serigraph-a6248bb220-preview.mp4",
     "posterVideoPreview": "",
     "likes": 37,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "sgraffito",
@@ -7124,7 +7395,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/sgraffito-7abef471c8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/sgraffito-7abef471c8-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "slipface",
@@ -7149,7 +7421,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/slipface-a2ddfbf3de-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/slipface-a2ddfbf3de-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "soffit",
@@ -7174,7 +7447,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/soffit-48cb2a4161-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/soffit-48cb2a4161-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "spangle",
@@ -7199,7 +7473,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/spangle-fec914846e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/spangle-fec914846e-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "sunfleck",
@@ -7224,7 +7499,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/sunfleck-87fb2b8cb4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/sunfleck-87fb2b8cb4-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "swathe",
@@ -7249,7 +7525,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/swathe-6c0376d016-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/swathe-6c0376d016-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "temper",
@@ -7274,7 +7551,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/temper-fdc7d2079a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/temper-fdc7d2079a-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "thixotrope",
@@ -7299,7 +7577,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/thixotrope-afa86f74fd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/thixotrope-afa86f74fd-preview.mp4",
     "likes": 115,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "tombac",
@@ -7320,13 +7599,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Crumpled brass with a warm room on one side and a cold window on the other â facets return whichever they face.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/tombac-19c887be26.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/tombac-19c887be26.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/tombac-19c887be26.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/tombac-19c887be26-preview.mp4",
     "posterVideoPreview": "",
     "likes": 39,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "tress",
@@ -7347,13 +7627,14 @@ window.GETLAYERS_DATA = [
     ],
     "tier": "Premium",
     "description": "Noise combed along a flow field â the walk re-reads its direction at every step, so the strands curve.",
-    "image": "",
-    "previewImage": "",
+    "image": "https://storage.getlayers.ai/gradients/tress-8ea63944fb.webp",
+    "previewImage": "https://storage.getlayers.ai/gradients/tress-8ea63944fb.webp",
     "posterVideo": "https://storage.getlayers.ai/gradients/tress-8ea63944fb.mp4",
     "previewVideo": "https://storage.getlayers.ai/gradients/tress-8ea63944fb-preview.mp4",
     "posterVideoPreview": "",
     "likes": 40,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "trichrome",
@@ -7378,7 +7659,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/trichrome-d96fa27cb3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/trichrome-d96fa27cb3-preview.mp4",
     "likes": 108,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "tuyere",
@@ -7403,7 +7685,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/tuyere-af770f51d2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/tuyere-af770f51d2-preview.mp4",
     "likes": 87,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "umbra",
@@ -7428,7 +7711,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/umbra-80148fb3a7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/umbra-80148fb3a7-preview.mp4",
     "likes": 80,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "vergeure",
@@ -7453,7 +7737,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/vergeure-b7a58136ed-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/vergeure-b7a58136ed-preview.mp4",
     "likes": 101,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "waft",
@@ -7478,7 +7763,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/waft-d995630e96-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/waft-d995630e96-preview.mp4",
     "likes": 73,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "windrow",
@@ -7503,7 +7789,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/windrow-c24576102f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/windrow-c24576102f-preview.mp4",
     "likes": 94,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "wisp",
@@ -7528,7 +7815,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/gradients/wisp-ceb08f9f2c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/gradients/wisp-ceb08f9f2c-preview.mp4",
     "likes": 73,
-    "createdAt": "2026-08-24"
+    "createdAt": "2026-08-24",
+    "mediaType": "video"
   },
   {
     "id": "amber-bokeh-grid",
@@ -7551,7 +7839,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/amber-bokeh-grid-deb23e9354-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/amber-bokeh-grid-deb23e9354-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "amber-glass-petals",
@@ -7574,7 +7863,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/amber-glass-petals-024ab3aedc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/amber-glass-petals-024ab3aedc-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "amber-glow-curves",
@@ -7599,7 +7889,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 1,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "amber-prism-wall",
@@ -7622,7 +7913,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/amber-prism-wall-be2abee27a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/amber-prism-wall-be2abee27a-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "amber-window-shadow",
@@ -7645,7 +7937,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/amber-window-shadow-76c3bb4d95-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/amber-window-shadow-76c3bb4d95-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "amethyst-liquid-glass",
@@ -7668,7 +7961,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/amethyst-liquid-glass-696a20f1c6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/amethyst-liquid-glass-696a20f1c6-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "ancient-cave",
@@ -7693,7 +7987,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/ancient-cave-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/ancient-cave-preview.mp4",
     "likes": 15,
-    "createdAt": "2026-03-23"
+    "createdAt": "2026-03-23",
+    "mediaType": "video"
   },
   {
     "id": "artistic-hands",
@@ -7718,7 +8013,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/artistic-hands-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/artistic-hands-preview.mp4",
     "likes": 31,
-    "createdAt": "2026-03-30"
+    "createdAt": "2026-03-30",
+    "mediaType": "video"
   },
   {
     "id": "astronaut-flower-bed",
@@ -7741,7 +8037,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/astronaut-flower-bed-7dab868767-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/astronaut-flower-bed-7dab868767-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "atom-sculpture-shore",
@@ -7764,7 +8061,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/atom-sculpture-shore-f48a7336b4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/atom-sculpture-shore-f48a7336b4-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "aurora-crystal-peaks",
@@ -7787,7 +8085,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/aurora-crystal-peaks-e11fab2182-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/aurora-crystal-peaks-e11fab2182-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "autumn-sea-view",
@@ -7810,7 +8109,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/autumn-sea-view-ae3d333561-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/autumn-sea-view-ae3d333561-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "balloon-letters-garden",
@@ -7833,7 +8133,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/balloon-letters-garden-c78c3438f6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/balloon-letters-garden-c78c3438f6-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "beige-petal-dunes",
@@ -7856,7 +8157,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/beige-petal-dunes-8f62751c53-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/beige-petal-dunes-8f62751c53-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "bird",
@@ -7881,7 +8183,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/bird-d22cad6bd1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/bird-d22cad6bd1-preview.mp4",
     "likes": 6,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "black-leather-glow",
@@ -7904,7 +8207,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/black-leather-glow-cde2af5aed-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/black-leather-glow-cde2af5aed-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "black-marble-swirl",
@@ -7927,7 +8231,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/black-marble-swirl-754ea96d8b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/black-marble-swirl-754ea96d8b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "blossom-forest-arch",
@@ -7950,7 +8255,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blossom-forest-arch-50aa93b9ea-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blossom-forest-arch-50aa93b9ea-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-arrow-ribbon",
@@ -7973,7 +8279,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-arrow-ribbon-bed37d52d9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-arrow-ribbon-bed37d52d9-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-canyon-stream",
@@ -7996,7 +8303,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-canyon-stream-863e6ad56e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-canyon-stream-863e6ad56e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-circuit-blobs",
@@ -8019,7 +8327,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-circuit-blobs-31b882768b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-circuit-blobs-31b882768b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "blue-contour-lines",
@@ -8042,7 +8351,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-contour-lines-3aa1e30a17-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-contour-lines-3aa1e30a17-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-cosmic-marble",
@@ -8065,7 +8375,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-cosmic-marble-d09e48d428-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-cosmic-marble-d09e48d428-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-electric-smoke",
@@ -8088,7 +8399,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-electric-smoke-48e4fbf985-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-electric-smoke-48e4fbf985-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "blue-flame",
@@ -8113,7 +8425,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-flame-8a162d05a1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-flame-8a162d05a1-preview.mp4",
     "likes": 5,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "blue-flare-burst",
@@ -8136,7 +8449,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-flare-burst-9c6d7fd73e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-flare-burst-9c6d7fd73e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "blue-galaxy-figure",
@@ -8159,7 +8473,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-galaxy-figure-f6cfa75123-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-galaxy-figure-f6cfa75123-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-glass-fan",
@@ -8182,7 +8497,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-glass-fan-76cb8d98ef-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-glass-fan-76cb8d98ef-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-glass-panels",
@@ -8207,7 +8523,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 4,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "blue-iridescent-curve",
@@ -8230,7 +8547,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-iridescent-curve-3b1d178018-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-iridescent-curve-3b1d178018-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-light-cascade",
@@ -8255,7 +8573,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "blue-light-orbits",
@@ -8278,7 +8597,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-light-orbits-92f8b4d1f4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-light-orbits-92f8b4d1f4-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-liquid-tubes",
@@ -8303,7 +8623,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 1,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "blue-plasma-burst",
@@ -8326,7 +8647,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-plasma-burst-355052bd59-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-plasma-burst-355052bd59-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-reeded-glass",
@@ -8349,7 +8671,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-reeded-glass-fb491391d6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-reeded-glass-fb491391d6-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-ring-streaks",
@@ -8372,7 +8695,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-ring-streaks-4b89ed0090-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-ring-streaks-4b89ed0090-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "blue-ripple-marble",
@@ -8395,7 +8719,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-ripple-marble-fe705ff8a3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-ripple-marble-fe705ff8a3-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-silver-silk",
@@ -8418,7 +8743,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-silver-silk-b303f675aa-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-silver-silk-b303f675aa-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "blue-spotlight-beam",
@@ -8441,7 +8767,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-spotlight-beam-dc44141a6b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-spotlight-beam-dc44141a6b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "blue-swirl",
@@ -8466,7 +8793,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-swirl-11082e5f20-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-swirl-11082e5f20-preview.mp4",
     "likes": 9,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "blue-violet-light-trails",
@@ -8489,7 +8817,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/blue-violet-light-trails-426b6e916e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/blue-violet-light-trails-426b6e916e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "bonfire",
@@ -8514,7 +8843,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/bonfire-d5bae03340-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/bonfire-d5bae03340-preview.mp4",
     "likes": 8,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "bronze-ripple-rings",
@@ -8537,7 +8867,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/bronze-ripple-rings-ab2ae83023-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/bronze-ripple-rings-ab2ae83023-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "bronze-silk-wave",
@@ -8560,7 +8891,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/bronze-silk-wave-71297a57bc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/bronze-silk-wave-71297a57bc-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "bubble-dome-hall",
@@ -8583,7 +8915,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/bubble-dome-hall-a064a68346-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/bubble-dome-hall-a064a68346-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "burgundy-feather-streak",
@@ -8606,7 +8939,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/burgundy-feather-streak-7931a42877-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/burgundy-feather-streak-7931a42877-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "butterfly",
@@ -8631,7 +8965,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/butterfly-ce4abf2e85-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/butterfly-ce4abf2e85-preview.mp4",
     "likes": 28,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "butterfly-moss-rock",
@@ -8654,7 +8989,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/butterfly-moss-rock-a661192040-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/butterfly-moss-rock-a661192040-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "cactus-cloud-planet",
@@ -8677,7 +9013,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cactus-cloud-planet-e30af01a40-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cactus-cloud-planet-e30af01a40-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "calm-dusk-shore",
@@ -8700,7 +9037,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/calm-dusk-shore-f62dd516a0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/calm-dusk-shore-f62dd516a0-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "candy-balloon-head",
@@ -8723,7 +9061,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/candy-balloon-head-f0e2d6338f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/candy-balloon-head-f0e2d6338f-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "candy-land-road",
@@ -8746,7 +9085,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/candy-land-road-4d71eb540d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/candy-land-road-4d71eb540d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "candy-river-meadow",
@@ -8769,7 +9109,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/candy-river-meadow-eac8ffaa6d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/candy-river-meadow-eac8ffaa6d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "chained-blue-figure",
@@ -8792,7 +9133,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chained-blue-figure-a3224619d5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chained-blue-figure-a3224619d5-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "chained-lilac-mask",
@@ -8815,7 +9157,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chained-lilac-mask-921e7d0edc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chained-lilac-mask-921e7d0edc-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "chained-pink-face",
@@ -8838,7 +9181,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chained-pink-face-aae4d58848-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chained-pink-face-aae4d58848-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "charcoal-silk-folds",
@@ -8861,7 +9205,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/charcoal-silk-folds-6dfa5e56de-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/charcoal-silk-folds-6dfa5e56de-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "chrome-bubble-dancer",
@@ -8884,7 +9229,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-bubble-dancer-2225bf124a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-bubble-dancer-2225bf124a-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "chrome-cactus-desert",
@@ -8907,7 +9253,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-cactus-desert-f1749508bc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-cactus-desert-f1749508bc-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "chrome-charms-hill",
@@ -8930,7 +9277,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-charms-hill-227524a2da-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-charms-hill-227524a2da-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "chrome-clock-head",
@@ -8953,7 +9301,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-clock-head-24b880db27-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-clock-head-24b880db27-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "chrome-flower-face",
@@ -8976,7 +9325,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-flower-face-6e6be3ab1e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-flower-face-6e6be3ab1e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "chrome-heart-meadow",
@@ -8999,7 +9349,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-heart-meadow-11ee0834d8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-heart-meadow-11ee0834d8-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "chrome-liquid-sunrise",
@@ -9022,7 +9373,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-liquid-sunrise-ccfdec6925-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-liquid-sunrise-ccfdec6925-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "chrome-orb-meadow",
@@ -9045,7 +9397,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-orb-meadow-82f70fd9d1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-orb-meadow-82f70fd9d1-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "chrome-speed-streaks",
@@ -9068,7 +9421,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-speed-streaks-9a6e2cb08a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-speed-streaks-9a6e2cb08a-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "chrome-spire-lagoon",
@@ -9091,7 +9445,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-spire-lagoon-f3347d9a0c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-spire-lagoon-f3347d9a0c-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "chrome-swirl-meadow",
@@ -9114,7 +9469,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-swirl-meadow-1cc41b9f48-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-swirl-meadow-1cc41b9f48-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "chrome-ufo-pond",
@@ -9137,7 +9493,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/chrome-ufo-pond-5633fdcb16-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/chrome-ufo-pond-5633fdcb16-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "clay-mushroom-forest",
@@ -9160,7 +9517,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/clay-mushroom-forest-5997c657c2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/clay-mushroom-forest-5997c657c2-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "clear-glass-twist",
@@ -9183,7 +9541,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/clear-glass-twist-0968129731-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/clear-glass-twist-0968129731-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "clock-hills",
@@ -9206,7 +9565,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/clock-hills-5e6888dd05-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/clock-hills-5e6888dd05-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "cobalt-chrome-bubbles",
@@ -9229,7 +9589,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cobalt-chrome-bubbles-1c85961122-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cobalt-chrome-bubbles-1c85961122-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "cobalt-liquid-blur",
@@ -9252,7 +9613,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cobalt-liquid-blur-aa47f58164-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cobalt-liquid-blur-aa47f58164-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "copper-contour-spiral",
@@ -9275,7 +9637,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/copper-contour-spiral-2332fec639-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/copper-contour-spiral-2332fec639-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "copper-ribbon-curl",
@@ -9298,7 +9661,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/copper-ribbon-curl-791e024be4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/copper-ribbon-curl-791e024be4-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "copper-teal-sparkle",
@@ -9321,7 +9685,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/copper-teal-sparkle-ec085e8e3a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/copper-teal-sparkle-ec085e8e3a-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "coral-light-arc",
@@ -9344,7 +9709,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/coral-light-arc-1a89bf70bb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/coral-light-arc-1a89bf70bb-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "coral-neon-coil",
@@ -9367,7 +9733,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/coral-neon-coil-4707c6c050-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/coral-neon-coil-4707c6c050-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "coral-soft-blobs",
@@ -9390,7 +9757,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/coral-soft-blobs-5b5dcf8161-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/coral-soft-blobs-5b5dcf8161-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "coral-vinyl-swirl",
@@ -9413,7 +9781,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/coral-vinyl-swirl-88c9928b27-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/coral-vinyl-swirl-88c9928b27-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "cosmic-aurora-waves",
@@ -9438,7 +9807,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "cosmic-glass-lotus",
@@ -9461,7 +9831,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cosmic-glass-lotus-139c837cbc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cosmic-glass-lotus-139c837cbc-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "crimson-chrome-marble",
@@ -9484,7 +9855,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crimson-chrome-marble-df2c36e76b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crimson-chrome-marble-df2c36e76b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "crimson-cream-swirl",
@@ -9507,7 +9879,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crimson-cream-swirl-d5ce701844-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crimson-cream-swirl-d5ce701844-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "crimson-navy-streaks",
@@ -9530,7 +9903,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crimson-navy-streaks-0b1094fafe-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crimson-navy-streaks-0b1094fafe-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "crystal-ball-cove",
@@ -9553,7 +9927,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crystal-ball-cove-59b0d29dc1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crystal-ball-cove-59b0d29dc1-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "crystal-desert-pools",
@@ -9576,7 +9951,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crystal-desert-pools-0eefbfacff-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crystal-desert-pools-0eefbfacff-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "crystal-flower-galaxy",
@@ -9599,7 +9975,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crystal-flower-galaxy-a94f38ac28-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crystal-flower-galaxy-a94f38ac28-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "crystal-heart-lake",
@@ -9622,7 +9999,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crystal-heart-lake-00f76153e6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crystal-heart-lake-00f76153e6-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "crystal-skeleton-box",
@@ -9645,7 +10023,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crystal-skeleton-box-c3201a0cf7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crystal-skeleton-box-c3201a0cf7-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "crystal-star-meadow",
@@ -9668,7 +10047,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crystal-star-meadow-7fb0fd0bab-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crystal-star-meadow-7fb0fd0bab-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "crystal-visor-figure",
@@ -9691,7 +10071,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/crystal-visor-figure-4a8b3d6338-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/crystal-visor-figure-4a8b3d6338-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "cube",
@@ -9716,7 +10097,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cube-87d9e63286-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cube-87d9e63286-preview.mp4",
     "likes": 15,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "cyan-blossom-face",
@@ -9739,7 +10121,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cyan-blossom-face-30f9515cfd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cyan-blossom-face-30f9515cfd-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "cyan-chrome-flow",
@@ -9762,7 +10145,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cyan-chrome-flow-0e18602bb1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cyan-chrome-flow-0e18602bb1-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "cyan-hypno-rings",
@@ -9785,7 +10169,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cyan-hypno-rings-cb79011f36-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cyan-hypno-rings-cb79011f36-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "cyan-lilac-veils",
@@ -9808,7 +10193,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cyan-lilac-veils-f5fd4628d0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cyan-lilac-veils-f5fd4628d0-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "cyber-flower-girl",
@@ -9831,7 +10217,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/cyber-flower-girl-fbee62d242-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/cyber-flower-girl-fbee62d242-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "daisy-face-figure",
@@ -9854,7 +10241,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/daisy-face-figure-ffb5f87266-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/daisy-face-figure-ffb5f87266-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "dandelion-bokeh-glow",
@@ -9877,7 +10265,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/dandelion-bokeh-glow-5e1dc33d6b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/dandelion-bokeh-glow-5e1dc33d6b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "dark-chrome-waves",
@@ -9900,7 +10289,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/dark-chrome-waves-c9d2d36cb7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/dark-chrome-waves-c9d2d36cb7-preview.mp4",
     "likes": 7,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "dark-glass-waves",
@@ -9925,7 +10315,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "dark-ocean-foam",
@@ -9948,7 +10339,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/dark-ocean-foam-5ad8fc9982-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/dark-ocean-foam-5ad8fc9982-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "dark-rainbow-streaks",
@@ -9971,7 +10363,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/dark-rainbow-streaks-abac5e2852-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/dark-rainbow-streaks-abac5e2852-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "desert-lantern-towers",
@@ -9994,7 +10387,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/desert-lantern-towers-f31c6070fd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/desert-lantern-towers-f31c6070fd-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "dewy-orange-leaf",
@@ -10017,7 +10411,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/dewy-orange-leaf-5a27b4c1bf-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/dewy-orange-leaf-5a27b4c1bf-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "dna",
@@ -10042,7 +10437,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/dna-1c1004b999-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/dna-1c1004b999-preview.mp4",
     "likes": 54,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "draped-figure-meadow",
@@ -10065,7 +10461,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/draped-figure-meadow-ffc1fa29e6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/draped-figure-meadow-ffc1fa29e6-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "dusk-cloud-swirl",
@@ -10088,7 +10485,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/dusk-cloud-swirl-37051991c8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/dusk-cloud-swirl-37051991c8-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "emerald-crystal-facets",
@@ -10111,7 +10509,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/emerald-crystal-facets-512d845d65-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/emerald-crystal-facets-512d845d65-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "emerald-glitter-streams",
@@ -10134,7 +10533,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/emerald-glitter-streams-7d6e2adf7f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/emerald-glitter-streams-7d6e2adf7f-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "emerald-gold-waves",
@@ -10157,7 +10557,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/emerald-gold-waves-369cbb7ae7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/emerald-gold-waves-369cbb7ae7-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "emerald-silk-waves",
@@ -10180,7 +10581,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/emerald-silk-waves-6aa2f2c400-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/emerald-silk-waves-6aa2f2c400-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "enchanted-garden",
@@ -10205,7 +10607,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/enchanted-garden-9f3dfe178e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/enchanted-garden-9f3dfe178e-preview.mp4",
     "likes": 55,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "fallen-giant-marsh",
@@ -10228,7 +10631,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/fallen-giant-marsh-800949713c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/fallen-giant-marsh-800949713c-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "feather-rainbow-light",
@@ -10251,7 +10655,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/feather-rainbow-light-cd673dd5be-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/feather-rainbow-light-cd673dd5be-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "fiery-glass-park",
@@ -10274,7 +10679,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/fiery-glass-park-cb862913e5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/fiery-glass-park-cb862913e5-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "floating-copper-rock",
@@ -10297,7 +10703,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floating-copper-rock-e2350fe805-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floating-copper-rock-e2350fe805-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "floating-figure-ruin",
@@ -10320,7 +10727,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floating-figure-ruin-eb0072ba3d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floating-figure-ruin-eb0072ba3d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "floating-hearts-laptop",
@@ -10343,7 +10751,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floating-hearts-laptop-a555620605-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floating-hearts-laptop-a555620605-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "floating-island",
@@ -10368,7 +10777,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floating-island-95020a0f8b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floating-island-95020a0f8b-preview.mp4",
     "likes": 8,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "floating-mirror-sphere",
@@ -10391,7 +10801,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floating-mirror-sphere-9dd4541452-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floating-mirror-sphere-9dd4541452-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "floral-ring-grotto",
@@ -10414,7 +10825,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floral-ring-grotto-560206a628-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floral-ring-grotto-560206a628-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "floral-robot-helmet",
@@ -10437,7 +10849,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floral-robot-helmet-b167d86845-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floral-robot-helmet-b167d86845-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "floral-sea-terrace",
@@ -10460,7 +10873,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floral-sea-terrace-24306ca262-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floral-sea-terrace-24306ca262-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "floral-skeleton-eclipse",
@@ -10483,7 +10897,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floral-skeleton-eclipse-e932c36d2b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floral-skeleton-eclipse-e932c36d2b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "floral-tv-room",
@@ -10506,7 +10921,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/floral-tv-room-a6cb574fef-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/floral-tv-room-a6cb574fef-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "flower-arc",
@@ -10531,7 +10947,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/flower-arc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/flower-arc-preview.mp4",
     "likes": 55,
-    "createdAt": "2026-04-01"
+    "createdAt": "2026-04-01",
+    "mediaType": "video"
   },
   {
     "id": "flower-astronaut",
@@ -10554,7 +10971,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/flower-astronaut-468de72cdc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/flower-astronaut-468de72cdc-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "flower-cabin-window",
@@ -10577,7 +10995,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/flower-cabin-window-57cb306428-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/flower-cabin-window-57cb306428-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "flower-field",
@@ -10602,7 +11021,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/flower-field-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/flower-field-preview.mp4",
     "likes": 36,
-    "createdAt": "2026-04-05"
+    "createdAt": "2026-04-05",
+    "mediaType": "video"
   },
   {
     "id": "flower-field-anatomy",
@@ -10625,7 +11045,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/flower-field-anatomy-5afc1e4d36-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/flower-field-anatomy-5afc1e4d36-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "flower-hill-chair",
@@ -10648,7 +11069,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/flower-hill-chair-4f3f096b64-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/flower-hill-chair-4f3f096b64-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "flower-lake-armchair",
@@ -10671,7 +11093,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/flower-lake-armchair-1283311c58-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/flower-lake-armchair-1283311c58-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "flower-throne-clouds",
@@ -10694,7 +11117,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/flower-throne-clouds-4dce759efc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/flower-throne-clouds-4dce759efc-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "forest-castle-path",
@@ -10717,7 +11141,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/forest-castle-path-f777617f7e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/forest-castle-path-f777617f7e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "forest-light-portal",
@@ -10740,7 +11165,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/forest-light-portal-e63205e34e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/forest-light-portal-e63205e34e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "forest-pond-lounge",
@@ -10763,7 +11189,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/forest-pond-lounge-b7d166cd44-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/forest-pond-lounge-b7d166cd44-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "forest-sprite",
@@ -10788,7 +11215,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/forest-sprite-75ea6a5cb9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/forest-sprite-75ea6a5cb9-preview.mp4",
     "likes": 39,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "forest-vinyl-turntable",
@@ -10811,7 +11239,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/forest-vinyl-turntable-39a6bc1d33-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/forest-vinyl-turntable-39a6bc1d33-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "frosted-bamboo-palms",
@@ -10834,7 +11263,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/frosted-bamboo-palms-6684cb6504-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/frosted-bamboo-palms-6684cb6504-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "frosted-glass-arches",
@@ -10857,7 +11287,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/frosted-glass-arches-74508de3ed-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/frosted-glass-arches-74508de3ed-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "frosted-orange-roses",
@@ -10880,7 +11311,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/frosted-orange-roses-ec470e30a0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/frosted-orange-roses-ec470e30a0-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "fruit-crown-face",
@@ -10903,7 +11335,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/fruit-crown-face-951cbbf179-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/fruit-crown-face-951cbbf179-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "fuzzy-lilac-hills",
@@ -10926,7 +11359,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/fuzzy-lilac-hills-551b20191d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/fuzzy-lilac-hills-551b20191d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "galaxy-flow-lines",
@@ -10949,7 +11383,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/galaxy-flow-lines-a801a2614e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/galaxy-flow-lines-a801a2614e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "galaxy-spire-city",
@@ -10972,7 +11407,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/galaxy-spire-city-cb49dd4c08-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/galaxy-spire-city-cb49dd4c08-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "garden-pool-terraces",
@@ -10995,7 +11431,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/garden-pool-terraces-8454115665-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/garden-pool-terraces-8454115665-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "garden-stair-dwellings",
@@ -11018,7 +11455,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/garden-stair-dwellings-d118bae254-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/garden-stair-dwellings-d118bae254-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glass-arc",
@@ -11043,7 +11481,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-arc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-arc-preview.mp4",
     "likes": 48,
-    "createdAt": "2026-04-09"
+    "createdAt": "2026-04-09",
+    "mediaType": "video"
   },
   {
     "id": "glass-bloom-turntable",
@@ -11066,7 +11505,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-bloom-turntable-975cbc4f35-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-bloom-turntable-975cbc4f35-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glass-blossom-body",
@@ -11089,7 +11529,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-blossom-body-1438d12a10-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-blossom-body-1438d12a10-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "glass-cube-head",
@@ -11112,7 +11553,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "static"
   },
   {
     "id": "glass-dream-bubble",
@@ -11135,7 +11577,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-dream-bubble-54b4211ef3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-dream-bubble-54b4211ef3-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "glass-floral-puffer",
@@ -11158,7 +11601,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-floral-puffer-e9e0caba8f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-floral-puffer-e9e0caba8f-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "glass-flower",
@@ -11183,7 +11627,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-flower-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-flower-preview.mp4",
     "likes": 67,
-    "createdAt": "2026-04-12"
+    "createdAt": "2026-04-12",
+    "mediaType": "video"
   },
   {
     "id": "glass-head-rings",
@@ -11206,7 +11651,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-head-rings-65d5d40bd8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-head-rings-65d5d40bd8-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "glass-heart-bust",
@@ -11229,7 +11675,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-heart-bust-4e979324fd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-heart-bust-4e979324fd-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "glass-jellyfish-forest",
@@ -11252,7 +11699,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-jellyfish-forest-7c593fefbe-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-jellyfish-forest-7c593fefbe-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glass-orb-valley",
@@ -11275,7 +11723,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-orb-valley-02ecd47ce2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-orb-valley-02ecd47ce2-preview.mp4",
     "likes": 5,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "glass-pod-lake",
@@ -11298,7 +11747,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-pod-lake-dfb458499d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-pod-lake-dfb458499d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glass-reed-pond",
@@ -11321,7 +11771,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-reed-pond-aa893f67c2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-reed-pond-aa893f67c2-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glass-room-blossoms",
@@ -11344,7 +11795,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-room-blossoms-696a40498f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-room-blossoms-696a40498f-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glass-rose-figure",
@@ -11367,7 +11819,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-rose-figure-357a4a444e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-rose-figure-357a4a444e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glass-splash-figure",
@@ -11390,7 +11843,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-splash-figure-55f19ea549-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-splash-figure-55f19ea549-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glass-swirls-garden",
@@ -11413,7 +11867,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-swirls-garden-f4c77da844-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-swirls-garden-f4c77da844-preview.mp4",
     "likes": 4,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "glass-wave",
@@ -11438,7 +11893,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-wave-57b5e9f0fb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-wave-57b5e9f0fb-preview.mp4",
     "likes": 56,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "glass-wire-cube",
@@ -11461,7 +11917,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glass-wire-cube-37d90c6ec4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glass-wire-cube-37d90c6ec4-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glassy-dna",
@@ -11486,7 +11943,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glassy-dna-03d7dbd106-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glassy-dna-03d7dbd106-preview.mp4",
     "likes": 33,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "glassy-horse",
@@ -11511,7 +11969,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glassy-horse-b1724bd4ab-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glassy-horse-b1724bd4ab-preview.mp4",
     "likes": 5,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "glitch-color-bars",
@@ -11534,7 +11993,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glitch-color-bars-a34388c0d0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glitch-color-bars-a34388c0d0-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glitch-globe",
@@ -11557,7 +12017,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glitch-globe-093e0b1000-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glitch-globe-093e0b1000-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glowing-flower-mannequin",
@@ -11580,7 +12041,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glowing-flower-mannequin-bf9efd8ca0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glowing-flower-mannequin-bf9efd8ca0-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "glowing-tree-door",
@@ -11603,7 +12065,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/glowing-tree-door-310d36223d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/glowing-tree-door-310d36223d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "gold-arc-orbs",
@@ -11626,7 +12089,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/gold-arc-orbs-57f1843466-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/gold-arc-orbs-57f1843466-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "gold-ribbon-tangle",
@@ -11649,7 +12113,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/gold-ribbon-tangle-a5441f8c86-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/gold-ribbon-tangle-a5441f8c86-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "golden-bokeh-blobs",
@@ -11672,7 +12137,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-bokeh-blobs-78bdc27f44-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-bokeh-blobs-78bdc27f44-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "golden-burst-figure",
@@ -11695,7 +12161,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-burst-figure-57088444b2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-burst-figure-57088444b2-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "golden-cosmic-beams",
@@ -11718,7 +12185,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-cosmic-beams-e977d663ee-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-cosmic-beams-e977d663ee-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "golden-flowing-figure",
@@ -11741,7 +12209,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-flowing-figure-faddc62b13-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-flowing-figure-faddc62b13-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "golden-glass-swirl",
@@ -11764,7 +12233,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-glass-swirl-20d32e3461-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-glass-swirl-20d32e3461-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "golden-halo-figure",
@@ -11787,7 +12257,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-halo-figure-1f7f31f5b3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-halo-figure-1f7f31f5b3-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "golden-hand-orb",
@@ -11810,7 +12281,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-hand-orb-21712f7243-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-hand-orb-21712f7243-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "golden-horizon-beams",
@@ -11833,7 +12305,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-horizon-beams-ffe5859706-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-horizon-beams-ffe5859706-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "golden-jungle-temple",
@@ -11856,7 +12329,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-jungle-temple-b3ad6f23d9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-jungle-temple-b3ad6f23d9-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "golden-light-loops",
@@ -11879,7 +12353,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-light-loops-c5c1c09588-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-light-loops-c5c1c09588-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "golden-light-streaks",
@@ -11902,7 +12377,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-light-streaks-e8fb1f1f71-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-light-streaks-e8fb1f1f71-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "golden-ring-silhouette",
@@ -11925,7 +12401,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-ring-silhouette-ab78bf07d4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-ring-silhouette-ab78bf07d4-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "golden-satin-waves",
@@ -11948,7 +12425,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-satin-waves-c4b6bd3d28-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-satin-waves-c4b6bd3d28-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "golden-statue-touch",
@@ -11971,7 +12449,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/golden-statue-touch-0959ce7ef0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/golden-statue-touch-0959ce7ef0-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "goldfish-crown-face",
@@ -11994,7 +12473,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/goldfish-crown-face-f13e15f8df-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/goldfish-crown-face-f13e15f8df-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "green-gold-brushstrokes",
@@ -12017,7 +12497,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/green-gold-brushstrokes-73220354e9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/green-gold-brushstrokes-73220354e9-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "green-light-bars",
@@ -12042,7 +12523,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "green-line-dunes",
@@ -12065,7 +12547,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/green-line-dunes-e5c31210ec-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/green-line-dunes-e5c31210ec-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "green-plus-asterisk",
@@ -12088,7 +12571,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/green-plus-asterisk-5d3b1eaf8e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/green-plus-asterisk-5d3b1eaf8e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "green-ripple-rings",
@@ -12111,7 +12595,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/green-ripple-rings-b951cdc052-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/green-ripple-rings-b951cdc052-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "green-sand-dune",
@@ -12136,7 +12621,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "green-swirl-lines",
@@ -12159,7 +12645,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/green-swirl-lines-1c3d98e24f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/green-swirl-lines-1c3d98e24f-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "green-valley-lake",
@@ -12182,7 +12669,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/green-valley-lake-eb84b87724-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/green-valley-lake-eb84b87724-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "hanging-flowers-sky",
@@ -12205,7 +12693,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/hanging-flowers-sky-b2e9675cd6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/hanging-flowers-sky-b2e9675cd6-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "hazy-sand-dunes",
@@ -12228,7 +12717,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/hazy-sand-dunes-943c47fcae-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/hazy-sand-dunes-943c47fcae-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "hidden-garden-stairs",
@@ -12251,7 +12741,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/hidden-garden-stairs-cfdfcbe68c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/hidden-garden-stairs-cfdfcbe68c-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "hills",
@@ -12276,7 +12767,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/hills-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/hills-preview.mp4",
     "likes": 61,
-    "createdAt": "2026-04-14"
+    "createdAt": "2026-04-14",
+    "mediaType": "video"
   },
   {
     "id": "holographic-chrome-swirl",
@@ -12299,7 +12791,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/holographic-chrome-swirl-3bbaddae25-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/holographic-chrome-swirl-3bbaddae25-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "holographic-glass-ripples",
@@ -12322,7 +12815,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/holographic-glass-ripples-59cbc82042-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/holographic-glass-ripples-59cbc82042-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "holographic-kaleidoscope",
@@ -12345,7 +12839,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/holographic-kaleidoscope-2f300d3fcf-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/holographic-kaleidoscope-2f300d3fcf-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "holographic-liquid-flow",
@@ -12368,7 +12863,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/holographic-liquid-flow-6b91a21cf6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/holographic-liquid-flow-6b91a21cf6-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "ice-chrome-swirl",
@@ -12391,7 +12887,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/ice-chrome-swirl-ad06041205-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/ice-chrome-swirl-ad06041205-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "indigo-glass-pills",
@@ -12414,7 +12911,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/indigo-glass-pills-7fc5084e43-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/indigo-glass-pills-7fc5084e43-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "indigo-glossy-swirls",
@@ -12437,7 +12935,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/indigo-glossy-swirls-dc92c08374-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/indigo-glossy-swirls-dc92c08374-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "indigo-paint-swirl",
@@ -12460,7 +12959,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/indigo-paint-swirl-f4c89dcb66-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/indigo-paint-swirl-f4c89dcb66-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "indigo-xray-flowers",
@@ -12483,7 +12983,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/indigo-xray-flowers-2070d2fc90-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/indigo-xray-flowers-2070d2fc90-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "indoor-garden-window",
@@ -12506,7 +13007,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/indoor-garden-window-28be4836ce-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/indoor-garden-window-28be4836ce-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "iridescent-quartz-crystals",
@@ -12529,7 +13031,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/iridescent-quartz-crystals-6a7ed0e7dd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/iridescent-quartz-crystals-6a7ed0e7dd-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "iridescent-ribbon-coil",
@@ -12552,7 +13055,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/iridescent-ribbon-coil-6adee35d39-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/iridescent-ribbon-coil-6adee35d39-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "iridescent-spirit-forest",
@@ -12575,7 +13079,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/iridescent-spirit-forest-d4786fbbfd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/iridescent-spirit-forest-d4786fbbfd-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "ivy-arch-tower",
@@ -12598,7 +13103,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/ivy-arch-tower-423e9263de-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/ivy-arch-tower-423e9263de-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "ivy-palace-portal",
@@ -12621,7 +13127,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/ivy-palace-portal-c3846fa6cf-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/ivy-palace-portal-c3846fa6cf-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "ivy-tunnel-bench",
@@ -12644,7 +13151,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/ivy-tunnel-bench-a69735b6c7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/ivy-tunnel-bench-a69735b6c7-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "jellyfish-tower-oasis",
@@ -12667,7 +13175,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/jellyfish-tower-oasis-54dfe44f73-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/jellyfish-tower-oasis-54dfe44f73-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "jungle-light-rays",
@@ -12690,7 +13199,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/jungle-light-rays-53ff14ca62-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/jungle-light-rays-53ff14ca62-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "jungle-swirl-portal",
@@ -12713,7 +13223,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/jungle-swirl-portal-cdf5e096dd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/jungle-swirl-portal-cdf5e096dd-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "knitted-astronaut-boots",
@@ -12736,7 +13247,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/knitted-astronaut-boots-a4db19c1a6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/knitted-astronaut-boots-a4db19c1a6-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "koi-art",
@@ -12761,7 +13273,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/koi-art-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/koi-art-preview.mp4",
     "likes": 33,
-    "createdAt": "2026-04-18"
+    "createdAt": "2026-04-18",
+    "mediaType": "video"
   },
   {
     "id": "koi-blue-face",
@@ -12784,7 +13297,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/koi-blue-face-ed7f98da38-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/koi-blue-face-ed7f98da38-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lavender-canyon-river",
@@ -12807,7 +13321,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lavender-canyon-river-165b3a0f77-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lavender-canyon-river-165b3a0f77-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "lavender-silk-wave",
@@ -12830,7 +13345,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lavender-silk-wave-a70d754510-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lavender-silk-wave-a70d754510-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lightning-storm-cloud",
@@ -12853,7 +13369,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lightning-storm-cloud-63f2049eac-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lightning-storm-cloud-63f2049eac-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "lilac-chrome-liquid",
@@ -12876,7 +13393,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-chrome-liquid-87ff2f09c7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-chrome-liquid-87ff2f09c7-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lilac-confetti-bokeh",
@@ -12899,7 +13417,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-confetti-bokeh-de2d52df93-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-confetti-bokeh-de2d52df93-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lilac-crystal-moon",
@@ -12922,7 +13441,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-crystal-moon-8d51719295-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-crystal-moon-8d51719295-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "lilac-dusk-gradient",
@@ -12945,7 +13465,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-dusk-gradient-0421163b68-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-dusk-gradient-0421163b68-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lilac-glass-sculptures",
@@ -12968,7 +13489,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-glass-sculptures-dce9832990-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-glass-sculptures-dce9832990-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lilac-glass-swell",
@@ -12991,7 +13513,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-glass-swell-9c1e2a22f4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-glass-swell-9c1e2a22f4-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lilac-mushroom-clocks",
@@ -13014,7 +13537,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-mushroom-clocks-d8fe407072-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-mushroom-clocks-d8fe407072-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "lilac-peak-blobs",
@@ -13037,7 +13561,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-peak-blobs-b146f51f87-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-peak-blobs-b146f51f87-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "lilac-rainbow-arcs",
@@ -13060,7 +13585,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-rainbow-arcs-82a5c438f3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-rainbow-arcs-82a5c438f3-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "lilac-silk-waves",
@@ -13083,7 +13609,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-silk-waves-73e7700514-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-silk-waves-73e7700514-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "lilac-thread-waves",
@@ -13106,7 +13633,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-thread-waves-561dda9f84-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-thread-waves-561dda9f84-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "lilac-watercolor-splash",
@@ -13129,7 +13657,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lilac-watercolor-splash-0b69811043-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lilac-watercolor-splash-0b69811043-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lime-glass-waves",
@@ -13152,7 +13681,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lime-glass-waves-8617feb789-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lime-glass-waves-8617feb789-preview.mp4",
     "likes": 4,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "lime-green-swirl",
@@ -13175,7 +13705,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lime-green-swirl-265b9d105f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lime-green-swirl-265b9d105f-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "lime-halo-rings",
@@ -13198,7 +13729,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lime-halo-rings-b6a842561e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lime-halo-rings-b6a842561e-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lime-puffer-flowers",
@@ -13221,7 +13753,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lime-puffer-flowers-c164c7b036-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lime-puffer-flowers-c164c7b036-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "liqued-molecule",
@@ -13246,7 +13779,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/liqued-molecule-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/liqued-molecule-preview.mp4",
     "likes": 15,
-    "createdAt": "2026-04-20"
+    "createdAt": "2026-04-20",
+    "mediaType": "video"
   },
   {
     "id": "liquid-glass",
@@ -13271,7 +13805,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/liquid-glass-4bc15d970c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/liquid-glass-4bc15d970c-preview.mp4",
     "likes": 38,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "liquid-silver-flow",
@@ -13294,7 +13829,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/liquid-silver-flow-70f2f8bf9b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/liquid-silver-flow-70f2f8bf9b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "lone-tree-reflection",
@@ -13317,7 +13853,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/lone-tree-reflection-4d82f1cfec-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/lone-tree-reflection-4d82f1cfec-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "magenta-cave-flowers",
@@ -13340,7 +13877,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/magenta-cave-flowers-940afaaadd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/magenta-cave-flowers-940afaaadd-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "magenta-chrome-tunnel",
@@ -13363,7 +13901,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/magenta-chrome-tunnel-5309c1c609-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/magenta-chrome-tunnel-5309c1c609-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "magenta-flow-lines",
@@ -13386,7 +13925,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/magenta-flow-lines-e74b49dec4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/magenta-flow-lines-e74b49dec4-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "magenta-green-laser-star",
@@ -13409,7 +13949,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/magenta-green-laser-star-e3232a06a7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/magenta-green-laser-star-e3232a06a7-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "magenta-ink-marble",
@@ -13432,7 +13973,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/magenta-ink-marble-3189d43f88-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/magenta-ink-marble-3189d43f88-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "magenta-velvet-waves",
@@ -13455,7 +13997,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/magenta-velvet-waves-5725883cff-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/magenta-velvet-waves-5725883cff-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "magic",
@@ -13480,7 +14023,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/magic-c1476eba14-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/magic-c1476eba14-preview.mp4",
     "likes": 14,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "material-hills",
@@ -13505,7 +14049,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/material-hills-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/material-hills-preview.mp4",
     "likes": 81,
-    "createdAt": "2026-04-29"
+    "createdAt": "2026-04-29",
+    "mediaType": "video"
   },
   {
     "id": "mauve-folded-planes",
@@ -13528,7 +14073,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/mauve-folded-planes-f82811b6e2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/mauve-folded-planes-f82811b6e2-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "meadow",
@@ -13553,7 +14099,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/meadow-674a5b0220-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/meadow-674a5b0220-preview.mp4",
     "likes": 48,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "melting-candy-clocks",
@@ -13576,7 +14123,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/melting-candy-clocks-38c8ea0103-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/melting-candy-clocks-38c8ea0103-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "meow-yawn",
@@ -13601,7 +14149,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/meow-yawn-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/meow-yawn-preview.mp4",
     "likes": 44,
-    "createdAt": "2026-05-05"
+    "createdAt": "2026-05-05",
+    "mediaType": "video"
   },
   {
     "id": "metal-human",
@@ -13626,7 +14175,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/metal-human-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/metal-human-preview.mp4",
     "likes": 120,
-    "createdAt": "2026-05-07"
+    "createdAt": "2026-05-07",
+    "mediaType": "video"
   },
   {
     "id": "midnight-iridescent-silk",
@@ -13649,7 +14199,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/midnight-iridescent-silk-e65eb78198-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/midnight-iridescent-silk-e65eb78198-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "mint-aurora-blur",
@@ -13672,7 +14223,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/mint-aurora-blur-6cc1dd3b90-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/mint-aurora-blur-6cc1dd3b90-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "mint-blob-silhouette",
@@ -13695,7 +14247,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/mint-blob-silhouette-8d986232f4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/mint-blob-silhouette-8d986232f4-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "mint-daisy-jacket",
@@ -13718,7 +14271,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/mint-daisy-jacket-e06602d030-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/mint-daisy-jacket-e06602d030-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "mint-soft-rays",
@@ -13741,7 +14295,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/mint-soft-rays-abcd15ecad-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/mint-soft-rays-abcd15ecad-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "misty-lotus-swamp",
@@ -13764,7 +14319,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/misty-lotus-swamp-95245e063f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/misty-lotus-swamp-95245e063f-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "molecules-universe",
@@ -13789,7 +14345,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/molecules-universe-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/molecules-universe-preview.mp4",
     "likes": 21,
-    "createdAt": "2026-05-12"
+    "createdAt": "2026-05-12",
+    "mediaType": "video"
   },
   {
     "id": "monochrome-fur-streaks",
@@ -13812,7 +14369,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/monochrome-fur-streaks-26bc7bc7f1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/monochrome-fur-streaks-26bc7bc7f1-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "monochrome-motion-swirl",
@@ -13835,7 +14393,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/monochrome-motion-swirl-be35021393-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/monochrome-motion-swirl-be35021393-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "moon-cottage",
@@ -13860,7 +14419,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/moon-cottage-eb606ce20d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/moon-cottage-eb606ce20d-preview.mp4",
     "likes": 24,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "moon-walk",
@@ -13885,7 +14445,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/moon-walk-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/moon-walk-preview.mp4",
     "likes": 80,
-    "createdAt": "2026-05-14"
+    "createdAt": "2026-05-14",
+    "mediaType": "video"
   },
   {
     "id": "moonlit-pond",
@@ -13910,7 +14471,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/moonlit-pond-09826cc07c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/moonlit-pond-09826cc07c-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "moss-astronaut",
@@ -13933,7 +14495,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/moss-astronaut-dac968cd64-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/moss-astronaut-dac968cd64-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "moss-glass-butterfly",
@@ -13956,7 +14519,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/moss-glass-butterfly-6834baa105-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/moss-glass-butterfly-6834baa105-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "moss-hill-capsule",
@@ -13979,7 +14543,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/moss-hill-capsule-4eac704a34-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/moss-hill-capsule-4eac704a34-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "moss-rose-gentleman",
@@ -14002,7 +14567,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/moss-rose-gentleman-f6792cb7f3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/moss-rose-gentleman-f6792cb7f3-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "moss-sofa-meadow",
@@ -14025,7 +14591,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/moss-sofa-meadow-6cf3dc42d9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/moss-sofa-meadow-6cf3dc42d9-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "moss-tunnel-astronaut",
@@ -14048,7 +14615,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/moss-tunnel-astronaut-f8a8ed253d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/moss-tunnel-astronaut-f8a8ed253d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "mossy-river-flow",
@@ -14071,7 +14639,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/mossy-river-flow-c56d58486d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/mossy-river-flow-c56d58486d-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "mossy-rose-statue",
@@ -14094,7 +14663,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/mossy-rose-statue-9c17e64a4c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/mossy-rose-statue-9c17e64a4c-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "mossy-stone-rings",
@@ -14117,7 +14687,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/mossy-stone-rings-5e09289c2a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/mossy-stone-rings-5e09289c2a-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "mushroom-chess-floor",
@@ -14140,7 +14711,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/mushroom-chess-floor-51cffeb7b5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/mushroom-chess-floor-51cffeb7b5-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "navy-fur-waves",
@@ -14163,7 +14735,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/navy-fur-waves-17d7860537-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/navy-fur-waves-17d7860537-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "navy-gold-swirl",
@@ -14186,7 +14759,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/navy-gold-swirl-e62a32e1ce-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/navy-gold-swirl-e62a32e1ce-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "navy-prism-glow",
@@ -14209,7 +14783,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/navy-prism-glow-d706401626-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/navy-prism-glow-d706401626-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "navy-twin-orbs",
@@ -14232,7 +14807,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/navy-twin-orbs-b9e9fdedf5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/navy-twin-orbs-b9e9fdedf5-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "neon-chrome-blobs",
@@ -14255,7 +14831,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/neon-chrome-blobs-4615055b80-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/neon-chrome-blobs-4615055b80-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "neon-cobalt-ribbons",
@@ -14278,7 +14855,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/neon-cobalt-ribbons-4cfc5a1596-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/neon-cobalt-ribbons-4cfc5a1596-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "neon-floral-anatomy",
@@ -14301,7 +14879,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/neon-floral-anatomy-67d2286230-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/neon-floral-anatomy-67d2286230-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "neon-glow-loop",
@@ -14326,7 +14905,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "neon-horizon-flare",
@@ -14349,7 +14929,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/neon-horizon-flare-9cf330f926-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/neon-horizon-flare-9cf330f926-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "neon-paint-swirls",
@@ -14372,7 +14953,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/neon-paint-swirls-ac5b4b4b8f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/neon-paint-swirls-ac5b4b4b8f-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "neon-ribbon-waves",
@@ -14395,7 +14977,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/neon-ribbon-waves-cfa85eabb9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/neon-ribbon-waves-cfa85eabb9-preview.mp4",
     "likes": 4,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "neon-sound-waves",
@@ -14418,7 +15001,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/neon-sound-waves-da5c6a0d78-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/neon-sound-waves-da5c6a0d78-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "neon-thermal-blobs",
@@ -14441,7 +15025,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/neon-thermal-blobs-f36ca7c1c4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/neon-thermal-blobs-f36ca7c1c4-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "night-door-meadow",
@@ -14464,7 +15049,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/night-door-meadow-647327c7bb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/night-door-meadow-647327c7bb-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "night-stream",
@@ -14489,7 +15075,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/night-stream-cd40391d2e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/night-stream-cd40391d2e-preview.mp4",
     "likes": 41,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "night-tv-head",
@@ -14512,7 +15099,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/night-tv-head-30f61bb7ff-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/night-tv-head-30f61bb7ff-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "northern-lights-sky",
@@ -14535,7 +15123,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/northern-lights-sky-15f7afae20-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/northern-lights-sky-15f7afae20-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "olive-gold-ribbon",
@@ -14558,7 +15147,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/olive-gold-ribbon-e8592b63c5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/olive-gold-ribbon-e8592b63c5-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "olive-liquid-waves",
@@ -14583,7 +15173,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "olive-ribbed-folds",
@@ -14606,7 +15197,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/olive-ribbed-folds-d4549a286c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/olive-ribbed-folds-d4549a286c-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "opal-glass-flow",
@@ -14629,7 +15221,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/opal-glass-flow-d0640de3b9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/opal-glass-flow-d0640de3b9-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "opal-waterfall-sea",
@@ -14652,7 +15245,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/opal-waterfall-sea-0e0ca2abba-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/opal-waterfall-sea-0e0ca2abba-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "orange-blur-ribbon",
@@ -14675,7 +15269,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/orange-blur-ribbon-80ea021aa5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/orange-blur-ribbon-80ea021aa5-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "orange-cobalt-strands",
@@ -14698,7 +15293,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/orange-cobalt-strands-51da45ab25-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/orange-cobalt-strands-51da45ab25-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "orange-halftone-haze",
@@ -14721,7 +15317,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/orange-halftone-haze-aadd0df4c8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/orange-halftone-haze-aadd0df4c8-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "orange-ink-smoke",
@@ -14744,7 +15341,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/orange-ink-smoke-4998585ea8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/orange-ink-smoke-4998585ea8-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "orange-light-threads",
@@ -14767,7 +15365,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/orange-light-threads-5fcc04c929-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/orange-light-threads-5fcc04c929-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "orange-light-vortex",
@@ -14790,7 +15389,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/orange-light-vortex-ebc74b4094-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/orange-light-vortex-ebc74b4094-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "orange-puffer-bouquet",
@@ -14813,7 +15413,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/orange-puffer-bouquet-f7664cb349-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/orange-puffer-bouquet-f7664cb349-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "orange-star-sparks",
@@ -14836,7 +15437,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/orange-star-sparks-1ea82d1eb8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/orange-star-sparks-1ea82d1eb8-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "overgrown-skeleton",
@@ -14859,7 +15461,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/overgrown-skeleton-f631d4e061-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/overgrown-skeleton-f631d4e061-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "overgrown-stone-face",
@@ -14882,7 +15485,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/overgrown-stone-face-509de36f9d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/overgrown-stone-face-509de36f9d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "overgrown-tram",
@@ -14905,7 +15509,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/overgrown-tram-7326b2d2db-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/overgrown-tram-7326b2d2db-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pale-blue-marble",
@@ -14928,7 +15533,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pale-blue-marble-02feba7113-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pale-blue-marble-02feba7113-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pale-prism-light",
@@ -14951,7 +15557,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pale-prism-light-9fe7967eb8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pale-prism-light-9fe7967eb8-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pale-water-ripples",
@@ -14974,7 +15581,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pale-water-ripples-4b57211eed-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pale-water-ripples-4b57211eed-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "palm-greenhouse-astronaut",
@@ -14997,7 +15605,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/palm-greenhouse-astronaut-d388309ecc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/palm-greenhouse-astronaut-d388309ecc-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "palm-shadow-lawn",
@@ -15020,7 +15629,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/palm-shadow-lawn-84702e72df-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/palm-shadow-lawn-84702e72df-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pampas-lake-hills",
@@ -15043,7 +15653,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pampas-lake-hills-6d80d66285-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pampas-lake-hills-6d80d66285-preview.mp4",
     "likes": 4,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "paradise",
@@ -15068,7 +15679,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/paradise-97db4062bc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/paradise-97db4062bc-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "particle-ocean",
@@ -15093,7 +15705,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/particle-ocean-ff19d3b598-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/particle-ocean-ff19d3b598-preview.mp4",
     "likes": 52,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "pastel-aurora-waves",
@@ -15116,7 +15729,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-aurora-waves-db81f96e56-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-aurora-waves-db81f96e56-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "pastel-blossom-bokeh",
@@ -15139,7 +15753,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-blossom-bokeh-149c9efc60-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-blossom-bokeh-149c9efc60-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pastel-brush-strokes",
@@ -15162,7 +15777,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-brush-strokes-1c58918b92-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-brush-strokes-1c58918b92-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pastel-cloud-meadow",
@@ -15185,7 +15801,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-cloud-meadow-19fba4559d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-cloud-meadow-19fba4559d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pastel-clover-sky",
@@ -15208,7 +15825,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-clover-sky-1ff285cd18-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-clover-sky-1ff285cd18-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pastel-dream-city",
@@ -15231,7 +15849,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-dream-city-c6f2de8acb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-dream-city-c6f2de8acb-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pastel-glass-panels",
@@ -15254,7 +15873,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-glass-panels-d862de539b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-glass-panels-d862de539b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pastel-glass-ring-lake",
@@ -15277,7 +15897,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-glass-ring-lake-273ecfdf50-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-glass-ring-lake-273ecfdf50-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pastel-holographic-waves",
@@ -15302,7 +15923,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "pastel-lava-blobs",
@@ -15325,7 +15947,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-lava-blobs-a704bc71a5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-lava-blobs-a704bc71a5-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pastel-line-waves",
@@ -15348,7 +15971,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-line-waves-fcad748b63-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-line-waves-fcad748b63-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pastel-mirror-peaks",
@@ -15371,7 +15995,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-mirror-peaks-9ce055c18f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-mirror-peaks-9ce055c18f-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pastel-pearl-liquid",
@@ -15394,7 +16019,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-pearl-liquid-c4f03ca5d1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-pearl-liquid-c4f03ca5d1-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pastel-prism-streaks",
@@ -15417,7 +16043,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-prism-streaks-9ea6dfaa24-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-prism-streaks-9ea6dfaa24-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pastel-rainbow-haze",
@@ -15440,7 +16067,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-rainbow-haze-dd20ab5f0e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-rainbow-haze-dd20ab5f0e-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pastel-ruin-city",
@@ -15463,7 +16091,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-ruin-city-95d4dff2b1-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-ruin-city-95d4dff2b1-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pastel-sculpture-garden",
@@ -15486,7 +16115,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-sculpture-garden-0b59c8b208-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-sculpture-garden-0b59c8b208-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pastel-sea-sunset",
@@ -15509,7 +16139,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pastel-sea-sunset-7a7aec8405-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pastel-sea-sunset-7a7aec8405-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "peach-satin-swirl",
@@ -15532,7 +16163,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/peach-satin-swirl-85e92745d7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/peach-satin-swirl-85e92745d7-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pearl-bust-sculpture",
@@ -15555,7 +16187,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pearl-bust-sculpture-cd90f316f5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pearl-bust-sculpture-cd90f316f5-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pearl-iridescent-liquid",
@@ -15578,7 +16211,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pearl-iridescent-liquid-8d84a21de5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pearl-iridescent-liquid-8d84a21de5-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pearl-shell-waves",
@@ -15601,7 +16235,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pearl-shell-waves-7711f483e7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pearl-shell-waves-7711f483e7-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pearl-swirl-vortex",
@@ -15624,7 +16259,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pearl-swirl-vortex-eb95272224-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pearl-swirl-vortex-eb95272224-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pink-blossom-kitchen",
@@ -15647,7 +16283,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-blossom-kitchen-4072d8eebc-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-blossom-kitchen-4072d8eebc-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pink-blur-waves",
@@ -15670,7 +16307,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-blur-waves-82875f1f5b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-blur-waves-82875f1f5b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pink-cloud-eye",
@@ -15693,7 +16331,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-cloud-eye-4342ddad70-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-cloud-eye-4342ddad70-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pink-glass-helix",
@@ -15716,7 +16355,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-glass-helix-66aa80b30c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-glass-helix-66aa80b30c-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pink-grass",
@@ -15741,7 +16381,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-grass-b541f2cb61-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-grass-b541f2cb61-preview.mp4",
     "likes": 64,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "pink-hills-van",
@@ -15764,7 +16405,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-hills-van-3485f1cc1d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-hills-van-3485f1cc1d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pink-lagoon-figure",
@@ -15787,7 +16429,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-lagoon-figure-148e3e4a43-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-lagoon-figure-148e3e4a43-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pink-light-streaks",
@@ -15810,7 +16453,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-light-streaks-30aefbb9eb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-light-streaks-30aefbb9eb-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "pink-lime-chrome-splash",
@@ -15833,7 +16477,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-lime-chrome-splash-c089986f85-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-lime-chrome-splash-c089986f85-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "pink-moss-portal",
@@ -15856,7 +16501,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-moss-portal-cd99321ba8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-moss-portal-cd99321ba8-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pink-mushroom-island",
@@ -15879,7 +16525,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-mushroom-island-cb4f39d69c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-mushroom-island-cb4f39d69c-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pink-neon-halo",
@@ -15902,7 +16549,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-neon-halo-953f05aeb2-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-neon-halo-953f05aeb2-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pink-pillows-pond",
@@ -15925,7 +16573,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-pillows-pond-8e82e48b91-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-pillows-pond-8e82e48b91-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pink-slime-mountain",
@@ -15948,7 +16597,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-slime-mountain-9a9f33828c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-slime-mountain-9a9f33828c-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pink-wired-figure",
@@ -15971,7 +16621,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pink-wired-figure-7db7abac6f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pink-wired-figure-7db7abac6f-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "planet-glass-body",
@@ -15994,7 +16645,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/planet-glass-body-ec8ba52b1f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/planet-glass-body-ec8ba52b1f-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "plum-gold-bokeh",
@@ -16017,7 +16669,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/plum-gold-bokeh-b26943324c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/plum-gold-bokeh-b26943324c-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "plum-leaf-shadows",
@@ -16040,7 +16693,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/plum-leaf-shadows-2688d63e49-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/plum-leaf-shadows-2688d63e49-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "plum-ribbed-glow",
@@ -16063,7 +16717,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/plum-ribbed-glow-eff75609a8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/plum-ribbed-glow-eff75609a8-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "pool",
@@ -16088,7 +16743,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/pool-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/pool-preview.mp4",
     "likes": 13,
-    "createdAt": "2026-05-18"
+    "createdAt": "2026-05-18",
+    "mediaType": "video"
   },
   {
     "id": "potato-lightning-lab",
@@ -16111,7 +16767,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/potato-lightning-lab-e391b9b1a7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/potato-lightning-lab-e391b9b1a7-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "prism-star-burst",
@@ -16134,7 +16791,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/prism-star-burst-571bfa40f8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/prism-star-burst-571bfa40f8-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "purple-coral-ribbons",
@@ -16157,7 +16815,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-coral-ribbons-f85e04d53b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-coral-ribbons-f85e04d53b-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "purple-desert",
@@ -16182,7 +16841,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-desert-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-desert-preview.mp4",
     "likes": 116,
-    "createdAt": "2026-05-20"
+    "createdAt": "2026-05-20",
+    "mediaType": "video"
   },
   {
     "id": "purple-glass",
@@ -16207,7 +16867,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-glass-df54bac45f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-glass-df54bac45f-preview.mp4",
     "likes": 54,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "purple-glass-stack",
@@ -16230,7 +16891,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-glass-stack-92dc16e4ce-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-glass-stack-92dc16e4ce-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "purple-glossy-coils",
@@ -16255,7 +16917,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "purple-grain-waves",
@@ -16278,7 +16941,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-grain-waves-901f3ea1fb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-grain-waves-901f3ea1fb-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "purple-grid-waves",
@@ -16301,7 +16965,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-grid-waves-5ac0eca3b3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-grid-waves-5ac0eca3b3-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "purple-lime-ripple",
@@ -16324,7 +16989,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-lime-ripple-174d02e81f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-lime-ripple-174d02e81f-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "purple-mesh-waves",
@@ -16347,7 +17013,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-mesh-waves-a1f4b11baf-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-mesh-waves-a1f4b11baf-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "purple-moire-petals",
@@ -16370,7 +17037,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-moire-petals-c49b71e1c0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-moire-petals-c49b71e1c0-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "purple-neon-spiral",
@@ -16393,7 +17061,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-neon-spiral-cd10f7ea33-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-neon-spiral-cd10f7ea33-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "purple-planet",
@@ -16418,7 +17087,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-planet-006d27ceac-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-planet-006d27ceac-preview.mp4",
     "likes": 32,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "purple-satin-crumple",
@@ -16441,7 +17111,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-satin-crumple-8b681e8907-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-satin-crumple-8b681e8907-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "purple-valley",
@@ -16466,7 +17137,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/purple-valley-0a4d5f1e5d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/purple-valley-0a4d5f1e5d-preview.mp4",
     "likes": 48,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "rainbow-glass-walkers",
@@ -16489,7 +17161,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/rainbow-glass-walkers-685cf804a6-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/rainbow-glass-walkers-685cf804a6-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "rainbow-light-waves",
@@ -16514,7 +17187,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "rainy-palm-glass",
@@ -16537,7 +17211,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/rainy-palm-glass-b867bd163e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/rainy-palm-glass-b867bd163e-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "red-blue-ribbed-arches",
@@ -16560,7 +17235,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/red-blue-ribbed-arches-d12f236d21-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/red-blue-ribbed-arches-d12f236d21-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "red-geometric-shards",
@@ -16583,7 +17259,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/red-geometric-shards-24e5bf720d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/red-geometric-shards-24e5bf720d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "red-neon-trails",
@@ -16606,7 +17283,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/red-neon-trails-1eed7bbaf3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/red-neon-trails-1eed7bbaf3-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "red-orb-glow",
@@ -16629,7 +17307,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/red-orb-glow-470e9cf808-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/red-orb-glow-470e9cf808-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "red-particle-wizard",
@@ -16652,7 +17331,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/red-particle-wizard-4aef3fdb7b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/red-particle-wizard-4aef3fdb7b-preview.mp4",
     "likes": 5,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "red-teal-veils",
@@ -16675,7 +17355,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/red-teal-veils-9ac4fd984a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/red-teal-veils-9ac4fd984a-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "red-woven-ribbons",
@@ -16698,7 +17379,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/red-woven-ribbons-72aea6d83b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/red-woven-ribbons-72aea6d83b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "retro-computer-flowers",
@@ -16721,7 +17403,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/retro-computer-flowers-94a0a6e11b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/retro-computer-flowers-94a0a6e11b-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "retro-pop-collage",
@@ -16744,7 +17427,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/retro-pop-collage-14b8454faf-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/retro-pop-collage-14b8454faf-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "rose-covered-figure",
@@ -16767,7 +17451,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/rose-covered-figure-b9d59ad44f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/rose-covered-figure-b9d59ad44f-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "rust-sand-ripples",
@@ -16790,7 +17475,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/rust-sand-ripples-c9d6b39a3e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/rust-sand-ripples-c9d6b39a3e-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "sage-room-sunbeam",
@@ -16813,7 +17499,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sage-room-sunbeam-55c69c1c46-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sage-room-sunbeam-55c69c1c46-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "sage-soft-waves",
@@ -16836,7 +17523,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sage-soft-waves-03374bda13-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sage-soft-waves-03374bda13-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "sea-cave-lagoon",
@@ -16859,7 +17547,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sea-cave-lagoon-150d673911-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sea-cave-lagoon-150d673911-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "sea-storm",
@@ -16884,7 +17573,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sea-storm-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sea-storm-preview.mp4",
     "likes": 106,
-    "createdAt": "2026-05-22"
+    "createdAt": "2026-05-22",
+    "mediaType": "video"
   },
   {
     "id": "shattered-glass-head",
@@ -16907,7 +17597,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/shattered-glass-head-dc3bb9de50-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/shattered-glass-head-dc3bb9de50-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "siloutte",
@@ -16932,7 +17623,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/siloutte-68d0d90347-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/siloutte-68d0d90347-preview.mp4",
     "likes": 52,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "silver-ember-waves",
@@ -16955,7 +17647,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/silver-ember-waves-c2be21d9c7-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/silver-ember-waves-c2be21d9c7-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "silver-fluted-glass",
@@ -16978,7 +17671,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/silver-fluted-glass-79502463dd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/silver-fluted-glass-79502463dd-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "silver-line-waves",
@@ -17001,7 +17695,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/silver-line-waves-8bd84503db-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/silver-line-waves-8bd84503db-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "silver-swirl-petals",
@@ -17024,7 +17719,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/silver-swirl-petals-3fa5ac7523-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/silver-swirl-petals-3fa5ac7523-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "skeleton-flower-field",
@@ -17047,7 +17743,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/skeleton-flower-field-11fa05d931-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/skeleton-flower-field-11fa05d931-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "skeleton-glass-portal",
@@ -17070,7 +17767,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/skeleton-glass-portal-51496976ce-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/skeleton-glass-portal-51496976ce-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "skull-cave-lagoon",
@@ -17093,7 +17791,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/skull-cave-lagoon-0370875e08-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/skull-cave-lagoon-0370875e08-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "sky-golden-ribbon",
@@ -17116,7 +17815,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sky-golden-ribbon-10d2daf4c9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sky-golden-ribbon-10d2daf4c9-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "sky-orange-blossoms",
@@ -17139,7 +17839,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sky-orange-blossoms-e82cd9ba13-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sky-orange-blossoms-e82cd9ba13-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "skylight-fish-swarm",
@@ -17162,7 +17863,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/skylight-fish-swarm-dde3b0821a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/skylight-fish-swarm-dde3b0821a-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "slate-silk-waves",
@@ -17185,7 +17887,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/slate-silk-waves-dc4cde378d-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/slate-silk-waves-dc4cde378d-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "sneaker",
@@ -17210,7 +17913,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sneaker-5e1aec5ff8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sneaker-5e1aec5ff8-preview.mp4",
     "likes": 25,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "soft-green-glow",
@@ -17235,7 +17939,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 85,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "soft-grey-waves",
@@ -17258,7 +17963,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/soft-grey-waves-243322fe13-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/soft-grey-waves-243322fe13-preview.mp4",
     "likes": 4,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "soft-monstera-leaves",
@@ -17281,7 +17987,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/soft-monstera-leaves-c538f3d698-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/soft-monstera-leaves-c538f3d698-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "star-man",
@@ -17306,7 +18013,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/star-man-58a4caa5a3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/star-man-58a4caa5a3-preview.mp4",
     "likes": 72,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "starlight-cosmic-figure",
@@ -17329,7 +18037,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/starlight-cosmic-figure-0b6b0fa09a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/starlight-cosmic-figure-0b6b0fa09a-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "starlight-flower-burst",
@@ -17352,7 +18061,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/starlight-flower-burst-5535c997fe-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/starlight-flower-burst-5535c997fe-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "starry-tree-avenue",
@@ -17375,7 +18085,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/starry-tree-avenue-a08455aa58-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/starry-tree-avenue-a08455aa58-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "steel-twist-sculpture",
@@ -17398,7 +18109,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/steel-twist-sculpture-f894cb89e8-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/steel-twist-sculpture-f894cb89e8-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "stone-arch",
@@ -17423,7 +18135,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/stone-arch-c4d4fdb950-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/stone-arch-c4d4fdb950-preview.mp4",
     "likes": 48,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "stone-daisy-figure",
@@ -17446,7 +18159,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/stone-daisy-figure-29d2c86f88-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/stone-daisy-figure-29d2c86f88-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "stone-head-beam",
@@ -17469,7 +18183,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/stone-head-beam-09c9f00b53-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/stone-head-beam-09c9f00b53-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "stone-podium-meadow",
@@ -17492,7 +18207,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/stone-podium-meadow-46630fbbaa-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/stone-podium-meadow-46630fbbaa-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "stone-retro-computer",
@@ -17515,7 +18231,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/stone-retro-computer-57a19e7ab5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/stone-retro-computer-57a19e7ab5-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "sunken-blue-library",
@@ -17538,7 +18255,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sunken-blue-library-6188a7dea5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sunken-blue-library-6188a7dea5-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "sunken-stone-giant",
@@ -17561,7 +18279,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sunken-stone-giant-1e5707c80c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sunken-stone-giant-1e5707c80c-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "sunlit-moss-cathedral",
@@ -17584,7 +18303,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sunlit-moss-cathedral-113ebbebc3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sunlit-moss-cathedral-113ebbebc3-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "sunny-grass-mound",
@@ -17607,7 +18327,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sunny-grass-mound-430c7233d3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sunny-grass-mound-430c7233d3-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "sunset-horizon-blur",
@@ -17630,7 +18351,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/sunset-horizon-blur-24254fc65b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/sunset-horizon-blur-24254fc65b-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "teal-aurora-bars",
@@ -17653,7 +18375,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/teal-aurora-bars-19fab1ec1a-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/teal-aurora-bars-19fab1ec1a-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "teal-bokeh-flare",
@@ -17676,7 +18399,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/teal-bokeh-flare-93c7c9b738-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/teal-bokeh-flare-93c7c9b738-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "teal-cloud-rays",
@@ -17699,7 +18423,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/teal-cloud-rays-ac958a0522-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/teal-cloud-rays-ac958a0522-preview.mp4",
     "likes": 2,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "teal-energy-burst",
@@ -17722,7 +18447,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/teal-energy-burst-4779009e0c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/teal-energy-burst-4779009e0c-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "teal-forest-path",
@@ -17745,7 +18471,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/teal-forest-path-0b91e44821-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/teal-forest-path-0b91e44821-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "teal-neon-dashes",
@@ -17768,7 +18495,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/teal-neon-dashes-bfe3d45283-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/teal-neon-dashes-bfe3d45283-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "teal-space",
@@ -17793,7 +18521,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/teal-space-1ed951e34e-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/teal-space-1ed951e34e-preview.mp4",
     "likes": 13,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "teal-watercolor-bloom",
@@ -17816,7 +18545,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/teal-watercolor-bloom-9045438415-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/teal-watercolor-bloom-9045438415-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "tropical-karst-lagoon",
@@ -17839,7 +18569,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/tropical-karst-lagoon-71472ce9ce-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/tropical-karst-lagoon-71472ce9ce-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "turquoise-forest-lake",
@@ -17862,7 +18593,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/turquoise-forest-lake-13fecb84a0-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/turquoise-forest-lake-13fecb84a0-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "turquoise-paint-strokes",
@@ -17885,7 +18617,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/turquoise-paint-strokes-9033dba885-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/turquoise-paint-strokes-9033dba885-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "tv-head-bouquet",
@@ -17908,7 +18641,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/tv-head-bouquet-e4989e1a58-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/tv-head-bouquet-e4989e1a58-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "twin-green-beams",
@@ -17931,7 +18665,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/twin-green-beams-21fbd811ab-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/twin-green-beams-21fbd811ab-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "violet-aurora-flame",
@@ -17954,7 +18689,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/violet-aurora-flame-42021d167f-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/violet-aurora-flame-42021d167f-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "violet-bloom-cap",
@@ -17977,7 +18713,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/violet-bloom-cap-657e222e77-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/violet-bloom-cap-657e222e77-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "violet-chrome-waves",
@@ -18002,7 +18739,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "",
     "posterVideoPreview": "",
     "likes": 2,
-    "createdAt": "2026-07-15"
+    "createdAt": "2026-07-15",
+    "mediaType": "static"
   },
   {
     "id": "violet-contour-waves",
@@ -18025,7 +18763,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/violet-contour-waves-c2b71051a9-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/violet-contour-waves-c2b71051a9-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "violet-flower-statue",
@@ -18048,7 +18787,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/violet-flower-statue-92b2cca622-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/violet-flower-statue-92b2cca622-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "violet-galaxy-beams",
@@ -18071,7 +18811,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/violet-galaxy-beams-6a35663acb-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/violet-galaxy-beams-6a35663acb-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "violet-glass-waves",
@@ -18094,7 +18835,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/violet-glass-waves-4ea6b07a76-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/violet-glass-waves-4ea6b07a76-preview.mp4",
     "likes": 7,
-    "createdAt": "2026-07-25"
+    "createdAt": "2026-07-25",
+    "mediaType": "video"
   },
   {
     "id": "violet-layered-curves",
@@ -18117,7 +18859,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/violet-layered-curves-532dc923cd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/violet-layered-curves-532dc923cd-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "violet-smoke-wave",
@@ -18140,7 +18883,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/violet-smoke-wave-d895f9abcd-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/violet-smoke-wave-d895f9abcd-preview.mp4",
     "likes": 3,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "warm-slat-light",
@@ -18163,7 +18907,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/warm-slat-light-aaec9cf2a3-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/warm-slat-light-aaec9cf2a3-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "white-blossoms",
@@ -18188,7 +18933,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/white-blossoms-0e55c0d9e5-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/white-blossoms-0e55c0d9e5-preview.mp4",
     "likes": 48,
-    "createdAt": "2026-07-08"
+    "createdAt": "2026-07-08",
+    "mediaType": "video"
   },
   {
     "id": "white-crystal-shards",
@@ -18211,7 +18957,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/white-crystal-shards-ed513fb7e4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/white-crystal-shards-ed513fb7e4-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "white-hood-blossoms",
@@ -18234,7 +18981,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/white-hood-blossoms-10df132b0c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/white-hood-blossoms-10df132b0c-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "white-room-shadows",
@@ -18257,7 +19005,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/white-room-shadows-e05d19272b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/white-room-shadows-e05d19272b-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "white-sphere-particles",
@@ -18280,7 +19029,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/white-sphere-particles-fef4e18634-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/white-sphere-particles-fef4e18634-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "white-terrace-hills",
@@ -18303,7 +19053,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/white-terrace-hills-a10f00a555-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/white-terrace-hills-a10f00a555-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "windblown-meadow-grass",
@@ -18326,7 +19077,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/windblown-meadow-grass-2a37f0ae67-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/windblown-meadow-grass-2a37f0ae67-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "windswept-golden-hills",
@@ -18349,7 +19101,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/windswept-golden-hills-54f6985139-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/windswept-golden-hills-54f6985139-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "windy-white-grass",
@@ -18372,7 +19125,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/windy-white-grass-2b8b4bb86c-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/windy-white-grass-2b8b4bb86c-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "wire-crown-statue",
@@ -18395,7 +19149,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/wire-crown-statue-66d9d1cd39-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/wire-crown-statue-66d9d1cd39-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   },
   {
     "id": "wool-hills-path",
@@ -18418,7 +19173,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/wool-hills-path-f24fbd2d7b-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/wool-hills-path-f24fbd2d7b-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "yellow-clay-valley",
@@ -18441,7 +19197,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/yellow-clay-valley-56bb3aa8a4-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/yellow-clay-valley-56bb3aa8a4-preview.mp4",
     "likes": 85,
-    "createdAt": "2026-09-21"
+    "createdAt": "2026-09-21",
+    "mediaType": "video"
   },
   {
     "id": "yellow-liquid-ripples",
@@ -18464,7 +19221,8 @@ window.GETLAYERS_DATA = [
     "previewVideo": "https://storage.getlayers.ai/backgrounds/yellow-liquid-ripples-f6533fdaef-preview.mp4",
     "posterVideoPreview": "https://storage.getlayers.ai/backgrounds/yellow-liquid-ripples-f6533fdaef-preview.mp4",
     "likes": 1,
-    "createdAt": "2026-10-15"
+    "createdAt": "2026-10-15",
+    "mediaType": "video"
   }
 ];
 

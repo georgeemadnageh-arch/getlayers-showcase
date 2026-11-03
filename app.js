@@ -198,8 +198,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const likes = item.likes !== undefined ? item.likes : (20 + (index * 7) % 80);
     const previewImg = item.previewImage || item.image || '';
-    const previewVid = item.previewVideo || item.posterVideoPreview || item.posterVideo || '';
-    const hasVideo = !!previewVid;
+    const previewVid = item.posterVideo || item.previewVideo || item.posterVideoPreview || '';
+    const isStatic = item.mediaType === 'static' || (!item.posterVideo && !item.previewVideo);
+    const hasVideo = !isStatic && !!previewVid;
     const catLabel = item.categoryLabel || item.category || 'Component';
     const tagDisplay = item.tag || (Array.isArray(item.tags) && item.tags[0] ? item.tags[0].toUpperCase() : 'PRO');
 
@@ -303,7 +304,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Inject Media
     modalMedia.innerHTML = '';
-    const videoUrl = item.posterVideo || item.previewVideo || '';
+    const isStaticItem = item.mediaType === 'static' || (!item.posterVideo && !item.previewVideo);
+    const videoUrl = !isStaticItem ? (item.posterVideo || item.previewVideo || '') : '';
     const imageUrl = item.image || item.previewImage || '';
 
     const studioLaunchBtn = document.getElementById('modalStudioLaunchLink');
