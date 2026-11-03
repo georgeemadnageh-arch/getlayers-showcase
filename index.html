@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GetLayers — Cinematic AI Web Templates & 3D Library</title>
+  <meta name="description" content="A curated library of cinematic web templates, 3D WebGL scenes, interactive sections, and animated video backgrounds." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="logo-mark">
+          <svg viewBox="0 0 28 28" fill="none" class="logo-svg">
+            <defs>
+              <linearGradient id="brand-grad" x1="3" y1="2" x2="25" y2="26" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00f2fe" />
+                <stop offset="50%" stop-color="#4facfe" />
+                <stop offset="100%" stop-color="#7367f0" />
+              </linearGradient>
+            </defs>
+            <path d="M14 16 24.5 21 14 26 3.5 21Z" fill="url(#brand-grad)" fill-opacity="0.3" />
+            <path d="M14 9 24.5 14 14 19 3.5 14Z" fill="url(#brand-grad)" fill-opacity="0.6" />
+            <path d="M14 2 24.5 7 14 12 3.5 7Z" fill="url(#brand-grad)" />
+          </svg>
+        </div>
+        <span class="brand-text">GetLayers <span class="badge-edition">Clone Edition</span></span>
+      </div>
+
+      <!-- Search Input in Header -->
+      <div class="search-box">
+        <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search templates, 3D scenes, shaders..." autocomplete="off" />
+        <span class="shortcut">⌘K</span>
+      </div>
+
+      <div class="header-actions">
+        <span class="stat-badge"><span class="pulse-dot"></span> 53 Cinematic Assets</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-pill">
+        <span class="pill-sparkle">✦</span>
+        <span>Curated Web Experience for AI Builders</span>
+      </div>
+      <h1 class="hero-title">Cinematic AI sites,<br><span class="gradient-text">made easy</span></h1>
+      <p class="hero-subtitle">
+        Explore 53 production-ready templates, 3D WebGL scenes, interactive sections, and high-res video backgrounds.
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter Navigation Tabs -->
+  <nav class="filters-nav">
+    <div class="filters-container" id="categoryTabs">
+      <button class="filter-tab active" data-category="all">
+        All <span class="tab-count" id="count-all">53</span>
+      </button>
+      <button class="filter-tab" data-category="templates">
+        Templates <span class="tab-count" id="count-templates">10</span>
+      </button>
+      <button class="filter-tab" data-category="3d_scenes">
+        3D Scenes <span class="tab-count" id="count-3d_scenes">9</span>
+      </button>
+      <button class="filter-tab" data-category="sections">
+        Sections <span class="tab-count" id="count-sections">10</span>
+      </button>
+      <button class="filter-tab" data-category="backgrounds">
+        Backgrounds <span class="tab-count" id="count-backgrounds">12</span>
+      </button>
+      <button class="filter-tab" data-category="gradients">
+        Gradients <span class="tab-count" id="count-gradients">12</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Grid Section -->
+  <main class="gallery-section">
+    <div class="gallery-grid" id="cardsGrid">
+      <!-- Cards dynamically rendered by app.js -->
+    </div>
+    <div id="noResults" class="no-results hidden">
+      <p class="no-results-title">No matching templates found</p>
+      <p class="no-results-sub">Try searching for another keyword or change your filter.</p>
+    </div>
+  </main>
+
+  <!-- Detail Modal Overlay -->
+  <div id="detailModal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">✕</button>
+      <div class="modal-media-wrap" id="modalMedia">
+        <!-- Live video or high-res image will be injected here -->
+      </div>
+      <div class="modal-info">
+        <div class="modal-header">
+          <div>
+            <span class="modal-badge" id="modalCategory">Category</span>
+            <h2 class="modal-title" id="modalTitle">Title</h2>
+          </div>
+          <div class="modal-likes" id="modalLikes">♡ 42</div>
+        </div>
+        <p class="modal-desc" id="modalDesc">Description goes here.</p>
+        
+        <div class="modal-prompt-box">
+          <div class="prompt-header">
+            <span>AI Prompt Specification</span>
+            <button class="btn-copy" id="btnCopyPrompt">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Prompt</span>
+            </button>
+          </div>
+          <pre class="prompt-content" id="modalPromptText"></pre>
+        </div>
+
+        <div class="modal-actions">
+          <a id="modalAssetLink" href="#" target="_blank" class="btn-primary">
+            <span>Open High-Res Media</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast hidden">Copied prompt to clipboard!</div>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

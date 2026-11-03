@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clarix — The Clarity Your Business Has Been Missing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #040508;
+      --card-bg: rgba(10, 14, 22, 0.7);
+      --card-border: rgba(56, 189, 248, 0.12);
+      --card-hover: rgba(56, 189, 248, 0.28);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --cyan: #38bdf8;
+      --blue: #2563eb;
+      --neon-grad: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* Grid background effect */
+    .grid-bg {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .ambient-glow {
+      position: absolute;
+      top: -150px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 900px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(37, 99, 235, 0.08) 50%, transparent 70%);
+      filter: blur(100px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 10;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 26px 0;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.3rem;
+      letter-spacing: -0.03em;
+    }
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--cyan);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+    }
+    .btn-glow {
+      background: var(--neon-grad);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 10px 22px;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.35);
+      transition: all 0.25s ease;
+    }
+    .btn-glow:hover {
+      box-shadow: 0 0 35px rgba(56, 189, 248, 0.6);
+      transform: translateY(-2px);
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 90px 0 60px;
+    }
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+      color: var(--cyan);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+    .hero-title {
+      font-size: clamp(2.6rem, 5.5vw, 4.2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 22px;
+    }
+    .grad-cyan {
+      background: var(--neon-grad);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 640px;
+      margin: 0 auto 40px;
+    }
+
+    /* Feature Grid */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 90px;
+    }
+    .bento-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 32px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .bento-card:hover {
+      border-color: var(--card-hover);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.7), 0 0 25px rgba(56, 189, 248, 0.15);
+      transform: translateY(-4px);
+    }
+    .bento-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .bento-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+    .bento-accent {
+      margin-top: 24px;
+      height: 140px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--cyan);
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="ambient-glow"></div>
+
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-mark">◈</div>
+        <span>Clarix</span>
+      </div>
+      <a href="#deploy" class="btn-glow">Deploy Clarix AI →</a>
+    </header>
+
+    <section class="hero">
+      <div class="hero-tag"><span>✦</span> Holographic Business Intelligence</div>
+      <h1 class="hero-title">
+        The clarity your business<br>
+        <span class="grad-cyan">has been missing</span>
+      </h1>
+      <p class="hero-sub">
+        Transform messy enterprise datasets into crystal-clear predictive decisions using autonomous spatial reasoning and neural pipelines.
+      </p>
+    </section>
+
+    <section class="bento-grid">
+      <div class="bento-card">
+        <h3 class="bento-title">Autonomous Signal Mesh</h3>
+        <p class="bento-desc">Continuously tracks thousands of data vectors to highlight anomalies before they affect revenue.</p>
+        <div class="bento-accent">99.4% Accuracy</div>
+      </div>
+
+      <div class="bento-card">
+        <h3 class="bento-title">Ultra Low Latency</h3>
+        <p class="bento-desc">Edge-optimized models process customer interaction events with less than 20 milliseconds roundtrip.</p>
+        <div class="bento-accent">18ms Latency</div>
+      </div>
+
+      <div class="bento-card">
+        <h3 class="bento-title">Zero-Configuration Sync</h3>
+        <p class="bento-desc">Connects instantly to Snowflake, Postgres, BigQuery, and Supabase without custom ETL workflows.</p>
+        <div class="bento-accent">Instant Connect</div>
+      </div>
+    </section>
+
+    <footer style="text-align:center; padding:40px 0; color:var(--text-muted); font-size:0.85rem; border-top:1px solid var(--card-border);">
+      © 2026 Clarix Systems. Built with GetLayers Inspiration.
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cards Cascade — 3D Interactive CSS Section</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #09090b;
+      --card-bg: #141418;
+      --border: rgba(255, 255, 255, 0.1);
+      --accent: #10b981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: #fff;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .header-box {
+      text-align: center;
+      max-width: 600px;
+      margin-bottom: 50px;
+    }
+    .tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .desc {
+      color: #a1a1aa;
+      font-size: 0.95rem;
+    }
+
+    /* 3D Cascade Stage */
+    .cascade-stage {
+      perspective: 1000px;
+      width: 100%;
+      max-width: 700px;
+      height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .deck-card {
+      position: absolute;
+      width: 320px;
+      height: 200px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: pointer;
+    }
+
+    /* Stack positioning */
+    .deck-card:nth-child(1) {
+      transform: translate3d(0, -60px, -120px) rotateX(15deg);
+      opacity: 0.5;
+      background: #0f0f12;
+    }
+    .deck-card:nth-child(2) {
+      transform: translate3d(0, -30px, -60px) rotateX(10deg);
+      opacity: 0.75;
+      background: #121216;
+    }
+    .deck-card:nth-child(3) {
+      transform: translate3d(0, 0px, 0px) rotateX(0deg);
+      opacity: 1;
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 30px rgba(16, 185, 129, 0.15);
+    }
+    .deck-card:nth-child(4) {
+      transform: translate3d(0, 45px, 60px) rotateX(-12deg);
+      opacity: 0.85;
+    }
+
+    /* Hover Cascade Effect */
+    .cascade-stage:hover .deck-card:nth-child(1) { transform: translate3d(-140px, -80px, -80px) rotateZ(-12deg); }
+    .cascade-stage:hover .deck-card:nth-child(2) { transform: translate3d(-60px, -40px, -30px) rotateZ(-6deg); }
+    .cascade-stage:hover .deck-card:nth-child(3) { transform: translate3d(0px, 0px, 40px) scale(1.05); }
+    .cascade-stage:hover .deck-card:nth-child(4) { transform: translate3d(120px, 30px, 60px) rotateZ(8deg); }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chip {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: #10b981;
+      background: rgba(16, 185, 129, 0.1);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .card-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .card-holder {
+      font-size: 0.75rem;
+      color: #71717a;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="header-box">
+    <span class="tag">Interactive Component</span>
+    <h1 class="title">Cards Cascade 3D</h1>
+    <p class="desc">Hover over the deck to see the pure CSS 3D cascade in motion.</p>
+  </div>
+
+  <div class="cascade-stage">
+    <div class="deck-card">
+      <div class="card-top">
+        <span class="chip">Tier 04</span>
+        <span style="font-size:0.8rem; color:#71717a;">Enterprise</span>
+      </div>
+      <div class="card-num">$1,200,000</div>
+      <div class="card-holder">Autonomous Reserve</div>
+    </div>
+
+    <div class="deck-card">
+      <div class="card-top">
+        <span class="chip">Tier 03</span>
+        <span style="font-size:0.8rem; color:#71717a;">Growth</span>
+      </div>
+      <div class="card-num">$650,000</div>
+      <div class="card-holder">Venture Line</div>
+    </div>
+
+    <div class="deck-card">
+      <div class="card-top">
+        <span class="chip">Primary</span>
+        <span style="font-size:0.8rem; color:#34d399;">Active</span>
+      </div>
+      <div class="card-num">$350,000</div>
+      <div class="card-holder">Instant Approval</div>
+    </div>
+
+    <div class="deck-card">
+      <div class="card-top">
+        <span class="chip">Tier 01</span>
+        <span style="font-size:0.8rem; color:#71717a;">Seed</span>
+      </div>
+      <div class="card-num">$120,000</div>
+      <div class="card-holder">Bridge Capital</div>
+    </div>
+  </div>
+</body>
+</html>
