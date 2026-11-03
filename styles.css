@@ -331,12 +331,37 @@ body {
   pointer-events: none;
 }
 
-.card:hover .card-video {
+.card-media-wrap.is-playing .card-video {
   opacity: 1;
 }
 
-.card:hover .card-img {
+.card-media-wrap.is-playing .card-img {
   opacity: 0;
+}
+
+/* Subtle loading indicator on card hover before video starts */
+.card-media-wrap .media-spinner {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: #00f2fe;
+  border-radius: 50%;
+  animation: mediaSpin 0.8s linear infinite;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.card-media-wrap.is-buffering .media-spinner {
+  opacity: 1;
+}
+
+@keyframes mediaSpin {
+  to { transform: rotate(360deg); }
 }
 
 .card-badge-top {
@@ -698,4 +723,79 @@ body {
   .gallery-grid { grid-template-columns: 1fr; }
   .modal-card { max-height: 95vh; }
   .modal-info { padding: 18px; }
+}
+
+
+/* Tool Special Card Styles */
+.card-tool-special {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, #121318 0%, #0c0d10 100%);
+}
+
+.tool-media-wrap {
+  background: radial-gradient(circle at 50% 50%, #1a1c24 0%, #0a0b0e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-badge-new {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #38bdf8;
+  color: #030712;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 3px 7px;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.tool-ambient-mesh {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mesh-orb {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.3) 0%, rgba(139, 92, 246, 0.15) 50%, transparent 70%);
+  filter: blur(20px);
+  animation: orbPulse 4s ease-in-out infinite alternate;
+}
+
+.mesh-symbol {
+  position: relative;
+  font-size: 2.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 20px rgba(56, 189, 248, 0.8);
+}
+
+.tool-tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.tool-tech-pill {
+  font-size: 0.68rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+@keyframes orbPulse {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  100% { transform: scale(1.2); opacity: 1; }
 }

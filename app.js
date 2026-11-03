@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let isLoadingChunk = false;
 
   // Initialize Category Counts dynamically
+  const toolsData = window.GETLAYERS_TOOLS || [];
   const counts = {
     all: data.length,
     templates: data.filter(d => d.categoryType === 'templates').length,
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     backgrounds: data.filter(d => d.categoryType === 'backgrounds').length,
     gradients: data.filter(d => d.categoryType === 'gradients').length,
     sections: data.filter(d => d.categoryType === 'sections').length,
-    tools: data.filter(d => d.categoryType === 'tools').length
+    tools: toolsData.length
   };
 
   if (headerTotalCount) {
@@ -53,6 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // Filter and Search logic
   function getFilteredItems() {
     const q = currentSearch.toLowerCase().trim();
+    if (currentCategory === 'tools') {
+      const tools = window.GETLAYERS_TOOLS || [];
+      if (!q) return tools;
+      return tools.filter(t => {
+        return (t.title && t.title.toLowerCase().includes(q)) ||
+               (t.description && t.description.toLowerCase().includes(q)) ||
+               (t.category && t.category.toLowerCase().includes(q)) ||
+               (Array.isArray(t.tech) && t.tech.some(x => x.toLowerCase().includes(q)));
+      });
+    }
+
     return data.filter(item => {
       const matchCat = currentCategory === 'all' || item.categoryType === currentCategory;
       if (!matchCat) return false;
@@ -133,6 +145,46 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function createCard(item, index) {
+    if (item.route) {
+      // Dedicated Interactive Tool Card
+      const card = document.createElement('article');
+      card.className = 'card card-tool-special';
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      const techTags = (item.tech || ['WebGL', 'Three.js']).map(t => `<span class="tool-tech-pill">${escapeHtml(t)}</span>`).join('');
+      
+      card.innerHTML = `
+        <div class="card-media-wrap tool-media-wrap">
+          <span class="card-badge-top">${escapeHtml(item.category)}</span>
+          <span class="card-badge-new">NEW</span>
+          <div class="tool-ambient-mesh">
+            <div class="mesh-orb"></div>
+            <div class="mesh-symbol">✦</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-title-row">
+            <h3 class="card-title">${escapeHtml(item.title)}</h3>
+            <span class="card-tag">3D STUDIO</span>
+          </div>
+          <p class="card-desc">${escapeHtml(item.description)}</p>
+          <div class="tool-tech-row">${techTags}</div>
+          <div class="card-footer">
+            <span class="btn-card-action">
+              <span>Inspect Tool Specs</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M5 12h14"></path>
+                <path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      `;
+
+      card.addEventListener('click', () => openModal(item, 195));
+      return card;
+    }
+
     const card = document.createElement('article');
     card.className = 'card';
     card.setAttribute('role', 'button');
@@ -148,7 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let mediaHtml = `
       <div class="card-media-wrap">
         <span class="card-badge-top">${escapeHtml(catLabel)}</span>
-        <span class="card-likes-top">♡ ${likes}</span>`;
+        <span class="card-likes-top">♡ ${likes}</span>
+        <div class="media-spinner"></div>`;
     if (previewImg) {
       mediaHtml += `<img class="card-img" src="${escapeHtml(previewImg)}" alt="${escapeHtml(item.title)}" loading="lazy" />`;
     }
@@ -176,30 +229,47 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
-    // Hover Video Behavior
+    // Zero-Flicker Smooth Video Behavior (GetLayers native feel)
     if (hasVideo) {
+      const wrap = card.querySelector('.card-media-wrap');
       const video = card.querySelector('.card-video');
-      let playPromise = null;
+      let isHovered = false;
+
+      video.addEventListener('playing', () => {
+        if (isHovered) {
+          wrap.classList.remove('is-buffering');
+          wrap.classList.add('is-playing');
+        }
+      });
+
+      video.addEventListener('waiting', () => {
+        if (isHovered && !wrap.classList.contains('is-playing')) {
+          wrap.classList.add('is-buffering');
+        }
+      });
+
       card.addEventListener('mouseenter', () => {
+        isHovered = true;
         if (video) {
-          playPromise = video.play();
-          if (playPromise !== undefined) {
-            playPromise.catch(() => {});
+          if (!wrap.classList.contains('is-playing')) {
+            wrap.classList.add('is-buffering');
+          }
+          const p = video.play();
+          if (p !== undefined) {
+            p.catch(() => {
+              wrap.classList.remove('is-buffering');
+            });
           }
         }
       });
+
       card.addEventListener('mouseleave', () => {
+        isHovered = false;
+        wrap.classList.remove('is-buffering');
+        wrap.classList.remove('is-playing');
         if (video) {
-          if (playPromise !== undefined) {
-            playPromise.then(() => {
-              video.pause();
-              video.currentTime = 0;
-            }).catch(() => {
-              video.pause();
-            });
-          } else {
-            video.pause();
-          }
+          video.pause();
+          video.currentTime = 0;
         }
       });
     }
