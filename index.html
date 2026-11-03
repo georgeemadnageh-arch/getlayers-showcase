@@ -43,7 +43,7 @@
       </div>
 
       <div class="header-actions">
-        <span class="stat-badge"><span class="pulse-dot"></span> 53 Cinematic Assets</span>
+        <span class="stat-badge"><span class="pulse-dot"></span> <span id="headerTotalCount">771</span> Cinematic Assets</span>
       </div>
     </div>
   </header>
@@ -57,7 +57,7 @@
       </div>
       <h1 class="hero-title">Cinematic AI sites,<br><span class="gradient-text">made easy</span></h1>
       <p class="hero-subtitle">
-        Explore 53 production-ready templates, 3D WebGL scenes, interactive sections, and high-res video backgrounds.
+        Explore 771 production-ready templates, 3D WebGL scenes, interactive sections, tools, and high-res video backgrounds.
       </p>
     </div>
   </section>
@@ -66,22 +66,25 @@
   <nav class="filters-nav">
     <div class="filters-container" id="categoryTabs">
       <button class="filter-tab active" data-category="all">
-        All <span class="tab-count" id="count-all">53</span>
+        All <span class="tab-count" id="count-all">771</span>
       </button>
       <button class="filter-tab" data-category="templates">
-        Templates <span class="tab-count" id="count-templates">10</span>
+        Templates <span class="tab-count" id="count-templates">85</span>
       </button>
       <button class="filter-tab" data-category="3d_scenes">
-        3D Scenes <span class="tab-count" id="count-3d_scenes">9</span>
+        3D Scenes <span class="tab-count" id="count-3d_scenes">114</span>
+      </button>
+      <button class="filter-tab" data-category="backgrounds">
+        Backgrounds <span class="tab-count" id="count-backgrounds">476</span>
+      </button>
+      <button class="filter-tab" data-category="gradients">
+        Gradients <span class="tab-count" id="count-gradients">73</span>
       </button>
       <button class="filter-tab" data-category="sections">
         Sections <span class="tab-count" id="count-sections">10</span>
       </button>
-      <button class="filter-tab" data-category="backgrounds">
-        Backgrounds <span class="tab-count" id="count-backgrounds">12</span>
-      </button>
-      <button class="filter-tab" data-category="gradients">
-        Gradients <span class="tab-count" id="count-gradients">12</span>
+      <button class="filter-tab" data-category="tools">
+        Tools <span class="tab-count" id="count-tools">13</span>
       </button>
     </div>
   </nav>
@@ -90,6 +93,10 @@
   <main class="gallery-section">
     <div class="gallery-grid" id="cardsGrid">
       <!-- Cards dynamically rendered by app.js -->
+    </div>
+    <div id="loadingMore" class="loading-more hidden">
+      <div class="spinner"></div>
+      <span>Loading more assets...</span>
     </div>
     <div id="noResults" class="no-results hidden">
       <p class="no-results-title">No matching templates found</p>
