@@ -698,6 +698,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Prompt Generator - Authentic Deep Architectural Specification
   function generatePrompt(item) {
+    if (window.GETLAYERS_BLUEPRINTS && window.GETLAYERS_BLUEPRINTS[item.id]) { return window.GETLAYERS_BLUEPRINTS[item.id]; }
     const title = item.title || 'Cinematic Component';
     const catType = item.categoryType || item.category || 'templates';
     const catLabel = item.categoryLabel || item.category || 'Component';
