@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Modal elements
   const detailModal = document.getElementById('detailModal');
   const modalCloseBtn = document.getElementById('modalCloseBtn');
+  const modalViewSwitcher = document.getElementById('modalViewSwitcher');
   const modalMedia = document.getElementById('modalMedia');
   const modalCategory = document.getElementById('modalCategory');
   const modalTitle = document.getElementById('modalTitle');
@@ -304,6 +305,14 @@ document.addEventListener('DOMContentLoaded', () => {
     return card;
   }
 
+  // Authentic GetLayers View Switcher Icons
+  const VIEW_ICONS = {
+    scene: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.12 6.4-6.05-3.5a2 2 0 0 0-2.14 0L6.88 6.4a2 2 0 0 0-1 1.73v7a2 2 0 0 0 1 1.73l6.05 3.5a2 2 0 0 0 2.14 0l6.05-3.5a2 2 0 0 0 1-1.73v-7a2 2 0 0 0-1-1.73Z"></path><path d="M12 22V12"></path><polyline points="3.29 7 12 12 20.71 7"></polyline></svg>`,
+    desktop: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>`,
+    mobile: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg>`,
+    poster: `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>`
+  };
+
   // Open Modal
   function openModal(item, likes) {
     const catLabel = item.categoryLabel || item.category || 'Component';
@@ -313,12 +322,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modalLikes.textContent = `♡ ${likes}`;
     modalDesc.textContent = item.description || `A cinematic, ultra-polished ${catLabel.toLowerCase()} engineered with smooth physics, dark-mode elegance, and high visual impact.`;
 
-    // Inject Media
-    modalMedia.innerHTML = '';
-    const isStaticItem = item.mediaType === 'static' || (!item.posterVideo && !item.previewVideo);
-    const videoUrl = !isStaticItem ? (item.posterVideo || item.previewVideo || '') : '';
-    const imageUrl = item.image || item.previewImage || '';
-
     const studioLaunchBtn = document.getElementById('modalStudioLaunchLink');
     if (item.id === 'holographic-cloth') {
       if (studioLaunchBtn) studioLaunchBtn.classList.remove('hidden');
@@ -326,22 +329,132 @@ document.addEventListener('DOMContentLoaded', () => {
       if (studioLaunchBtn) studioLaunchBtn.classList.add('hidden');
     }
 
-    if (videoUrl) {
-      const video = document.createElement('video');
-      video.src = videoUrl;
-      video.autoplay = true;
-      video.loop = true;
-      video.muted = true;
-      video.controls = true;
-      video.playsInline = true;
-      modalMedia.appendChild(video);
-      modalAssetLink.href = videoUrl;
+    // Dynamic detection of available views
+    const availableViews = [];
+    const rawSceneVideo = item.posterVideo || item.previewVideo;
+    if (rawSceneVideo) {
+      availableViews.push({
+        id: 'scene',
+        label: '4K 3D Scene',
+        type: 'video',
+        url: rawSceneVideo,
+        isMobile: false,
+        iconSvg: VIEW_ICONS.scene
+      });
+    }
+    if (item.mockupDesktop) {
+      availableViews.push({
+        id: 'desktop',
+        label: 'Desktop View',
+        type: 'video',
+        url: item.mockupDesktop,
+        isMobile: false,
+        iconSvg: VIEW_ICONS.desktop
+      });
+    }
+    if (item.mockupMobile) {
+      availableViews.push({
+        id: 'mobile',
+        label: 'Mobile View',
+        type: 'video',
+        url: item.mockupMobile,
+        isMobile: true,
+        iconSvg: VIEW_ICONS.mobile
+      });
+    }
+    const posterImg = item.image || item.previewImage;
+    if (posterImg) {
+      availableViews.push({
+        id: 'poster',
+        label: '4K Poster',
+        type: 'image',
+        url: posterImg,
+        isMobile: false,
+        iconSvg: VIEW_ICONS.poster
+      });
+    }
+
+    function switchModalView(view) {
+      if (!view) return;
+
+      // Update switcher tabs active state
+      if (modalViewSwitcher) {
+        modalViewSwitcher.querySelectorAll('.modal-view-tab').forEach((tab) => {
+          const isActive = tab.dataset.viewId === view.id;
+          tab.classList.toggle('active', isActive);
+          tab.setAttribute('aria-selected', isActive ? 'true' : 'false');
+        });
+      }
+
+      // For Mobile View: toggle .is-mobile-view on #modalMedia so it scales to a phone container
+      if (view.id === 'mobile') {
+        modalMedia.classList.add('is-mobile-view');
+      } else {
+        modalMedia.classList.remove('is-mobile-view');
+      }
+
+      // Switching tabs immediately swaps the active playing video/image in #modalMedia
+      modalMedia.innerHTML = '';
+      if (view.type === 'video') {
+        const video = document.createElement('video');
+        video.src = view.url;
+        video.autoplay = true;
+        video.loop = true;
+        video.muted = true;
+        video.controls = (view.id !== 'mobile');
+        video.playsInline = true;
+        modalMedia.appendChild(video);
+        const p = video.play();
+        if (p !== undefined) p.catch(() => {});
+      } else {
+        const img = document.createElement('img');
+        img.src = view.url;
+        img.alt = `${item.title} - ${view.label}`;
+        img.loading = 'eager';
+        modalMedia.appendChild(img);
+      }
+
+      // Update #modalAssetLink
+      if (modalAssetLink) {
+        modalAssetLink.href = view.url;
+        const linkSpan = modalAssetLink.querySelector('span');
+        if (linkSpan) {
+          linkSpan.textContent = `Open ${view.label}`;
+        }
+      }
+    }
+
+    // Populate dynamic switcher tabs
+    if (modalViewSwitcher) {
+      modalViewSwitcher.innerHTML = '';
+      if (availableViews.length === 0) {
+        modalViewSwitcher.classList.add('hidden');
+      } else {
+        modalViewSwitcher.classList.remove('hidden');
+        availableViews.forEach((v) => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'modal-view-tab';
+          btn.dataset.viewId = v.id;
+          btn.setAttribute('role', 'tab');
+          btn.setAttribute('aria-selected', 'false');
+          btn.innerHTML = `
+            <span class="tab-icon">${v.iconSvg}</span>
+            <span class="tab-label">${v.label}</span>
+          `;
+          btn.addEventListener('click', () => switchModalView(v));
+          modalViewSwitcher.appendChild(btn);
+        });
+      }
+    }
+
+    // Default to the first available view (e.g. 4K 3D Scene or 4K Poster)
+    const initialView = availableViews.length > 0 ? availableViews[0] : null;
+    if (initialView) {
+      switchModalView(initialView);
     } else {
-      const img = document.createElement('img');
-      img.src = imageUrl;
-      img.alt = item.title;
-      modalMedia.appendChild(img);
-      modalAssetLink.href = imageUrl;
+      modalMedia.innerHTML = '';
+      modalMedia.classList.remove('is-mobile-view');
     }
 
     // Generate Formatted AI Prompt
@@ -355,6 +468,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeModal() {
     detailModal.classList.add('hidden');
     modalMedia.innerHTML = '';
+    modalMedia.classList.remove('is-mobile-view');
+    if (modalAssetLink) {
+      const linkSpan = modalAssetLink.querySelector('span');
+      if (linkSpan) linkSpan.textContent = 'Open High-Res Media';
+    }
     document.body.style.overflow = '';
   }
 
