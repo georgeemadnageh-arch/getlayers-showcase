@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refract — Obscure Glass Effect Studio | GetLayers</title>
+  <meta name="description" content="Photorealistic real-time glass refraction engine with chromatic dispersion, normal-mapped surface reliefs, and dynamic background distortion." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="refract-studio.css" />
+</head>
+<body class="studio-body">
+
+  <!-- Top Navigation Bar (Identical to GetLayers Header) -->
+  <header class="header studio-header">
+    <div class="header-container">
+      
+      <!-- Brand & Search -->
+      <div class="header-left">
+        <a href="../../index.html" class="brand" aria-label="getlayers — home">
+          <svg class="logo-svg" viewBox="0 0 28 28" fill="none">
+            <defs>
+              <linearGradient id="brand-grad" x1="3" y1="2" x2="25" y2="26" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="50%" stop-color="#818cf8" />
+                <stop offset="100%" stop-color="#c084fc" />
+              </linearGradient>
+            </defs>
+            <path d="M14 16 24.5 21 14 26 3.5 21Z" fill="url(#brand-grad)" fill-opacity="0.3"></path>
+            <path d="M14 9 24.5 14 14 19 3.5 14Z" fill="url(#brand-grad)" fill-opacity="0.6"></path>
+            <path d="M14 2 24.5 7 14 12 3.5 7Z" fill="url(#brand-grad)"></path>
+          </svg>
+          <span class="logo-word"><span class="logo-word-dim">get</span>layers</span>
+        </a>
+
+        <div class="search-pill-nav">
+          <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" placeholder="Search..." readonly onclick="window.location.href='../../index.html'" />
+          <kbd class="shortcut-badge">/</kbd>
+        </div>
+      </div>
+
+      <!-- Main Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="../../index.html#library" class="nav-link">Library</a>
+        <a href="../../index.html#tools" class="nav-link active nav-link-tools">
+          Tools
+          <span class="new-badge">New</span>
+        </a>
+        <a href="../../index.html#pricing" class="nav-link">Pricing</a>
+        <a href="../../index.html#docs" class="nav-link">Docs</a>
+        <a href="../../index.html#affiliate" class="nav-link">Affiliate</a>
+        <a href="../../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- External Actions -->
+      <div class="header-right">
+        <button type="button" class="btn-nav-action btn-mcp" onclick="window.location.href='../../index.html#mcp'">
+          <span class="sparkle-symbol">✦</span>
+          <span>MCP</span>
+        </button>
+
+        <button type="button" class="btn-nav-action btn-figma" onclick="window.open('https://figma.com/@getlayers', '_blank')">
+          <svg class="figma-svg" width="10" height="15" viewBox="0 0 38 57" fill="none">
+            <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0Z" fill="#1ABCFE"></path>
+            <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0Z" fill="#0ACF83"></path>
+            <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19Z" fill="#F24E1E"></path>
+            <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z" fill="#FF7262"></path>
+            <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z" fill="#A259FF"></path>
+          </svg>
+          <span>Figma</span>
+          <span class="new-badge">New</span>
+        </button>
+
+        <button type="button" class="btn-signin" onclick="window.location.href='../../index.html#signin'">
+          <span class="avatar-ring">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span>Sign in</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 3-Column Studio Workspace -->
+  <main class="studio-workspace">
+    
+    <!-- LEFT SIDEBAR: Asset Inputs & Presets -->
+    <aside class="studio-sidebar studio-sidebar-left">
+      
+      <!-- Card: Source Media Uploader -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            <span>Background Media</span>
+          </div>
+          <span class="panel-info-badge" title="Drop an image or video to place behind the glass surface">ⓘ</span>
+        </div>
+
+        <div class="panel-body">
+          <!-- Drop Zone -->
+          <label class="drop-zone" id="mediaDropZone">
+            <input type="file" id="mediaFileInput" accept="image/png,image/jpeg,image/webp,image/svg+xml,video/mp4,video/webm" class="hidden" />
+            <div class="drop-zone-content">
+              <svg class="upload-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span class="drop-label">Drop image or video</span>
+              <span class="drop-hint">PNG · JPG · WebP · MP4 · WebM</span>
+            </div>
+          </label>
+
+          <!-- Active Asset Slot -->
+          <div class="asset-slot" id="mediaAssetSlot">
+            <div class="asset-thumb-preview" id="mediaThumbPreview"></div>
+            <div class="asset-info">
+              <span class="asset-name" id="mediaAssetName">Default Editorial Media</span>
+              <span class="asset-meta" id="mediaAssetMeta">Architectural Poster · 240 KB</span>
+            </div>
+            <button type="button" class="btn-remove-asset" id="btnRemoveMedia" title="Reset to default artwork">✕</button>
+          </div>
+
+          <button type="button" class="btn-secondary-action mt-3" id="btnClearMedia">Reset to Default Backdrop</button>
+        </div>
+      </div>
+
+      <!-- Card: Glass Patterns -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            <span>Glass Pattern</span>
+          </div>
+          <span class="panel-info-badge" title="Procedural surface heightmap profile">ⓘ</span>
+        </div>
+
+        <div class="panel-body">
+          <div class="patterns-list" id="patternsList">
+            <!-- Pattern 1: Fluted / Reeded (Default) -->
+            <button type="button" class="pattern-option-btn active" data-pattern="fluted">
+              <div class="pattern-icon-box">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="6" y1="3" x2="6" y2="21"></line>
+                  <line x1="12" y1="3" x2="12" y2="21"></line>
+                  <line x1="18" y1="3" x2="18" y2="21"></line>
+                </svg>
+              </div>
+              <div class="pattern-meta">
+                <span>Fluted / Reeded</span>
+                <span class="pattern-sub">Linear cylindrical ribs</span>
+              </div>
+            </button>
+
+            <!-- Pattern 2: Glass Block -->
+            <button type="button" class="pattern-option-btn" data-pattern="block">
+              <div class="pattern-icon-box">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="8" height="8" rx="1"></rect>
+                  <rect x="13" y="3" width="8" height="8" rx="1"></rect>
+                  <rect x="3" y="13" width="8" height="8" rx="1"></rect>
+                  <rect x="13" y="13" width="8" height="8" rx="1"></rect>
+                </svg>
+              </div>
+              <div class="pattern-meta">
+                <span>Glass Block</span>
+                <span class="pattern-sub">Beveled architectural grid</span>
+              </div>
+            </button>
+
+            <!-- Pattern 3: Frosted Matte -->
+            <button type="button" class="pattern-option-btn" data-pattern="frosted">
+              <div class="pattern-icon-box">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="8"></circle>
+                  <path d="M12 2v20M2 12h20"></path>
+                </svg>
+              </div>
+              <div class="pattern-meta">
+                <span>Frosted Matte</span>
+                <span class="pattern-sub">Micro-rough sandblast</span>
+              </div>
+            </button>
+
+            <!-- Pattern 4: Rain Drops -->
+            <button type="button" class="pattern-option-btn" data-pattern="rain">
+              <div class="pattern-icon-box">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+              </div>
+              <div class="pattern-meta">
+                <span>Rain Drops</span>
+                <span class="pattern-sub">Beaded condensation</span>
+              </div>
+            </button>
+
+            <!-- Pattern 5: Flemish Wave -->
+            <button type="button" class="pattern-option-btn" data-pattern="flemish">
+              <div class="pattern-icon-box">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M2 12c3-4 6-4 10 0s7 4 10 0"></path>
+                  <path d="M2 6c3-4 6-4 10 0s7 4 10 0"></path>
+                  <path d="M2 18c3-4 6-4 10 0s7 4 10 0"></path>
+                </svg>
+              </div>
+              <div class="pattern-meta">
+                <span>Flemish Wave</span>
+                <span class="pattern-sub">Antique rolled glass</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Presets -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <span>Preset Gallery</span>
+          </div>
+        </div>
+
+        <div class="panel-body">
+          <div class="preset-tabs">
+            <button type="button" class="preset-tab active" id="tabPresetAll">All</button>
+            <button type="button" class="preset-tab" id="tabPresetFav">♡ Favourites</button>
+          </div>
+
+          <div class="presets-gallery mt-3" id="presetsGallery">
+            <!-- Preset 1: Ribbed Architecture (Default) -->
+            <button type="button" class="preset-card active" data-preset="ribbedArch">
+              <div class="preset-swatch swatch-ribbed"></div>
+              <span class="preset-label">Ribbed Architecture</span>
+            </button>
+
+            <!-- Preset 2: Frosted Privacy -->
+            <button type="button" class="preset-card" data-preset="frostedPriv">
+              <div class="preset-swatch swatch-frosted"></div>
+              <span class="preset-label">Frosted Privacy</span>
+            </button>
+
+            <!-- Preset 3: Heavy Block -->
+            <button type="button" class="preset-card" data-preset="heavyBlock">
+              <div class="preset-swatch swatch-block"></div>
+              <span class="preset-label">Heavy Block</span>
+            </button>
+
+            <!-- Preset 4: Rainy Pane -->
+            <button type="button" class="preset-card" data-preset="rainyPane">
+              <div class="preset-swatch swatch-rain"></div>
+              <span class="preset-label">Rainy Pane</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- CENTER CANVAS: 3D Interactive WebGL Viewport -->
+    <section class="studio-canvas-container" id="canvasContainer">
+      <div class="canvas-top-badge">
+        <span class="status-dot"></span>
+        <span id="canvasStatusText">Refract Engine v2.4 · WebGL 2.0 Active</span>
+      </div>
+
+      <div class="canvas-hint-overlay">
+        <span>Click & drag to tilt parallax · Scroll to adjust thickness</span>
+      </div>
+
+      <canvas id="refractCanvas"></canvas>
+    </section>
+
+    <!-- RIGHT SIDEBAR: Glass & Optics Controls & Actions -->
+    <aside class="studio-sidebar studio-sidebar-right">
+      
+      <!-- Locked Pro Banner -->
+      <div class="banner-pro">
+        <span class="banner-pro-text">Export 4K WebGL Glass Shaders</span>
+        <a href="../../index.html#pricing" class="banner-pro-link">Upgrade to unlock →</a>
+      </div>
+
+      <!-- Card: Glass & Optics Parameters -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>Glass Optics</span>
+          </div>
+          <div class="panel-header-actions">
+            <span class="panel-info-badge" title="Physical index of refraction, normal relief, and chromatic dispersion parameters">ⓘ</span>
+            <button type="button" class="btn-icon-reset" id="btnResetOptics" title="Reset optics to preset default">⟲</button>
+          </div>
+        </div>
+
+        <div class="panel-body controls-list">
+          <!-- Parameter 1: Pattern Scale (6 - 220) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderScale">Pattern Scale</label>
+              <span class="slider-val" id="valScale">48</span>
+            </div>
+            <input type="range" id="sliderScale" min="6" max="220" step="1" value="48" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 2: Relief Depth (0.0 - 3.0) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderRelief">Relief Depth</label>
+              <span class="slider-val" id="valRelief">1.40</span>
+            </div>
+            <input type="range" id="sliderRelief" min="0" max="3" step="0.05" value="1.40" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 3: Thickness (0 - 200px) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderThickness">Thickness</label>
+              <span class="slider-val" id="valThickness">65px</span>
+            </div>
+            <input type="range" id="sliderThickness" min="0" max="200" step="1" value="65" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 4: Chromatic Dispersion (0.0 - 1.0) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderDispersion">Chromatic Dispersion</label>
+              <span class="slider-val" id="valDispersion">0.45</span>
+            </div>
+            <input type="range" id="sliderDispersion" min="0" max="1" step="0.01" value="0.45" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 5: Specular Sheen (0.0 - 1.0) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderSpecular">Specular Sheen</label>
+              <span class="slider-val" id="valSpecular">0.70</span>
+            </div>
+            <input type="range" id="sliderSpecular" min="0" max="1" step="0.01" value="0.70" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 6: Index of Refraction (1.0 - 2.5) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderIOR">IOR (Refraction Index)</label>
+              <span class="slider-val" id="valIOR">1.52</span>
+            </div>
+            <input type="range" id="sliderIOR" min="1.0" max="2.5" step="0.01" value="1.52" class="studio-slider" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Action & Export Controls (Bottom) -->
+      <div class="studio-actions-card">
+        <div class="actions-split-row">
+          <button type="button" class="btn-action-split" id="btnResetPosition">
+            <span>⟲ Reset position</span>
+          </button>
+          <button type="button" class="btn-action-split" id="btnSaveFavorite">
+            <span id="favHeart">♡ Save to favourites</span>
+          </button>
+        </div>
+
+        <button type="button" class="btn-action-full mt-2" id="btnCopyLink">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+          <span>Copy link</span>
+        </button>
+
+        <button type="button" class="btn-action-primary mt-2" id="btnCopyPrompt">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Copy shader prompt</span>
+        </button>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="studioToast" class="toast hidden">Copied shader prompt to clipboard!</div>
+
+  <!-- Studio WebGL Application Logic -->
+  <script src="refract-studio.js"></script>
+</body>
+</html>

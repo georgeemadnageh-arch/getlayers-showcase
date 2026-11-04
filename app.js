@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="tool-tech-row">${techTags}</div>
           <div class="card-footer">
             <span class="btn-card-action btn-tool-action">
-              <span>${item.id === 'holographic-cloth' ? 'Launch 3D Studio ↗' : 'Inspect Tool Specs'}</span>
+              <span>${item.id === 'holographic-cloth' ? 'Launch 3D Studio ↗' : item.id === 'refract' ? 'Launch Refract Studio ↗' : 'Inspect Tool Specs'}</span>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
@@ -332,6 +332,8 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('click', () => {
         if (item.id === 'holographic-cloth') {
           window.location.href = 'tools/holographic-cloth/index.html';
+        } else if (item.id === 'refract') {
+          window.location.href = 'tools/refract/index.html';
         } else {
           openModal(item, toolLikes);
         }
@@ -469,11 +471,33 @@ document.addEventListener('DOMContentLoaded', () => {
     modalTitle.textContent = item.title;
     modalDesc.textContent = item.description || `A cinematic, ultra-polished ${catLabel.toLowerCase()} engineered with smooth physics, dark-mode elegance, and high visual impact.`;
 
-    const studioLaunchBtn = document.getElementById('modalStudioLaunchLink');
-    if (item.id === 'holographic-cloth') {
-      if (studioLaunchBtn) studioLaunchBtn.classList.remove('hidden');
-    } else {
-      if (studioLaunchBtn) studioLaunchBtn.classList.add('hidden');
+    let studioLaunchBtn = document.getElementById('modalStudioLaunchLink');
+    if (!studioLaunchBtn) {
+      const modalActions = document.querySelector('.modal-actions');
+      if (modalActions) {
+        studioLaunchBtn = document.createElement('a');
+        studioLaunchBtn.id = 'modalStudioLaunchLink';
+        studioLaunchBtn.className = 'btn-primary hidden';
+        studioLaunchBtn.innerHTML = `<span>Launch Studio ↗</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>`;
+        modalActions.insertBefore(studioLaunchBtn, modalActions.firstChild);
+      }
+    }
+    if (studioLaunchBtn) {
+      if (item.id === 'refract') {
+        studioLaunchBtn.href = 'tools/refract/index.html';
+        const span = studioLaunchBtn.querySelector('span');
+        if (span) span.textContent = 'Launch Refract Studio ↗';
+        else studioLaunchBtn.textContent = 'Launch Refract Studio ↗';
+        studioLaunchBtn.classList.remove('hidden');
+      } else if (item.id === 'holographic-cloth') {
+        studioLaunchBtn.href = 'tools/holographic-cloth/index.html';
+        const span = studioLaunchBtn.querySelector('span');
+        if (span) span.textContent = 'Launch 3D Studio ↗';
+        else studioLaunchBtn.textContent = 'Launch 3D Studio ↗';
+        studioLaunchBtn.classList.remove('hidden');
+      } else {
+        studioLaunchBtn.classList.add('hidden');
+      }
     }
 
     // Dynamic detection of available views
