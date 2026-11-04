@@ -1,0 +1,19 @@
+{
+  "id": "nexus",
+  "title": "Nexus \u2014 Next-Gen Autonomous AI Systems",
+  "tier": "Premium",
+  "category": "template",
+  "author": "Alex Savostianick (GetLayers Co-Founder)",
+  "provenance": "Harvested from official author repository https://github.com/AlexSavostianick/getlayers-nexus",
+  "figmaKey": "WINXFW2nTM7zYwd5dGgm1T",
+  "verifiedAssets": {
+    "astronaut.glb": "https://raw.githubusercontent.com/AlexSavostianick/getlayers-nexus/main/public/assets/hero/astronaut.glb",
+    "nexus.mp4": "https://storage.getlayers.ai/templates/nexus-4d86deb149.mp4",
+    "nexus.webp": "https://storage.getlayers.ai/templates/nexus-4d86deb149.webp"
+  },
+  "linesCount": 553,
+  "charsCount": 16776,
+  "engine": "Three.js r160 + GLTFLoader + Audiowide Exclusion Typography",
+  "hasRealGLB": true,
+  "status": "verified"
+}
