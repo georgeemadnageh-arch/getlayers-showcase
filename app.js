@@ -352,23 +352,191 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === detailModal) closeModal();
   });
 
-  // Prompt Generator
+  // Prompt Generator - Authentic Deep Architectural Specification
   function generatePrompt(item) {
+    const title = item.title || 'Cinematic Component';
+    const catType = item.categoryType || item.category || 'templates';
     const catLabel = item.categoryLabel || item.category || 'Component';
-    const stackStr = Array.isArray(item.stack) ? item.stack.join(', ') : 'Next.js, Three.js, Tailwind CSS';
-    const tagsStr = Array.isArray(item.tags) ? item.tags.join(', ') : 'interactive, webgl, dark';
+    const tag = item.tag || (Array.isArray(item.tags) && item.tags[0] ? item.tags[0].toUpperCase() : 'PRO');
+    const desc = item.description || `High-end cinematic ${catLabel.toLowerCase()} engineered with physical shaders and micro-interactions.`;
+    
+    // Extract keywords and clean up into choreography narrative
+    const keywords = Array.isArray(item.keywords) ? item.keywords : [];
+    const keywordsStr = keywords.join(', ');
+    
+    // Mood & Tone
+    const moodStr = Array.isArray(item.mood) ? item.mood.join(', ') : (item.mood || 'cinematic, minimal, luxury');
+    const toneStr = item.tone || 'dark';
 
-    return `Create a high-end cinematic web component inspired by "${item.title}".
-Style: Ultra-modern Dark Theme, minimal pure black canvas (#070709), crisp borders (rgba(255,255,255,0.08)), subtle ambient glows.
-Component Role: ${catLabel} (${item.tag || 'General'})
-Tech Stack: ${stackStr}
-Tags: ${tagsStr}
-Core Concept: ${item.description || item.title}
-Key Requirements:
-- Use React / Next.js with Tailwind CSS and smooth spring-based physics.
-- Responsive across desktop, tablet, and mobile with fluid rem scaling.
-- Semantic HTML tags, zero TypeScript 'any' types, accessible colors and contrast.
-- Visual elements should convey depth, elegance, and premium editorial polish.`;
+    // Performance & Lighthouse Metrics from Real Audit
+    const opt = item.optimizationReport || {};
+    const desktopPerf = opt.performance && opt.performance.desktop ? opt.performance.desktop : null;
+    const desktopSeo = opt.seo && opt.seo.desktop && opt.seo.desktop.scores ? opt.seo.desktop.scores : null;
+
+    let perfSection = '';
+    if (desktopPerf || desktopSeo) {
+      perfSection = `
+## 5. PRODUCTION BENCHMARKS & QUALITY BUDGET
+- Frame Budget: 60fps locked (16.6ms frame budget, zero CPU jank)
+${desktopPerf ? `- Viewport Measured: ${desktopPerf.viewport.width}x${desktopPerf.viewport.height} | Input: ${desktopPerf.input} | Verdict: ${desktopPerf.verdict.toUpperCase()}` : ''}
+${desktopPerf ? `- Frame Metrics: p50: ${desktopPerf.p50}ms | p95: ${desktopPerf.p95}ms | Dropped Frames: ${desktopPerf.droppedPct}% (${desktopPerf.frames} frames measured)` : ''}
+${desktopSeo ? `- Target Lighthouse Audit: Performance: ${desktopSeo.performance}/100 | Accessibility: ${desktopSeo.accessibility}/100 | Best Practices: ${desktopSeo.bestPractices}/100 | SEO: ${desktopSeo.seo}/100` : '- Target Lighthouse Audit: Performance: 100 | Accessibility: 100 | Best Practices: 100 | SEO: 100'}`;
+    } else {
+      perfSection = `
+## 5. PRODUCTION BENCHMARKS & QUALITY BUDGET
+- Frame Budget: 60fps locked (16.6ms frame budget, zero CPU jank, instanced WebGL rendering)
+- Target Lighthouse Audit: Performance: 100/100 | Accessibility: 100/100 | Best Practices: 100/100 | SEO: 100/100
+- Scalability: Responsive CSS fluid clamp scaling from mobile (390px) to ultra-wide (2560px)`;
+    }
+
+    // Direct Assets
+    const videoUrl = item.posterVideo || item.previewVideo || '';
+    const imgUrl = item.image || item.previewImage || '';
+
+    // Category 1: Interactive Tools
+    if (catType === 'tools' || item.route) {
+      const techList = Array.isArray(item.tech) ? item.tech.join(', ') : 'Three.js, WebGL, GLSL, Verlet Physics';
+      return `# AI SOFTWARE ARCHITECTURE SPECIFICATION: ${title.toUpperCase()} (3D Web Studio)
+
+## 1. STUDIO ENGINE & 3D CANVAS
+- Application Role: Interactive WebGL Design Software & Shader Sandbox
+- Technology Stack: Next.js 16, React 19, Three.js r128+, WebGL 2.0, GLSL, Tailwind CSS
+- Core Capability: ${desc}
+- Stack Technologies: ${techList}
+
+## 2. STUDIO WORKSPACE & DUAL CONTROL PANELS
+- Left Panel (Asset Pipeline):
+  - Drag & Drop zone supporting PNG, JPG, WebP, SVG file uploads.
+  - Live texture remapping onto 3D geometry in real-time.
+  - Preset library manager with instant parameter serialization.
+- Center Viewport:
+  - Full-resolution interactive WebGL viewport with orbit physics (damping ~0.05).
+  - Physics-reactive surface with spring wave simulation.
+- Right Panel (Live Shader Sliders):
+  - Base Color picker (Hex format), Rainbow iridescence intensity, Pattern scale, Hue shift, Glitter noise sparkle.
+  - Reset camera position action, Save to favorites, and Prompt generation.
+
+## 3. ASSET & CODE REPRODUCTION DIRECTIVES
+- Direct Studio Route: tools/${item.id}/index.html
+- Ensure all shaders use floating-point precision, avoid uniform branching in fragment shaders, and maintain 60fps lock.`;
+    }
+
+    // Category 2: Procedural WebGL Gradients
+    if (catType === 'gradients') {
+      return `# AI SHADER SPECIFICATION: ${title.toUpperCase()} (Procedural WebGL Gradient)
+
+## 1. COMPONENT ROLE & RENDERING PIPELINE
+- Role: Full-bleed Procedural Ambient Shader Layer (Background / Hero Canvas)
+- Stack: WebGL 2.0 Fragment Shader, React Three Fiber (ShaderPass / FullscreenQuad) or Vanilla Canvas
+- Atmosphere & Tone: Tone: ${toneStr} | Mood: ${moodStr}
+
+## 2. PROCEDURAL ALGORITHM & GLSL EQUATIONS
+- Visual Concept: ${desc}
+- Shader Keywords & Harmonic Resonance:
+  ${keywordsStr || 'fluid, procedural, ambient, chromatic, organic, webgl, glsl'}
+- Uniform Inputs Required:
+  \`uniform float uTime;\` // Single shared clock for infinite seamless drift
+  \`uniform vec2 uResolution;\` // Viewport dimensions for non-stretched aspect ratio
+  \`uniform vec2 uMouse;\` // Normalized cursor coordinates for subtle magnetic distortion
+
+## 3. COLOR PALETTE & DYNAMICS
+- Shading Math: Multi-octave Perlin / Simplex 2D noise or Fractal Brownian Motion (FBM).
+- Color Blending: Cosine-based smooth spectral palette interpolation, preventing mudding in darker regions.
+- Frame Rate Target: Locked 60fps with low GPU wattage and battery preservation.
+
+## 4. GROUND TRUTH ASSET REFERENCES
+- Master Video Loop: ${videoUrl || 'Procedural WebGL Shader'}
+- Poster Frame: ${imgUrl}
+- Reference ID: ${item.id} on getlayers.ai/layer/${item.id}`;
+    }
+
+    // Category 3: 3D Scenes
+    if (catType === '3d_scenes') {
+      return `# AI 3D WEBGL SPECIFICATION: ${title.toUpperCase()} (Interactive Three.js Scene)
+
+## 1. 3D SCENE ARCHITECTURE & ENVIRONMENT
+- Component Role: Interactive 3D Model / WebGL Hero Asset
+- Stack: React Three Fiber (@react-three/fiber, @react-three/drei) or Vanilla Three.js r128+
+- Canvas Setup: Pure black canvas (#050608), ACESFilmicToneMapping, exposure ~1.15
+- Controls: Smooth OrbitControls with inertia damping (dampingFactor: 0.05), restricted elevation to prevent scene inversion
+
+## 2. 3D GEOMETRY, LIGHTING & SHADER CHOREOGRAPHY
+- Scene Description: ${desc}
+- Geometry & Scene Detail Keywords:
+  ${keywordsStr || '3d, webgl, model, physical-material, specular-highlights, cinematic'}
+- Material Specifications: MeshPhysicalMaterial with transmission: ~0.9, roughness: ~0.15, metalness: ~0.1, and subtle chromatic Fresnel rim.
+- Lighting Scheme: 3-point studio setup (Key directional light with soft shadows, cool ambient fill, and sharp rim highlight).
+
+## 3. INTERACTIVE PHYSICS & MOTION
+- Cursor Tracking: Spring inertia parallax following mouse pointer across the screen.
+- Scroll Scrubbing: Rotational delta bound to user scroll progress via requestAnimationFrame loop.
+- Micro-interactions: Click-to-react physics bounce or burst assembly.
+${perfSection}
+
+## 6. GROUND TRUTH ASSET REFERENCES
+- Master 4K Video Loop: ${videoUrl}
+- Poster Frame: ${imgUrl}
+- Reference ID: ${item.id} on getlayers.ai/layer/${item.id}`;
+    }
+
+    // Category 4: Backgrounds
+    if (catType === 'backgrounds') {
+      const isStatic = item.mediaType === 'static' || !videoUrl;
+      return `# AI COMPONENT SPECIFICATION: ${title.toUpperCase()} (Cinematic Background Layer)
+
+## 1. MEDIA LAYER INTEGRATION
+- Media Type: ${isStatic ? 'High-Resolution 4K Static Poster Layer' : 'Seamless 4K Infinite Video Loop'}
+- HTML5 Container: Full-bleed relative/fixed aspect-ratio wrapper (\`aspect-[960/684]\` or \`aspect-video\`) with \`overflow: hidden; pointer-events: none;\`
+${!isStatic ? `- Video Element Setup: \`<video autoPlay loop muted playsInline preload="auto" class="w-full h-full object-cover">\`` : '- Image Element Setup: `<img src="..." alt="${title}" loading="eager" class="w-full h-full object-cover">`'}
+
+## 2. EDITORIAL OVERLAY & ATMOSPHERIC TREATMENT
+- Concept: ${desc}
+- Mood & Aesthetic: Tone: ${toneStr} | Mood: ${moodStr}
+- Keywords & Visual Texture: ${keywordsStr || 'cinematic, dark, high-res, backdrop'}
+- Contrast Protection: Dual vignette overlay with \`radial-gradient(ellipse at center, transparent 35%, rgba(5,6,8,0.75) 100%)\` to guarantee white typography readability.
+${perfSection}
+
+## 6. DIRECT ASSET ENDPOINTS
+- Media Source: ${videoUrl || imgUrl}
+- High-Res Poster Fallback: ${imgUrl}
+- Reference ID: ${item.id} on getlayers.ai/layer/${item.id}`;
+    }
+
+    // Category 5: Templates (Landing pages, Hero sections, e-commerce)
+    return `# AI ENGINEERING SPECIFICATION: ${title.toUpperCase()} (Production Next.js 16 Web Application)
+
+## 1. COMPONENT ROLE & ARCHITECTURAL FOUNDATION
+- Component Role: ${catLabel} (${tag})
+- Target Framework: Next.js 16 (App Router, React 19 Server Components)
+- Core Libraries: Three.js / React Three Fiber (@react-three/fiber, @react-three/drei), GSAP (ScrollTrigger), Tailwind CSS, Lucide Icons
+- Mood & Aesthetic: Tone: ${toneStr} | Mood: ${moodStr}
+- Responsive Scope: Mobile-first responsive fluid scaling with CSS \`clamp()\` rem values.
+
+## 2. SCENE VISUAL CONCEPT & ART DIRECTION
+- Editorial Concept: ${desc}
+- Detailed Geometric Choreography & Visual Scene Assets:
+  ${keywordsStr || 'hero, cinematic, nextjs, threejs, webgl, dark, landing-page'}
+
+## 3. 3D MESH, SHADERS & LIGHTING SPECIFICATIONS
+- Shading Pipeline: MeshPhysicalMaterial with custom roughness map, transmission, and spectral Fresnel rim lighting.
+- Lighting Scheme: Balanced 3-point studio lighting (Neutral Key, cool ambient fill, and high-contrast rim light).
+- WebGL Optimization: Target 60fps locked, instanced mesh rendering for repeating particles/drifters, frustum culling enabled, zero CPU bottlenecks.
+
+## 4. INTERACTION CHOREOGRAPHY & SPRING PHYSICS
+- Cursor Tracking: Spring-interpolated inertia lag (damping ~0.08) reacting to mouse position across canvas.
+- Animation Scrubbing: Single shared clock driving synchronized multi-phase scroll triggers via GSAP ScrollTrigger.
+- Interactive Feedback: Dynamic state changes on hover and click (zero layout shifts, micro-haptic visual feedback).
+${perfSection}
+
+## 6. PRODUCTION ENGINEERING REQUIREMENTS
+- TypeScript: 100% strict type safety, zero \`any\` types, well-defined prop interfaces.
+- Accessibility: Semantic HTML5 tags (<header>, <main>, <section>, <article>), ARIA live regions for dynamic states.
+- Error Boundaries: Graceful WebGL context loss recovery with automatic canvas recreation.
+
+## 7. GROUND TRUTH ASSET REFERENCES
+- Master 4K Video Loop: ${videoUrl}
+- Poster Frame Still: ${imgUrl}
+- Reference ID: ${item.id} on getlayers.ai/layer/${item.id}`;
   }
 
   // Copy Prompt to Clipboard
