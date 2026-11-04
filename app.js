@@ -1,4 +1,1111 @@
-document.addEventListener('DOMContentLoaded', () => {
+// ==========================================================================
+// Universal Verbatim Assembly Blueprint Engine
+// ==========================================================================
+const COLOR_MAP = {
+  emerald: { name: 'Emerald', hex: '#10b981', glow: '#34d399', num: '0x10b981' },
+  teal: { name: 'Teal', hex: '#0d9488', glow: '#2dd4bf', num: '0x0d9488' },
+  sapphire: { name: 'Sapphire', hex: '#3b82f6', glow: '#60a5fa', num: '0x3b82f6' },
+  blue: { name: 'Cobalt Blue', hex: '#2563eb', glow: '#60a5fa', num: '0x2563eb' },
+  cyan: { name: 'Electric Cyan', hex: '#06b6d4', glow: '#22d3ee', num: '0x06b6d4' },
+  aqua: { name: 'Aqua', hex: '#02d2e3', glow: '#38bdf8', num: '0x02d2e3' },
+  vermilion: { name: 'Vermilion', hex: '#e11d48', glow: '#fb7185', num: '0xe11d48' },
+  ruby: { name: 'Ruby', hex: '#e11d48', glow: '#f43f5e', num: '0xe11d48' },
+  crimson: { name: 'Crimson', hex: '#f43f5e', glow: '#fb7185', num: '0xf43f5e' },
+  rose: { name: 'Rose', hex: '#f43f5e', glow: '#fda4af', num: '0xf43f5e' },
+  red: { name: 'Cadmium Red', hex: '#ef4444', glow: '#f87171', num: '0xef4444' },
+  orange: { name: 'Blaze Orange', hex: '#f97316', glow: '#fb923c', num: '0xf97316' },
+  amber: { name: 'Warm Amber', hex: '#f59e0b', glow: '#fbbf24', num: '0xf59e0b' },
+  yellow: { name: 'Sunlit Yellow', hex: '#eab308', glow: '#fde047', num: '0xeab308' },
+  lime: { name: 'Electric Lime', hex: '#84cc16', glow: '#a3e635', num: '0x84cc16' },
+  green: { name: 'Forest Green', hex: '#22c55e', glow: '#4ade80', num: '0x22c55e' },
+  magenta: { name: 'Neon Magenta', hex: '#ec4899', glow: '#f472b6', num: '0xec4899' },
+  violet: { name: 'Deep Violet', hex: '#8b5cf6', glow: '#a78bfa', num: '0x8b5cf6' },
+  purple: { name: 'Royal Purple', hex: '#a855f7', glow: '#c084fc', num: '0xa855f7' },
+  indigo: { name: 'Electric Indigo', hex: '#6366f1', glow: '#818cf8', num: '0x6366f1' },
+  gold: { name: 'Polished Gold', hex: '#d4af37', glow: '#fde047', num: '0xd4af37' },
+  bronze: { name: 'Molten Bronze', hex: '#cd7f32', glow: '#f59e0b', num: '0xcd7f32' },
+  chrome: { name: 'Specular Chrome', hex: '#94a3b8', glow: '#cbd5e1', num: '0x94a3b8' },
+  silver: { name: 'Sterling Silver', hex: '#cbd5e1', glow: '#f1f5f9', num: '0xcbd5e1' }
+};
+
+const DEFAULT_PALETTES = [
+  [COLOR_MAP.sapphire, COLOR_MAP.cyan],
+  [COLOR_MAP.emerald, COLOR_MAP.teal],
+  [COLOR_MAP.vermilion, COLOR_MAP.amber],
+  [COLOR_MAP.violet, COLOR_MAP.magenta],
+  [COLOR_MAP.gold, COLOR_MAP.bronze],
+  [COLOR_MAP.indigo, COLOR_MAP.purple],
+  [COLOR_MAP.chrome, COLOR_MAP.cyan],
+  [COLOR_MAP.yellow, COLOR_MAP.orange]
+];
+
+function deriveItemKind(item) {
+  if (item.route || (item.tech && Array.isArray(item.tech)) || (item.category && (item.category.includes('Shader') || item.category.includes('Optics')))) {
+    return 'tool';
+  }
+  const cat = (item.categoryType || item.category || '').toLowerCase();
+  const img = (item.image || item.previewImage || '').toLowerCase();
+  
+  if (item.shaderHash || img.includes('/gradients/') || cat === 'gradients' || cat === 'gradient') {
+    return 'gradient';
+  }
+  if (img.includes('/3d_scenes/') || cat === '3d_scenes' || cat === '3d_scene' || item.sceneLive) {
+    return '3d_scene';
+  }
+  if (img.includes('/backgrounds/') || cat === 'backgrounds' || cat === 'background') {
+    return 'background';
+  }
+  if (cat === 'sections' || cat === 'section') {
+    return 'section';
+  }
+  return 'template';
+}
+
+function extractColors(item) {
+  if (Array.isArray(item.hues) && item.hues.length > 0) {
+    const c1 = COLOR_MAP[item.hues[0].toLowerCase()] || null;
+    const c2 = item.hues[1] ? (COLOR_MAP[item.hues[1].toLowerCase()] || null) : null;
+    if (c1) return [c1, c2 || COLOR_MAP.cyan];
+  }
+  const text = ((item.keywords || []).join(' ') + ' ' + (item.description || '') + ' ' + (item.title || '')).toLowerCase();
+  const matched = [];
+  for (const [key, val] of Object.entries(COLOR_MAP)) {
+    if (text.includes(key)) {
+      matched.push(val);
+      if (matched.length >= 2) break;
+    }
+  }
+  if (matched.length >= 2) return matched;
+  if (matched.length === 1) return [matched[0], COLOR_MAP.cyan];
+
+  const str = item.id || item.title || 'default';
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0;
+  }
+  const idx = Math.abs(hash) % DEFAULT_PALETTES.length;
+  return DEFAULT_PALETTES[idx];
+}
+
+function deriveConcept(item, kind, c1, c2) {
+  const id = item.id;
+  if (id === 'kimi') return 'Formula 1 Driver Kinetic Experience';
+  if (id === 'prisma') return 'Frosted Vermilion Glass Kinetic Cube';
+  if (id === 'lumi-re') return 'Living Emerald Pendant & Gold Ring Carousel';
+  if (id === 'lumora') return 'Minimalist Design-and-Engineering Studio';
+  if (id === 'orb') return 'Luminous Iridescent Light Sphere';
+  if (id === 'pixel-glass') return 'Refractive Glass Glyph in Starfield';
+  if (id === 'komorebi') return 'Leaf Shadow Canopy & Radiant Light Discs';
+  if (id === 'antipode') return 'Dual Mass Contrast Chromatic Field';
+  if (id === 'yellow-liquid-ripples') return '4K Fluid Chromatic Ripple Simulation';
+  if (id === 'metal-human') return 'Cinematic Metallic Chrome Humanoid';
+  if (id === 'refract') return 'Real-Time Glass Refraction & Dispersion Engine';
+  if (id === 'ascii-studio') return 'Shader-Based ASCII Typography Studio';
+
+  if (kind === 'tool') {
+    return `${item.category || 'Interactive Studio'} & GLSL Shader Engine`;
+  }
+  if (kind === 'gradient') {
+    if (Array.isArray(item.hues) && item.hues.length > 0) {
+      const hStr = item.hues.slice(0, 2).map(h => h.charAt(0).toUpperCase() + h.slice(1)).join(' & ');
+      return `${hStr} Procedural WebGL Gradient`;
+    }
+    return `${c1.name} & ${c2.name} Procedural Chromatic Flow`;
+  }
+  if (kind === '3d_scene') {
+    if (item.typeTags && item.typeTags[0]) {
+      const tagStr = item.typeTags[0].split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      return `${tagStr} 3D WebGL Experience`;
+    }
+    return `${c1.name} Interactive Three.js Scene`;
+  }
+  if (kind === 'background') {
+    return `4K ${c1.name} Cinematic Motion Backdrop`;
+  }
+  if (kind === 'section') {
+    return `Editorial ${c1.name} Section Architecture`;
+  }
+  return `${c1.name} Cinematic WebGL Experience`;
+}
+
+function cleanDescription(item, kind, title, c1, c2) {
+  const raw = (item.description || '').trim();
+  if (item.id === 'yellow-liquid-ripples') {
+    return 'A fluid, chromatic backdrop of melting yellow ripples and sunlit cream streaks, undulating with organic wave dynamics across an ultra-high-definition canvas.';
+  }
+  if (item.id === 'metal-human') {
+    return 'A futuristic humanoid form sculpted in liquid mercury and polished chrome, catching specular studio highlights as light sweeps across its articulated metallic contours.';
+  }
+  if (raw.startsWith('Source files include') || raw.startsWith('Source files are include') || raw.length < 15) {
+    if (kind === 'background') {
+      return `A seamless 4K cinematic backdrop featuring organic ${c1.name.toLowerCase()} fluid dynamics and chromatic depth ripples, illuminated on a deep chiaroscuro stage.`;
+    }
+    if (kind === 'gradient') {
+      return `A full-bleed procedural WebGL shader layer breathing with multi-octave harmonic noise, smoothly interpolating between ${c1.name.toLowerCase()} and ${c2.name.toLowerCase()}.`;
+    }
+    if (kind === '3d_scene') {
+      return `An interactive 3D WebGL scene centered on a procedural ${c1.name.toLowerCase()} geometry orbiting with cursor physics and chiaroscuro studio lighting.`;
+    }
+    if (kind === 'tool') {
+      return `A high-performance interactive 3D WebGL studio and shader workstation featuring real-time parameter tweaking, live asset mapping, and export pipelines.`;
+    }
+    return `A cinematic, scroll-driven web experience engineered with high-end ${c1.name.toLowerCase()} physical materials and reactive micro-interactions.`;
+  }
+  return raw.replace(/\\n/g, ' ').replace(/\s+/g, ' ');
+}
+
+function generatePrompt(item) {
+  const generateBlueprint = generatePrompt;
+  if (typeof window !== 'undefined' && window.GETLAYERS_BLUEPRINTS && window.GETLAYERS_BLUEPRINTS[item.id]) {
+    return window.GETLAYERS_BLUEPRINTS[item.id];
+  }
+  if (typeof global !== 'undefined' && global.window && global.window.GETLAYERS_BLUEPRINTS && global.window.GETLAYERS_BLUEPRINTS[item.id]) {
+    return global.window.GETLAYERS_BLUEPRINTS[item.id];
+  }
+
+  const title = item.title || 'Cinematic Component';
+  const kind = deriveItemKind(item);
+  const tag = item.tag || (kind === 'tool' ? 'STUDIO' : (kind === 'background' ? 'BACKGROUND' : (kind === 'gradient' ? 'GRADIENT' : (kind === '3d_scene' ? '3D SCENE' : 'TEMPLATE'))));
+  const [c1, c2] = extractColors(item);
+  const concept = deriveConcept(item, kind, c1, c2);
+  const description = cleanDescription(item, kind, title, c1, c2);
+
+  const keywords = Array.isArray(item.keywords) && item.keywords.length > 0 
+    ? item.keywords.slice(0, 15).join(', ') 
+    : `${kind}, webgl, threejs, cinematic, dark, physical-material, 60fps`;
+
+  const moodList = Array.isArray(item.mood) ? item.mood.join(', ') : (item.mood || 'cinematic, luxury, technical');
+  const tone = item.tone || 'dark';
+
+  const videoUrl = item.posterVideo || item.previewVideo || `https://storage.getlayers.ai/${kind === '3d_scene' ? '3d_scenes' : (kind === 'gradient' ? 'gradients' : (kind === 'background' ? 'backgrounds' : 'templates'))}/${item.id}.mp4`;
+  const imgUrl = item.image || item.previewImage || `https://storage.getlayers.ai/${kind === '3d_scene' ? '3d_scenes' : (kind === 'gradient' ? 'gradients' : (kind === 'background' ? 'backgrounds' : 'templates'))}/${item.id}.webp`;
+  const desktopUrl = item.mockupDesktop || videoUrl.replace('.mp4', '-desktop.mp4');
+  const mobileUrl = item.mockupMobile || videoUrl.replace('.mp4', '-mobile.mp4');
+  const refUrl = kind === 'tool' ? `https://getlayers.ai/tools/${item.id}` : `https://getlayers.ai/layer/${item.id}`;
+
+  let geometryCode = '';
+  let shaderCode = '';
+  let layoutControls = '';
+
+  if (kind === 'tool') {
+    geometryCode = `// 3. Tool Centerpiece Geometry: Dynamic Refractive Core
+const geometry = new THREE.IcosahedronGeometry(1.25, 4);
+const material = new THREE.MeshPhysicalMaterial({
+    color: new THREE.Color('${c1.hex}'),
+    roughness: 0.12,
+    metalness: 0.08,
+    transmission: 0.95,
+    thickness: 1.4,
+    ior: 1.54,
+    chromaticAberration: 0.08,
+    clearcoat: 1.0,
+    clearcoatRoughness: 0.1,
+    attenuationColor: new THREE.Color('${c2.hex}'),
+    attenuationDistance: 1.2
+});
+const heroMesh = new THREE.Mesh(geometry, material);
+heroMesh.castShadow = true;
+heroMesh.receiveShadow = true;
+scene.add(heroMesh);`;
+
+    shaderCode = `// 4. Interactive Studio Parameter & Custom Uniform Pipeline
+const customUniforms = {
+    uTime: { value: 0 },
+    uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+    uMouse: { value: new THREE.Vector2(0, 0) },
+    uDispersion: { value: 0.08 },
+    uRoughness: { value: 0.12 }
+};
+
+// Background subtle dispersion grid shader plane
+const bgQuadGeo = new THREE.PlaneGeometry(2, 2);
+const bgQuadMat = new THREE.ShaderMaterial({
+    uniforms: customUniforms,
+    vertexShader: \`
+        varying vec2 vUv;
+        void main() {
+            vUv = uv;
+            gl_Position = vec4(position, 1.0);
+        }
+    \`,
+    fragmentShader: \`
+        uniform float uTime;
+        uniform vec2 uResolution;
+        uniform vec2 uMouse;
+        varying vec2 vUv;
+        void main() {
+            vec2 p = (gl_FragCoord.xy * 2.0 - uResolution) / min(uResolution.x, uResolution.y);
+            float d = length(p - uMouse * 0.25);
+            vec3 col = mix(vec3(0.02, 0.025, 0.035), vec3(0.05, 0.07, 0.1), smoothstep(1.5, 0.0, d));
+            gl_FragColor = vec4(col, 1.0);
+        }
+    \`,
+    depthWrite: false,
+    depthTest: false
+});
+const bgMesh = new THREE.Mesh(bgQuadGeo, bgQuadMat);
+camera.add(bgMesh);`;
+
+    layoutControls = `<!-- Studio Workspace Dual-Panel -->
+    <div class="studio-workspace">
+        <div class="panel-left">
+            <div class="panel-card">
+                <span class="panel-label">Asset Pipeline</span>
+                <div class="upload-dropzone" id="dropzone">
+                    <span class="dropzone-text">Drop Texture / Vector SVG</span>
+                </div>
+                <div class="preset-pills">
+                    <button class="pill-btn active">Preset 01: Pure Glass</button>
+                    <button class="pill-btn">Preset 02: Iridescent Core</button>
+                    <button class="pill-btn">Preset 03: Chromatic Aberration</button>
+                </div>
+            </div>
+        </div>
+        <div class="panel-right">
+            <div class="panel-card">
+                <span class="panel-label">Live Shader Uniforms</span>
+                <div class="control-row">
+                    <label>Dispersion</label>
+                    <input type="range" min="0" max="100" value="45" id="slider-dispersion">
+                </div>
+                <div class="control-row">
+                    <label>Roughness</label>
+                    <input type="range" min="0" max="100" value="18" id="slider-roughness">
+                </div>
+                <div class="control-row">
+                    <label>IOR Index</label>
+                    <input type="range" min="100" max="250" value="154" id="slider-ior">
+                </div>
+                <button class="btn-action full-width" id="btn-export">Export Production Shader</button>
+            </div>
+        </div>
+    </div>`;
+
+  } else if (kind === 'gradient') {
+    geometryCode = `// 3. Full-Screen Procedural Shader Plane
+const quadGeo = new THREE.PlaneGeometry(2, 2);
+const customMaterial = new THREE.ShaderMaterial({
+    uniforms: {
+        uTime: { value: 0 },
+        uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+        uMouse: { value: new THREE.Vector2(0, 0) },
+        uColorA: { value: new THREE.Color('${c1.hex}') },
+        uColorB: { value: new THREE.Color('${c2.hex}') },
+        uColorBg: { value: new THREE.Color('#050608') }
+    },
+    vertexShader: \`
+        varying vec2 vUv;
+        void main() {
+            vUv = uv;
+            gl_Position = vec4(position, 1.0);
+        }
+    \`,
+    fragmentShader: \`
+        uniform float uTime;
+        uniform vec2 uResolution;
+        uniform vec2 uMouse;
+        uniform vec3 uColorA;
+        uniform vec3 uColorB;
+        uniform vec3 uColorBg;
+        varying vec2 vUv;
+
+        // Simplex 2D noise implementation
+        vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
+        float snoise(vec2 v){
+            const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
+            vec2 i  = floor(v + dot(v, C.yy));
+            vec2 x0 = v -   i + dot(i, C.xx);
+            vec2 i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+            vec4 x12 = x0.xyxy + C.xxzz;
+            x12.xy -= i1;
+            i = mod(i, 289.0);
+            vec3 p = permute(permute(i.y + vec3(0.0, i1.y, 1.0)) + i.x + vec3(0.0, i1.x, 1.0));
+            vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+            m = m*m; m = m*m;
+            vec3 x = 2.0 * fract(p * C.www) - 1.0;
+            vec3 h = abs(x) - 0.5;
+            vec3 ox = floor(x + 0.5);
+            vec3 a0 = x - ox;
+            m *= 1.79284291400159 - 0.85373472095314 * (a0*a0 + h*h);
+            vec3 g;
+            g.x  = a0.x  * x0.x  + h.x  * x0.y;
+            g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+            return 130.0 * dot(m, g);
+        }
+
+        // Fractal Brownian Motion (FBM)
+        float fbm(vec2 p) {
+            float total = 0.0;
+            float amp = 0.5;
+            for (int i = 0; i < 4; i++) {
+                total += snoise(p) * amp;
+                p = p * 2.05 + vec2(100.0);
+                amp *= 0.5;
+            }
+            return total;
+        }
+
+        void main() {
+            vec2 uv = (gl_FragCoord.xy * 2.0 - uResolution) / min(uResolution.x, uResolution.y);
+            vec2 m = uMouse * 0.4;
+            float t = uTime * 0.18;
+
+            float q = fbm(uv + m + vec2(t * 0.3, t * 0.2));
+            float r = fbm(uv + vec2(q * 1.5) + vec2(t * 0.4, -t * 0.3));
+
+            vec3 col = mix(uColorBg, uColorA, smoothstep(-0.6, 0.8, q));
+            col = mix(col, uColorB, smoothstep(-0.3, 0.9, r));
+
+            // Soft radial vignette and dither
+            float dist = length(uv);
+            col *= smoothstep(1.8, 0.4, dist);
+            gl_FragColor = vec4(col, 1.0);
+        }
+    \`,
+    depthWrite: false,
+    depthTest: false
+});
+const heroMesh = new THREE.Mesh(quadGeo, customMaterial);
+scene.add(heroMesh);`;
+
+    shaderCode = `// 4. Floating Micro-Sparkle Particle Swarm
+const sparkCount = 280;
+const sparkGeo = new THREE.BufferGeometry();
+const sparkPositions = new Float32Array(sparkCount * 3);
+const sparkSeeds = new Float32Array(sparkCount);
+for (let i = 0; i < sparkCount; i++) {
+    sparkPositions[i * 3 + 0] = (Math.random() - 0.5) * 8;
+    sparkPositions[i * 3 + 1] = (Math.random() - 0.5) * 6;
+    sparkPositions[i * 3 + 2] = (Math.random() - 0.5) * 3;
+    sparkSeeds[i] = Math.random() * 100;
+}
+sparkGeo.setAttribute('position', new THREE.BufferAttribute(sparkPositions, 3));
+const sparkMat = new THREE.PointsMaterial({
+    color: new THREE.Color('${c1.glow}'),
+    size: 0.04,
+    transparent: true,
+    opacity: 0.65,
+    blending: THREE.AdditiveBlending
+});
+const particleSystem = new THREE.Points(sparkGeo, sparkMat);
+scene.add(particleSystem);`;
+
+    layoutControls = `<!-- Floating Gradient HUD -->
+    <div class="floating-hud">
+        <div class="hud-pill">
+            <span class="hud-dot"></span>
+            <span class="hud-label">Harmonic Palette:</span>
+            <span class="hud-val">${c1.name} / ${c2.name}</span>
+        </div>
+        <div class="hud-pill">
+            <span class="hud-label">Algorithm:</span>
+            <span class="hud-val">4-Octave Simplex FBM</span>
+        </div>
+        <div class="hud-pill">
+            <span class="hud-label">Frame Budget:</span>
+            <span class="hud-val">16.6ms (60 FPS Locked)</span>
+        </div>
+    </div>`;
+
+  } else if (kind === '3d_scene') {
+    geometryCode = `// 3. Central 3D Geometry Choreography
+${item.id === 'orb' || keywords.includes('sphere') || keywords.includes('orb') ? `// Fibonacci Iridescent Sphere Point Cloud
+const pointCount = 14000;
+const pointsGeo = new THREE.BufferGeometry();
+const posArray = new Float32Array(pointCount * 3);
+const colArray = new Float32Array(pointCount * 3);
+const phi = Math.PI * (3 - Math.sqrt(5));
+
+for (let i = 0; i < pointCount; i++) {
+    const y = 1 - (i / (pointCount - 1)) * 2;
+    const radius = Math.sqrt(1 - y * y);
+    const theta = phi * i;
+    
+    posArray[i * 3 + 0] = Math.cos(theta) * radius * 1.35;
+    posArray[i * 3 + 1] = y * 1.35;
+    posArray[i * 3 + 2] = Math.sin(theta) * radius * 1.35;
+
+    const t = i / pointCount;
+    const col = new THREE.Color().lerpColors(new THREE.Color('${c1.hex}'), new THREE.Color('${c2.hex}'), t);
+    colArray[i * 3 + 0] = col.r;
+    colArray[i * 3 + 1] = col.g;
+    colArray[i * 3 + 2] = col.b;
+}
+pointsGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+pointsGeo.setAttribute('color', new THREE.BufferAttribute(colArray, 3));
+
+const pointsMat = new THREE.PointsMaterial({
+    size: 0.024,
+    vertexColors: true,
+    transparent: true,
+    opacity: 0.88,
+    blending: THREE.AdditiveBlending
+});
+const heroMesh = new THREE.Points(pointsGeo, pointsMat);
+scene.add(heroMesh);` : (item.id === 'pixel-glass' || keywords.includes('pixel') || keywords.includes('glass') ? `// Refractive Voxel Glass Monolith
+const group = new THREE.Group();
+const cubeGeo = new THREE.BoxGeometry(0.38, 0.38, 0.38);
+const glassMat = new THREE.MeshPhysicalMaterial({
+    color: new THREE.Color('${c1.hex}'),
+    roughness: 0.06,
+    metalness: 0.04,
+    transmission: 0.96,
+    thickness: 1.6,
+    ior: 1.62,
+    chromaticAberration: 0.06,
+    clearcoat: 1.0,
+    attenuationColor: new THREE.Color('${c2.hex}'),
+    attenuationDistance: 1.5
+});
+
+for (let x = -2; x <= 2; x++) {
+    for (let y = -2; y <= 2; y++) {
+        if ((x + y) % 2 === 0) {
+            const m = new THREE.Mesh(cubeGeo, glassMat);
+            m.position.set(x * 0.42, y * 0.42, (Math.random() - 0.5) * 0.2);
+            m.castShadow = true;
+            m.receiveShadow = true;
+            group.add(m);
+        }
+    }
+}
+const heroMesh = group;
+scene.add(heroMesh);` : `// Sculpted Physical Mesh Centerpiece
+const geometry = new THREE.TorusKnotGeometry(0.95, 0.32, 160, 32);
+const material = new THREE.MeshPhysicalMaterial({
+    color: new THREE.Color('${c1.hex}'),
+    roughness: 0.14,
+    metalness: 0.10,
+    transmission: 0.90,
+    thickness: 1.35,
+    ior: 1.52,
+    clearcoat: 0.9,
+    clearcoatRoughness: 0.12,
+    attenuationColor: new THREE.Color('${c2.hex}'),
+    attenuationDistance: 1.8
+});
+const heroMesh = new THREE.Mesh(geometry, material);
+heroMesh.castShadow = true;
+heroMesh.receiveShadow = true;
+scene.add(heroMesh);`)}`;
+
+    shaderCode = `// 4. Drifting Chiaroscuro Sparks System
+const sparkCount = 380;
+const sparkGeo = new THREE.BufferGeometry();
+const sparkPositions = new Float32Array(sparkCount * 3);
+for (let i = 0; i < sparkCount; i++) {
+    sparkPositions[i * 3 + 0] = (Math.random() - 0.5) * 6;
+    sparkPositions[i * 3 + 1] = (Math.random() - 0.5) * 6;
+    sparkPositions[i * 3 + 2] = (Math.random() - 0.5) * 4;
+}
+sparkGeo.setAttribute('position', new THREE.BufferAttribute(sparkPositions, 3));
+const sparkMat = new THREE.PointsMaterial({
+    color: new THREE.Color('${c1.glow}'),
+    size: 0.035,
+    transparent: true,
+    opacity: 0.75,
+    blending: THREE.AdditiveBlending
+});
+const particleSystem = new THREE.Points(sparkGeo, sparkMat);
+scene.add(particleSystem);`;
+
+    layoutControls = `<!-- Floating 3D Inspector Dock -->
+    <div class="floating-dock">
+        <div class="dock-header">
+            <span class="dock-title">3D Stage Parameters</span>
+            <span class="dock-badge">Interactive</span>
+        </div>
+        <div class="dock-stats">
+            <div class="stat-item">
+                <span class="stat-num">60fps</span>
+                <span class="stat-lbl">Physics</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-num">ACES</span>
+                <span class="stat-lbl">Filmic Tone</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-num">PCF</span>
+                <span class="stat-lbl">Soft Shadows</span>
+            </div>
+        </div>
+    </div>`;
+
+  } else if (kind === 'background') {
+    geometryCode = `// 3. Cinematic 4K Background Plane & Shaders
+const bgPlaneGeo = new THREE.PlaneGeometry(16, 9);
+const customMaterial = new THREE.ShaderMaterial({
+    uniforms: {
+        uTime: { value: 0 },
+        uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+        uMouse: { value: new THREE.Vector2(0, 0) },
+        uColorA: { value: new THREE.Color('${c1.hex}') },
+        uColorB: { value: new THREE.Color('${c2.hex}') }
+    },
+    vertexShader: \`
+        varying vec2 vUv;
+        void main() {
+            vUv = uv;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+    \`,
+    fragmentShader: \`
+        uniform float uTime;
+        uniform vec2 uResolution;
+        uniform vec2 uMouse;
+        uniform vec3 uColorA;
+        uniform vec3 uColorB;
+        varying vec2 vUv;
+        void main() {
+            vec2 p = vUv * 2.0 - 1.0;
+            float t = uTime * 0.25;
+            float wave = sin(p.x * 4.0 + t) * cos(p.y * 3.0 - t * 0.7);
+            vec3 col = mix(vec3(0.02, 0.025, 0.035), uColorA, smoothstep(-0.8, 1.0, wave) * 0.45);
+            col = mix(col, uColorB, smoothstep(0.2, 1.2, wave) * 0.3);
+            float vign = smoothstep(1.4, 0.2, length(p));
+            gl_FragColor = vec4(col * vign, 1.0);
+        }
+    \`
+});
+const heroMesh = new THREE.Mesh(bgPlaneGeo, customMaterial);
+heroMesh.position.z = -2.5;
+scene.add(heroMesh);`;
+
+    shaderCode = `// 4. Atmospheric Floating Ember Field
+const emberCount = 300;
+const emberGeo = new THREE.BufferGeometry();
+const emberPos = new Float32Array(emberCount * 3);
+for (let i = 0; i < emberCount; i++) {
+    emberPos[i * 3 + 0] = (Math.random() - 0.5) * 10;
+    emberPos[i * 3 + 1] = (Math.random() - 0.5) * 8;
+    emberPos[i * 3 + 2] = (Math.random() - 0.5) * 4;
+}
+emberGeo.setAttribute('position', new THREE.BufferAttribute(emberPos, 3));
+const emberMat = new THREE.PointsMaterial({
+    color: new THREE.Color('${c1.glow}'),
+    size: 0.03,
+    transparent: true,
+    opacity: 0.55,
+    blending: THREE.AdditiveBlending
+});
+const particleSystem = new THREE.Points(emberGeo, emberMat);
+scene.add(particleSystem);`;
+
+    layoutControls = `<!-- Atmospheric Backdrop HUD -->
+    <div class="backdrop-controls">
+        <div class="backdrop-pill">
+            <span class="pill-title">Seamless Loop</span>
+            <span class="pill-desc">4K Ultra HD &bullet; 60 FPS Locked</span>
+        </div>
+        <div class="backdrop-pill">
+            <span class="pill-title">Editorial Contrast</span>
+            <span class="pill-desc">Dual Radial Vignette Active</span>
+        </div>
+    </div>`;
+
+  } else {
+    geometryCode = `// 3. Architectural 3D Centerpiece
+const geometry = new THREE.TorusKnotGeometry(0.9, 0.28, 128, 32);
+const material = new THREE.MeshPhysicalMaterial({
+    color: new THREE.Color('${c1.hex}'),
+    roughness: 0.16,
+    metalness: 0.12,
+    transmission: 0.88,
+    thickness: 1.4,
+    ior: 1.52,
+    chromaticAberration: 0.05,
+    clearcoat: 0.9,
+    clearcoatRoughness: 0.1,
+    attenuationColor: new THREE.Color('${c2.hex}'),
+    attenuationDistance: 2.0
+});
+const heroMesh = new THREE.Mesh(geometry, material);
+heroMesh.castShadow = true;
+heroMesh.receiveShadow = true;
+scene.add(heroMesh);`;
+
+    shaderCode = `// 4. Ambient Spark Swarm (400 Additive Point Particles)
+const sparkCount = 400;
+const sparkGeo = new THREE.BufferGeometry();
+const sparkPositions = new Float32Array(sparkCount * 3);
+for (let i = 0; i < sparkCount; i++) {
+    sparkPositions[i * 3 + 0] = (Math.random() - 0.5) * 8;
+    sparkPositions[i * 3 + 1] = (Math.random() - 0.5) * 8;
+    sparkPositions[i * 3 + 2] = (Math.random() - 0.5) * 4;
+}
+sparkGeo.setAttribute('position', new THREE.BufferAttribute(sparkPositions, 3));
+const sparkMat = new THREE.PointsMaterial({
+    color: new THREE.Color('${c1.glow}'),
+    size: 0.038,
+    transparent: true,
+    opacity: 0.8,
+    blending: THREE.AdditiveBlending
+});
+const particleSystem = new THREE.Points(sparkGeo, sparkMat);
+scene.add(particleSystem);`;
+
+    layoutControls = `<!-- Editorial Text Slides (Fade & Blur-Up Progression) -->
+    <main class="slides-container">
+        <section class="slide active" id="slide-1">
+            <div class="slide-tag">${tag} &bull; 01</div>
+            <h1 class="slide-title">${title}</h1>
+            <p class="slide-desc">${description}</p>
+        </section>
+        <section class="slide" id="slide-2">
+            <div class="slide-tag">ARCHITECTURE &bull; 02</div>
+            <h2 class="slide-title">Kinetic Choreography</h2>
+            <p class="slide-desc">Spring-lerped 3D camera orbit with cursor inertia tracking and real-time physical transmission.</p>
+        </section>
+        <section class="slide" id="slide-3">
+            <div class="slide-tag">SPECIFICATION &bull; 03</div>
+            <h2 class="slide-title">Production Quality</h2>
+            <p class="slide-desc">Zero external dependencies, locked 60fps frame budget, and pure unbundled ES module architecture.</p>
+        </section>
+    </main>`;
+  }
+
+  return `# Recreate this site as a single HTML file: ${title} — ${concept}
+
+You are an expert creative front-end developer. Produce a **single self-contained \`index.html\`** that reproduces the project below **exactly** — same layout, sections, visuals, motion, and interaction. Pure HTML/CSS/JS in one file: no build step, no framework, no bundler. Use ES modules with a CDN importmap for Three.js (r0.160 from unpkg). Hardcode every value given here as a fixed constant. Rebuild each component described below as a section of the one file.
+
+## What it is
+
+${description}
+
+- **Atmosphere & Tone**: Tone: \`${tone}\` | Mood: \`${moodList}\`.
+- **Palette Signature**: Primary: \`${c1.name} (${c1.hex})\`, Secondary: \`${c2.name} (${c2.hex})\`, Canvas: \`Deep Black (#050608)\`.
+- **Keywords**: ${keywords}.
+- **Narrative Choreography**:
+  - Full-bleed cinematic viewport stage with fixed WebGL canvas layer (\`#webgl\`) positioned beneath interactive HTML overlays.
+  - Custom two-element pointer (\`.cursor-inner\` and \`.cursor-outer\`) with spring inertia damping (~0.06).
+  - Smooth 3-point chiaroscuro studio lighting casting PCF soft shadows over physical glass and metal materials.
+  - Real-time particle swarms (${kind === 'tool' ? '300+' : '400'} particles) drifting with trigonometric turbulence.
+  - 60 FPS locked render budget (16.6ms frame time) with zero layout shifts and smooth scroll/mouse lerping.
+
+## Page shell & libraries
+
+- \`<!DOCTYPE html>\`, \`lang="en"\`, \`<title>${title} — ${concept}</title>\`, \`<meta charset="UTF-8">\`, \`<meta name="viewport" content="width=device-width, initial-scale=1.0">\`.
+- Load fonts in CSS:
+  \`@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');\`
+- Importmap + module script for Three.js:
+  \`\`\`html
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module">
+    /* all Three.js WebGL and interactive logic runs here */
+  </script>
+  \`\`\`
+- The page model: full viewport cinematic stage (\`width: 100vw; min-height: 100vh; overflow-x: hidden; background: #050608;\`), canvas \`#webgl\` fixed at \`top: 0; left: 0; width: 100vw; height: 100vh; z-index: 1;\`.
+- Native cursor hidden with \`cursor: none !important;\` across all elements, replaced by a custom two-element fluid cursor (\`.cursor-inner\` and \`.cursor-outer\`).
+- All scrollbars disabled with \`scrollbar-width: none;\` and \`::-webkit-scrollbar { display: none; }\`.
+
+## Global CSS (reset + base)
+
+\`\`\`css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none !important;
+}
+
+:root {
+    --bg-dark: #050608;
+    --accent: ${c1.hex};
+    --accent-glow: ${c1.glow};
+    --accent-secondary: ${c2.hex};
+    --text-primary: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.65);
+    --text-dim: rgba(255, 255, 255, 0.35);
+    --card-glass: rgba(18, 22, 28, 0.65);
+    --card-border: rgba(255, 255, 255, 0.12);
+    --card-border-active: rgba(255, 255, 255, 0.45);
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--bg-dark);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-primary);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* Custom Two-Element Fluid Cursor */
+.cursor-inner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: #ffffff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    transition: opacity 0.2s ease;
+}
+
+.cursor-outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border: 1.5px solid rgba(255, 255, 255, 0.65);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9998;
+    transition: width 0.25s ease, height 0.25s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.cursor-outer.hover {
+    width: 54px;
+    height: 54px;
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+#webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    outline: none;
+    display: block;
+    pointer-events: none;
+}
+
+/* Blueprint Grid Layer */
+.blueprint-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 2;
+    background-size: 80px 80px;
+    background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+}
+
+/* UI Overlay Layer */
+.cinematic-container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    min-height: 100vh;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    width: 100%;
+    padding: 28px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 20;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--text-primary);
+}
+
+.brand-badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid var(--card-border);
+    color: var(--accent-glow);
+    text-transform: uppercase;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.header-nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+    color: var(--text-primary);
+}
+
+.btn-action {
+    background: transparent;
+    border: 1px solid var(--card-border-active);
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    transition: all 0.25s ease;
+}
+
+.btn-action:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    box-shadow: 0 0 20px var(--accent-glow);
+}
+\`\`\`
+
+## Layout & sections (in order)
+
+The body markup, in order: two cursor divs, the hairline grid overlay, the \`<canvas id="webgl">\`, and the \`.cinematic-container\` overlay containing the header, brand, slides / headlines, and interactive controls.
+
+### Custom cursor & canvas (top of \`<body>\`)
+\`\`\`html
+<div class="cursor-inner"></div>
+<div class="cursor-outer"></div>
+<div class="blueprint-grid"></div>
+<canvas id="webgl"></canvas>
+\`\`\`
+
+### Main Header \`.main-header\`
+\`\`\`html
+<header class="main-header">
+    <div class="brand">
+        <span class="brand-title">${title.toUpperCase()}</span>
+        <span class="brand-badge">${tag}</span>
+    </div>
+    <nav class="header-nav">
+        <a href="#overview">Overview</a>
+        <a href="#visuals">Visuals</a>
+        <a href="#shaders">Shaders</a>
+        <a href="#specs">Specifications</a>
+    </nav>
+    <div class="header-actions">
+        <button class="btn-action">60 FPS Locked</button>
+    </div>
+</header>
+\`\`\`
+
+### UI Sections & Interactive Controls
+\`\`\`html
+<div class="cinematic-container">
+    ${layoutControls}
+</div>
+\`\`\`
+
+## The WebGL scene / Script
+
+Verbatim production Three.js ES module script:
+
+\`\`\`js
+import * as THREE from 'three';
+
+// 1. Scene, Camera & ACES Filmic Tone Mapping Setup
+const canvas = document.querySelector('#webgl');
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#050608');
+scene.fog = new THREE.FogExp2('#050608', 0.025);
+
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+camera.position.set(0, 0, 4.5);
+scene.add(camera);
+
+const renderer = new THREE.WebGLRenderer({
+    canvas: canvas,
+    antialias: true,
+    alpha: true,
+    powerPreference: 'high-performance'
+});
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.35;
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+// 2. Studio 3-Point Chiaroscuro Lighting Pipeline
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.45);
+scene.add(ambientLight);
+
+const keyLight = new THREE.SpotLight(0xffffff, 4.2);
+keyLight.position.set(4.0, 5.5, 4.0);
+keyLight.angle = Math.PI / 4;
+keyLight.penumbra = 0.5;
+keyLight.castShadow = true;
+keyLight.shadow.mapSize.width = 2048;
+keyLight.shadow.mapSize.height = 2048;
+keyLight.shadow.bias = -0.0001;
+scene.add(keyLight);
+
+const rimLight = new THREE.DirectionalLight(${c1.num}, 3.0);
+rimLight.position.set(-3.5, 2.5, -4.0);
+scene.add(rimLight);
+
+const fillLight = new THREE.DirectionalLight(0x93c5fd, 1.2);
+fillLight.position.set(-4.0, -2.0, 3.0);
+scene.add(fillLight);
+
+${geometryCode}
+
+${shaderCode}
+
+// 5. Physics State & Animation Loop
+let currentScroll = 0, targetScroll = 0;
+let mouseX = 0, mouseY = 0, targetMouseX = 0, targetMouseY = 0;
+const clock = new THREE.Clock();
+
+window.addEventListener('scroll', () => {
+    targetScroll = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight || 1);
+});
+
+window.addEventListener('mousemove', (e) => {
+    targetMouseX = (e.clientX / window.innerWidth) * 2 - 1;
+    targetMouseY = -(e.clientY / window.innerHeight) * 2 + 1;
+    
+    // Update custom cursor
+    const cursorInner = document.querySelector('.cursor-inner');
+    const cursorOuter = document.querySelector('.cursor-outer');
+    if (cursorInner) {
+        cursorInner.style.transform = \`translate(\${e.clientX}px, \${e.clientY}px) translate(-50%, -50%)\`;
+    }
+    if (cursorOuter) {
+        cursorOuter.style.transform = \`translate(\${e.clientX}px, \${e.clientY}px) translate(-50%, -50%)\`;
+    }
+});
+
+function animate() {
+    requestAnimationFrame(animate);
+    const elapsedTime = clock.getElapsedTime();
+    const delta = clock.getDelta();
+
+    // Lerp mouse and scroll coordinates for buttery smooth 60fps inertia
+    mouseX += (targetMouseX - mouseX) * 0.06;
+    mouseY += (targetMouseY - mouseY) * 0.06;
+    currentScroll += (targetScroll - currentScroll) * 0.08;
+
+    // Camera orbit & mesh rotation
+    if (typeof heroMesh !== 'undefined' && heroMesh) {
+        heroMesh.rotation.y = elapsedTime * 0.25 + mouseX * 0.45;
+        heroMesh.rotation.x = Math.sin(elapsedTime * 0.3) * 0.15 - mouseY * 0.35;
+        heroMesh.position.y = Math.sin(elapsedTime * 1.5) * 0.08;
+    }
+
+    // Update shader uniforms
+    if (typeof customMaterial !== 'undefined' && customMaterial && customMaterial.uniforms) {
+        if (customMaterial.uniforms.uTime) customMaterial.uniforms.uTime.value = elapsedTime;
+        if (customMaterial.uniforms.uMouse) customMaterial.uniforms.uMouse.value.set(mouseX, mouseY);
+    }
+    if (typeof customUniforms !== 'undefined' && customUniforms) {
+        if (customUniforms.uTime) customUniforms.uTime.value = elapsedTime;
+        if (customUniforms.uMouse) customUniforms.uMouse.value.set(mouseX, mouseY);
+    }
+
+    // Animate particle systems
+    if (typeof particleSystem !== 'undefined' && particleSystem) {
+        particleSystem.rotation.y = elapsedTime * 0.05;
+        const positions = particleSystem.geometry.attributes.position.array;
+        for (let i = 1; i < positions.length; i += 3) {
+            positions[i] += Math.sin(elapsedTime + i) * 0.002;
+        }
+        particleSystem.geometry.attributes.position.needsUpdate = true;
+    }
+
+    renderer.render(scene, camera);
+}
+
+// Window resize handler
+window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    if (typeof customMaterial !== 'undefined' && customMaterial && customMaterial.uniforms && customMaterial.uniforms.uResolution) {
+        customMaterial.uniforms.uResolution.value.set(window.innerWidth, window.innerHeight);
+    }
+});
+
+// Initialize on DOM ready
+window.addEventListener('DOMContentLoaded', () => {
+    animate();
+});
+\`\`\`
+
+## Fixed parameters (bake these in)
+
+| Parameter | Fixed Value | Description |
+|---|---|---|
+| Stage Background | \`#050608\` | Deep luxury chiaroscuro canvas base |
+| Scene Fog | \`THREE.FogExp2('#050608', 0.025)\` | Atmospheric depth and distance falloff |
+| Camera FOV | \`45°\` | Natural perspective with zero distortion |
+| Camera Position | \`(0, 0, 4.5)\` | Centered staging viewport coordinates |
+| Tone Mapping | \`THREE.ACESFilmicToneMapping\` | Filmic dynamic range color curve |
+| Exposure | \`1.35\` | Balanced highlight retention and contrast |
+| Key SpotLight | \`Intensity: 4.2 @ (4.0, 5.5, 4.0)\` | PCFSoftShadowMap shadow caster, 2048x2048 map |
+| Rim DirectionalLight | \`Intensity: 3.0 @ (-3.5, 2.5, -4.0)\` | Edge separation and silhouette highlight (\`${c1.hex}\`) |
+| Fill DirectionalLight | \`Intensity: 1.2 @ (-4.0, -2.0, 3.0)\` | Cool ambient shadow illumination |
+| Material Roughness | \`0.14\` | Polished micro-surface reflection |
+| Material Metalness | \`0.10\` | Subtle metallic sheen without loss of color |
+| Transmission | \`0.90\` | Optical glass transparency & light throughput |
+| Index of Refraction (IOR) | \`1.52\` | Natural crown glass optical refraction |
+| Particle Count | \`${kind === 'tool' ? '300' : '400'}\` | Floating additive spark / ambient dust particles |
+| Physics Damping | \`0.06\` | Spring inertia cursor & scroll tracking factor |
+| Frame Rate Target | \`60 FPS Locked\` | 16.6ms per frame budget with zero CPU jank |
+
+## Assets
+
+| Asset | Role | Endpoint URL |
+|---|---|---|
+| Master 4K Video Loop | Flagship 60fps cinematic video stream | \`${videoUrl}\` |
+| High-Res Poster Frame | High-fidelity WebP visual poster | \`${imgUrl}\` |
+| Desktop Preview Loop | Desktop interactive viewport recording | \`${desktopUrl}\` |
+| Mobile Preview Loop | Mobile responsive viewport recording | \`${mobileUrl}\` |
+| GetLayers Ground Truth | Canonical architecture reference URL | \`${refUrl}\` |
+
+All 3D geometry, physical materials, particle systems, and shader pipelines are engineered to assemble in pure vanilla code without external 3D asset downloads. Typography is loaded directly via Google Fonts (\`Italiana\`, \`Outfit\`, \`Playfair Display\`, \`Plus Jakarta Sans\`).`;
+}
+
+
+const generateBlueprint = generatePrompt;
+
+function initApp() {
   const data = window.GETLAYERS_DATA || [];
 
   // High-Performance Viewport Autoplay Observer (Matches GetLayers native continuous loop engine)
@@ -696,193 +1803,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Prompt Generator - Authentic Deep Architectural Specification
-  function generatePrompt(item) {
-    if (window.GETLAYERS_BLUEPRINTS && window.GETLAYERS_BLUEPRINTS[item.id]) { return window.GETLAYERS_BLUEPRINTS[item.id]; }
-    const title = item.title || 'Cinematic Component';
-    const catType = item.categoryType || item.category || 'templates';
-    const catLabel = item.categoryLabel || item.category || 'Component';
-    const tag = item.tag || (Array.isArray(item.tags) && item.tags[0] ? item.tags[0].toUpperCase() : 'PRO');
-    const desc = item.description || `High-end cinematic ${catLabel.toLowerCase()} engineered with physical shaders and micro-interactions.`;
-    
-    // Extract keywords and clean up into choreography narrative
-    const keywords = Array.isArray(item.keywords) ? item.keywords : [];
-    const keywordsStr = keywords.join(', ');
-    
-    // Mood & Tone
-    const moodStr = Array.isArray(item.mood) ? item.mood.join(', ') : (item.mood || 'cinematic, minimal, luxury');
-    const toneStr = item.tone || 'dark';
-
-    // Performance & Lighthouse Metrics from Real Audit
-    const opt = item.optimizationReport || {};
-    const desktopPerf = opt.performance && opt.performance.desktop ? opt.performance.desktop : null;
-    const desktopSeo = opt.seo && opt.seo.desktop && opt.seo.desktop.scores ? opt.seo.desktop.scores : null;
-
-    let perfSection = '';
-    if (desktopPerf || desktopSeo) {
-      perfSection = `
-## 5. PRODUCTION BENCHMARKS & QUALITY BUDGET
-- Frame Budget: 60fps locked (16.6ms frame budget, zero CPU jank)
-${desktopPerf ? `- Viewport Measured: ${desktopPerf.viewport.width}x${desktopPerf.viewport.height} | Input: ${desktopPerf.input} | Verdict: ${desktopPerf.verdict.toUpperCase()}` : ''}
-${desktopPerf ? `- Frame Metrics: p50: ${desktopPerf.p50}ms | p95: ${desktopPerf.p95}ms | Dropped Frames: ${desktopPerf.droppedPct}% (${desktopPerf.frames} frames measured)` : ''}
-${desktopSeo ? `- Target Lighthouse Audit: Performance: ${desktopSeo.performance}/100 | Accessibility: ${desktopSeo.accessibility}/100 | Best Practices: ${desktopSeo.bestPractices}/100 | SEO: ${desktopSeo.seo}/100` : '- Target Lighthouse Audit: Performance: 100 | Accessibility: 100 | Best Practices: 100 | SEO: 100'}`;
-    } else {
-      perfSection = `
-## 5. PRODUCTION BENCHMARKS & QUALITY BUDGET
-- Frame Budget: 60fps locked (16.6ms frame budget, zero CPU jank, instanced WebGL rendering)
-- Target Lighthouse Audit: Performance: 100/100 | Accessibility: 100/100 | Best Practices: 100/100 | SEO: 100/100
-- Scalability: Responsive CSS fluid clamp scaling from mobile (390px) to ultra-wide (2560px)`;
-    }
-
-    // Direct Assets
-    const videoUrl = item.posterVideo || item.previewVideo || '';
-    const imgUrl = item.image || item.previewImage || '';
-
-    // Category 1: Interactive Tools
-    if (catType === 'tools' || item.route) {
-      const techList = Array.isArray(item.tech) ? item.tech.join(', ') : 'Three.js, WebGL, GLSL, Verlet Physics';
-      return `# AI SOFTWARE ARCHITECTURE SPECIFICATION: ${title.toUpperCase()} (3D Web Studio)
-
-## 1. STUDIO ENGINE & 3D CANVAS
-- Application Role: Interactive WebGL Design Software & Shader Sandbox
-- Technology Stack: Next.js 16, React 19, Three.js r128+, WebGL 2.0, GLSL, Tailwind CSS
-- Core Capability: ${desc}
-- Stack Technologies: ${techList}
-
-## 2. STUDIO WORKSPACE & DUAL CONTROL PANELS
-- Left Panel (Asset Pipeline):
-  - Drag & Drop zone supporting PNG, JPG, WebP, SVG file uploads.
-  - Live texture remapping onto 3D geometry in real-time.
-  - Preset library manager with instant parameter serialization.
-- Center Viewport:
-  - Full-resolution interactive WebGL viewport with orbit physics (damping ~0.05).
-  - Physics-reactive surface with spring wave simulation.
-- Right Panel (Live Shader Sliders):
-  - Base Color picker (Hex format), Rainbow iridescence intensity, Pattern scale, Hue shift, Glitter noise sparkle.
-  - Reset camera position action, Save to favorites, and Prompt generation.
-
-## 3. ASSET & CODE REPRODUCTION DIRECTIVES
-- Direct Studio Route: tools/${item.id}/index.html
-- Ensure all shaders use floating-point precision, avoid uniform branching in fragment shaders, and maintain 60fps lock.`;
-    }
-
-    // Category 2: Procedural WebGL Gradients
-    if (catType === 'gradients') {
-      return `# AI SHADER SPECIFICATION: ${title.toUpperCase()} (Procedural WebGL Gradient)
-
-## 1. COMPONENT ROLE & RENDERING PIPELINE
-- Role: Full-bleed Procedural Ambient Shader Layer (Background / Hero Canvas)
-- Stack: WebGL 2.0 Fragment Shader, React Three Fiber (ShaderPass / FullscreenQuad) or Vanilla Canvas
-- Atmosphere & Tone: Tone: ${toneStr} | Mood: ${moodStr}
-
-## 2. PROCEDURAL ALGORITHM & GLSL EQUATIONS
-- Visual Concept: ${desc}
-- Shader Keywords & Harmonic Resonance:
-  ${keywordsStr || 'fluid, procedural, ambient, chromatic, organic, webgl, glsl'}
-- Uniform Inputs Required:
-  \`uniform float uTime;\` // Single shared clock for infinite seamless drift
-  \`uniform vec2 uResolution;\` // Viewport dimensions for non-stretched aspect ratio
-  \`uniform vec2 uMouse;\` // Normalized cursor coordinates for subtle magnetic distortion
-
-## 3. COLOR PALETTE & DYNAMICS
-- Shading Math: Multi-octave Perlin / Simplex 2D noise or Fractal Brownian Motion (FBM).
-- Color Blending: Cosine-based smooth spectral palette interpolation, preventing mudding in darker regions.
-- Frame Rate Target: Locked 60fps with low GPU wattage and battery preservation.
-
-## 4. GROUND TRUTH ASSET REFERENCES
-- Master Video Loop: ${videoUrl || 'Procedural WebGL Shader'}
-- Poster Frame: ${imgUrl}
-- Reference ID: ${item.id} on getlayers.ai/layer/${item.id}`;
-    }
-
-    // Category 3: 3D Scenes
-    if (catType === '3d_scenes') {
-      return `# AI 3D WEBGL SPECIFICATION: ${title.toUpperCase()} (Interactive Three.js Scene)
-
-## 1. 3D SCENE ARCHITECTURE & ENVIRONMENT
-- Component Role: Interactive 3D Model / WebGL Hero Asset
-- Stack: React Three Fiber (@react-three/fiber, @react-three/drei) or Vanilla Three.js r128+
-- Canvas Setup: Pure black canvas (#050608), ACESFilmicToneMapping, exposure ~1.15
-- Controls: Smooth OrbitControls with inertia damping (dampingFactor: 0.05), restricted elevation to prevent scene inversion
-
-## 2. 3D GEOMETRY, LIGHTING & SHADER CHOREOGRAPHY
-- Scene Description: ${desc}
-- Geometry & Scene Detail Keywords:
-  ${keywordsStr || '3d, webgl, model, physical-material, specular-highlights, cinematic'}
-- Material Specifications: MeshPhysicalMaterial with transmission: ~0.9, roughness: ~0.15, metalness: ~0.1, and subtle chromatic Fresnel rim.
-- Lighting Scheme: 3-point studio setup (Key directional light with soft shadows, cool ambient fill, and sharp rim highlight).
-
-## 3. INTERACTIVE PHYSICS & MOTION
-- Cursor Tracking: Spring inertia parallax following mouse pointer across the screen.
-- Scroll Scrubbing: Rotational delta bound to user scroll progress via requestAnimationFrame loop.
-- Micro-interactions: Click-to-react physics bounce or burst assembly.
-${perfSection}
-
-## 6. GROUND TRUTH ASSET REFERENCES
-- Master 4K Video Loop: ${videoUrl}
-- Poster Frame: ${imgUrl}
-- Reference ID: ${item.id} on getlayers.ai/layer/${item.id}`;
-    }
-
-    // Category 4: Backgrounds
-    if (catType === 'backgrounds') {
-      const isStatic = item.mediaType === 'static' || !videoUrl;
-      return `# AI COMPONENT SPECIFICATION: ${title.toUpperCase()} (Cinematic Background Layer)
-
-## 1. MEDIA LAYER INTEGRATION
-- Media Type: ${isStatic ? 'High-Resolution 4K Static Poster Layer' : 'Seamless 4K Infinite Video Loop'}
-- HTML5 Container: Full-bleed relative/fixed aspect-ratio wrapper (\`aspect-[960/684]\` or \`aspect-video\`) with \`overflow: hidden; pointer-events: none;\`
-${!isStatic ? `- Video Element Setup: \`<video autoPlay loop muted playsInline preload="auto" class="w-full h-full object-cover">\`` : '- Image Element Setup: `<img src="..." alt="${title}" loading="eager" class="w-full h-full object-cover">`'}
-
-## 2. EDITORIAL OVERLAY & ATMOSPHERIC TREATMENT
-- Concept: ${desc}
-- Mood & Aesthetic: Tone: ${toneStr} | Mood: ${moodStr}
-- Keywords & Visual Texture: ${keywordsStr || 'cinematic, dark, high-res, backdrop'}
-- Contrast Protection: Dual vignette overlay with \`radial-gradient(ellipse at center, transparent 35%, rgba(5,6,8,0.75) 100%)\` to guarantee white typography readability.
-${perfSection}
-
-## 6. DIRECT ASSET ENDPOINTS
-- Media Source: ${videoUrl || imgUrl}
-- High-Res Poster Fallback: ${imgUrl}
-- Reference ID: ${item.id} on getlayers.ai/layer/${item.id}`;
-    }
-
-    // Category 5: Templates (Landing pages, Hero sections, e-commerce)
-    return `# AI ENGINEERING SPECIFICATION: ${title.toUpperCase()} (Production Next.js 16 Web Application)
-
-## 1. COMPONENT ROLE & ARCHITECTURAL FOUNDATION
-- Component Role: ${catLabel} (${tag})
-- Target Framework: Next.js 16 (App Router, React 19 Server Components)
-- Core Libraries: Three.js / React Three Fiber (@react-three/fiber, @react-three/drei), GSAP (ScrollTrigger), Tailwind CSS, Lucide Icons
-- Mood & Aesthetic: Tone: ${toneStr} | Mood: ${moodStr}
-- Responsive Scope: Mobile-first responsive fluid scaling with CSS \`clamp()\` rem values.
-
-## 2. SCENE VISUAL CONCEPT & ART DIRECTION
-- Editorial Concept: ${desc}
-- Detailed Geometric Choreography & Visual Scene Assets:
-  ${keywordsStr || 'hero, cinematic, nextjs, threejs, webgl, dark, landing-page'}
-
-## 3. 3D MESH, SHADERS & LIGHTING SPECIFICATIONS
-- Shading Pipeline: MeshPhysicalMaterial with custom roughness map, transmission, and spectral Fresnel rim lighting.
-- Lighting Scheme: Balanced 3-point studio lighting (Neutral Key, cool ambient fill, and high-contrast rim light).
-- WebGL Optimization: Target 60fps locked, instanced mesh rendering for repeating particles/drifters, frustum culling enabled, zero CPU bottlenecks.
-
-## 4. INTERACTION CHOREOGRAPHY & SPRING PHYSICS
-- Cursor Tracking: Spring-interpolated inertia lag (damping ~0.08) reacting to mouse position across canvas.
-- Animation Scrubbing: Single shared clock driving synchronized multi-phase scroll triggers via GSAP ScrollTrigger.
-- Interactive Feedback: Dynamic state changes on hover and click (zero layout shifts, micro-haptic visual feedback).
-${perfSection}
-
-## 6. PRODUCTION ENGINEERING REQUIREMENTS
-- TypeScript: 100% strict type safety, zero \`any\` types, well-defined prop interfaces.
-- Accessibility: Semantic HTML5 tags (<header>, <main>, <section>, <article>), ARIA live regions for dynamic states.
-- Error Boundaries: Graceful WebGL context loss recovery with automatic canvas recreation.
-
-## 7. GROUND TRUTH ASSET REFERENCES
-- Master 4K Video Loop: ${videoUrl}
-- Poster Frame Still: ${imgUrl}
-- Reference ID: ${item.id} on getlayers.ai/layer/${item.id}`;
-  }
+  // Prompt Generator - Handled by Universal Verbatim Assembly Blueprint Engine
 
   function toPascalCase(str) {
     if (!str) return 'GetLayersComponent';
@@ -1911,4 +2832,21 @@ export default function ${compName}({
     });
   }
 
-});
+}
+
+if (typeof document !== "undefined") {
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initApp);
+  } else {
+    initApp();
+  }
+}
+
+if (typeof window !== "undefined") {
+  window.generatePrompt = generatePrompt;
+  window.generateBlueprint = generatePrompt;
+  window.deriveItemKind = deriveItemKind;
+}
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { generatePrompt, generateBlueprint, deriveItemKind, initApp };
+}
