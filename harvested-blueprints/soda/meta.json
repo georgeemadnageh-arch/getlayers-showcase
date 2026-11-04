@@ -1,0 +1,24 @@
+{
+  "id": "soda",
+  "title": "Soda \u2014 Diet Soda Pure Zero Refreshment",
+  "tier": "Free",
+  "category": "template",
+  "provenance": "Harvested from official GetLayers subscriber exports (StarKnightt / greycode / Nathan Beja)",
+  "verifiedAssets": {
+    "LEAVES_GLB": "https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/leaves.glb",
+    "CHERRY_GLB": "https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/cherry.glb",
+    "BLUEBERRY_GLB": "https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/blueberry.glb",
+    "DEIT_SODA2_GLB": "https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/deit_soda2.glb",
+    "GREEN_SODA_PNG": "https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/Green%20Soda.png",
+    "BLUE_SODA_PNG": "https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/Blue%20Soda.png",
+    "GREEN_BASE_COLOR_JPG": "https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/green%20base%20color.jpg",
+    "BLUE_BASE_COLOR_JPG": "https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/blue%20base%20color.jpg",
+    "BUBBLE_PNG": "https://api.getlayers.ai/storage/v1/object/public/public/assets/soda-14ff8a788d/bubble.png"
+  },
+  "linesCount": 1090,
+  "charsCount": 39009,
+  "engine": "Google <model-viewer> + GSAP 3.12 + Vanilla WebGL",
+  "hasRealGLB": true,
+  "hasVideoLoop": true,
+  "status": "verified"
+}
