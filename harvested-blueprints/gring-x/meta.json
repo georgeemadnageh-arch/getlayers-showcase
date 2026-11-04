@@ -1,0 +1,18 @@
+{
+  "id": "gring-x",
+  "title": "GringX \u2014 AI Decision Layer & 3D Nebula Sphere",
+  "tier": "Premium",
+  "category": "template",
+  "provenance": "Harvested from official subscriber repository https://github.com/jorgetwenty/code-teste-lp",
+  "verifiedAssets": {
+    "hands.glb": "https://raw.githubusercontent.com/jorgetwenty/code-teste-lp/main/public/assets/hands.glb",
+    "eagle-logo.png": "https://raw.githubusercontent.com/jorgetwenty/code-teste-lp/main/public/assets/eagle-logo.png",
+    "gring-x.mp4": "https://storage.getlayers.ai/templates/gring-x-066eecc455.mp4",
+    "gring-x.webp": "https://storage.getlayers.ai/templates/gring-x-066eecc455.webp"
+  },
+  "linesCount": 618,
+  "charsCount": 19293,
+  "engine": "Three.js r160 + GLTFLoader + GLSL Domain-Warped Nebula Sphere Shader",
+  "hasRealGLB": true,
+  "status": "verified"
+}
