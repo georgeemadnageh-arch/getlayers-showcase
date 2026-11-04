@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <div class="tool-tech-row">${techTags}</div>
           <div class="card-footer">
             <span class="btn-card-action btn-tool-action">
-              <span>${item.id === 'holographic-cloth' ? 'Launch 3D Studio ↗' : item.id === 'refract' ? 'Launch Refract Studio ↗' : 'Inspect Tool Specs'}</span>
+              <span>${item.id === 'holographic-cloth' ? 'Launch 3D Studio ↗' : item.id === 'refract' ? 'Launch Refract Studio ↗' : item.id === 'ascii-studio' ? 'Launch ASCII Studio ↗' : 'Inspect Tool Specs'}</span>
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
@@ -334,6 +334,8 @@ document.addEventListener('DOMContentLoaded', () => {
           window.location.href = 'tools/holographic-cloth/index.html';
         } else if (item.id === 'refract') {
           window.location.href = 'tools/refract/index.html';
+        } else if (item.id === 'ascii-studio') {
+          window.location.href = 'tools/ascii-studio/index.html';
         } else {
           openModal(item, toolLikes);
         }
@@ -494,6 +496,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const span = studioLaunchBtn.querySelector('span');
         if (span) span.textContent = 'Launch 3D Studio ↗';
         else studioLaunchBtn.textContent = 'Launch 3D Studio ↗';
+        studioLaunchBtn.classList.remove('hidden');
+      } else if (item.id === 'ascii-studio') {
+        studioLaunchBtn.href = 'tools/ascii-studio/index.html';
+        const span = studioLaunchBtn.querySelector('span');
+        if (span) span.textContent = 'Launch ASCII Studio ↗';
+        else studioLaunchBtn.textContent = 'Launch ASCII Studio ↗';
         studioLaunchBtn.classList.remove('hidden');
       } else {
         studioLaunchBtn.classList.add('hidden');

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASCII Studio — Shader Typography & Matrix Art Engine | GetLayers</title>
+  <meta name="description" content="Turn any photo, video, or real-time 3D animation into shader-based ASCII typography, matrix code stream, and CRT phosphor visual art." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="ascii-studio.css" />
+</head>
+<body class="studio-body">
+
+  <!-- Top Navigation Bar (Identical to GetLayers Header) -->
+  <header class="header studio-header">
+    <div class="header-container">
+      
+      <!-- Brand & Search -->
+      <div class="header-left">
+        <a href="../../index.html" class="brand" aria-label="getlayers — home">
+          <svg class="logo-svg" viewBox="0 0 28 28" fill="none">
+            <defs>
+              <linearGradient id="brand-grad" x1="3" y1="2" x2="25" y2="26" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="50%" stop-color="#818cf8" />
+                <stop offset="100%" stop-color="#c084fc" />
+              </linearGradient>
+            </defs>
+            <path d="M14 16 24.5 21 14 26 3.5 21Z" fill="url(#brand-grad)" fill-opacity="0.3"></path>
+            <path d="M14 9 24.5 14 14 19 3.5 14Z" fill="url(#brand-grad)" fill-opacity="0.6"></path>
+            <path d="M14 2 24.5 7 14 12 3.5 7Z" fill="url(#brand-grad)"></path>
+          </svg>
+          <span class="logo-word"><span class="logo-word-dim">get</span>layers</span>
+        </a>
+
+        <div class="search-pill-nav">
+          <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" placeholder="Search..." readonly onclick="window.location.href='../../index.html'" />
+          <kbd class="shortcut-badge">/</kbd>
+        </div>
+      </div>
+
+      <!-- Main Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="../../index.html#library" class="nav-link">Library</a>
+        <a href="../../index.html#tools" class="nav-link active nav-link-tools">
+          Tools
+          <span class="new-badge">New</span>
+        </a>
+        <a href="../../index.html#pricing" class="nav-link">Pricing</a>
+        <a href="../../index.html#docs" class="nav-link">Docs</a>
+        <a href="../../index.html#affiliate" class="nav-link">Affiliate</a>
+        <a href="../../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- External Actions -->
+      <div class="header-right">
+        <button type="button" class="btn-nav-action btn-mcp" onclick="window.location.href='../../index.html#mcp'">
+          <span class="sparkle-symbol">✦</span>
+          <span>MCP</span>
+        </button>
+
+        <button type="button" class="btn-nav-action btn-figma" onclick="window.open('https://figma.com/@getlayers', '_blank')">
+          <svg class="figma-svg" width="10" height="15" viewBox="0 0 38 57" fill="none">
+            <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0Z" fill="#1ABCFE"></path>
+            <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0Z" fill="#0ACF83"></path>
+            <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19Z" fill="#F24E1E"></path>
+            <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z" fill="#FF7262"></path>
+            <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z" fill="#A259FF"></path>
+          </svg>
+          <span>Figma</span>
+          <span class="new-badge">New</span>
+        </button>
+
+        <button type="button" class="btn-signin" onclick="window.location.href='../../index.html#signin'">
+          <span class="avatar-ring">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span>Sign in</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 3-Column Studio Workspace -->
+  <main class="studio-workspace">
+    
+    <!-- LEFT SIDEBAR: Source Media & Character Sets & Presets -->
+    <aside class="studio-sidebar studio-sidebar-left">
+      
+      <!-- Card: Source Media Uploader & Generators -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            <span>Source Media</span>
+          </div>
+          <span class="panel-info-badge" title="Drop an image or video, or select a built-in generative 3D stream">ⓘ</span>
+        </div>
+
+        <div class="panel-body">
+          <!-- Drop Zone -->
+          <label class="drop-zone" id="mediaDropZone">
+            <input type="file" id="mediaFileInput" accept="image/png,image/jpeg,image/webp,image/gif,video/mp4,video/webm" class="hidden" />
+            <div class="drop-zone-content">
+              <svg class="upload-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span class="drop-label">Drop Image or Video</span>
+              <span class="drop-hint">PNG, JPG, MP4, WebM up to 50MB</span>
+            </div>
+          </label>
+
+          <!-- Generative Source Options -->
+          <div class="source-pills">
+            <button type="button" class="source-pill-btn active" data-source="torus" id="btnSourceTorus" title="Real-time 3D Torus Knot wireframe animation">
+              <span class="source-pill-icon">🌀</span>
+              <span>Cyber Torus</span>
+            </button>
+            <button type="button" class="source-pill-btn" data-source="matrix" id="btnSourceMatrix" title="Animated digital matrix code rain">
+              <span class="source-pill-icon">⚡</span>
+              <span>Matrix Rain</span>
+            </button>
+            <button type="button" class="source-pill-btn" data-source="plasma" id="btnSourcePlasma" title="Smooth swirling mathematical plasma waves">
+              <span class="source-pill-icon">🌌</span>
+              <span>Plasma Flow</span>
+            </button>
+          </div>
+
+          <!-- Active Asset Slot -->
+          <div class="asset-slot" id="activeAssetSlot">
+            <div class="asset-thumb-preview" id="assetThumbPreview">
+              <span id="assetThumbIcon">3D</span>
+            </div>
+            <div class="asset-info">
+              <span class="asset-name" id="assetName">Generative Cyber Torus 3D</span>
+              <span class="asset-meta" id="assetMeta">Real-time Procedural · 60 FPS</span>
+            </div>
+            <button type="button" class="btn-remove-asset hidden" id="btnRemoveAsset" title="Remove custom file and restore generator">✕</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Character Set Selector -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="4 7 4 4 20 4 20 7"></polyline>
+              <line x1="9" y1="20" x2="15" y2="20"></line>
+              <line x1="12" y1="4" x2="12" y2="20"></line>
+            </svg>
+            <span>Character Set</span>
+          </div>
+          <span class="panel-info-badge" title="Character ramp mapped to luminance levels">ⓘ</span>
+        </div>
+
+        <div class="panel-body">
+          <div class="charsets-list">
+            <!-- Set 1: Classic ASCII -->
+            <button type="button" class="charset-option-btn active" data-charset="classic">
+              <div class="charset-title">
+                <span class="charset-badge">#</span>
+                <span>Classic ASCII</span>
+              </div>
+              <span class="charset-preview">.:-=+*#%@</span>
+            </button>
+
+            <!-- Set 2: Blocks -->
+            <button type="button" class="charset-option-btn" data-charset="blocks">
+              <div class="charset-title">
+                <span class="charset-badge">█</span>
+                <span>Blocks</span>
+              </div>
+              <span class="charset-preview">░▒▓█</span>
+            </button>
+
+            <!-- Set 3: Binary -->
+            <button type="button" class="charset-option-btn" data-charset="binary">
+              <div class="charset-title">
+                <span class="charset-badge">01</span>
+                <span>Binary</span>
+              </div>
+              <span class="charset-preview">0 1</span>
+            </button>
+
+            <!-- Set 4: Matrix Cyber -->
+            <button type="button" class="charset-option-btn" data-charset="matrix">
+              <div class="charset-title">
+                <span class="charset-badge">FX</span>
+                <span>Matrix Cyber</span>
+              </div>
+              <span class="charset-preview">012..ABCDEF</span>
+            </button>
+
+            <!-- Set 5: Minimal Dots -->
+            <button type="button" class="charset-option-btn" data-charset="dots">
+              <div class="charset-title">
+                <span class="charset-badge">•</span>
+                <span>Minimal Dots</span>
+              </div>
+              <span class="charset-preview">· : • ●</span>
+            </button>
+          </div>
+
+          <!-- Custom Charset Input -->
+          <div class="custom-charset-box">
+            <input type="text" id="customCharsetInput" class="custom-charset-input" placeholder="Custom glyphs (e.g. .oO0@)" maxlength="32" />
+            <button type="button" id="btnApplyCustomCharset" class="btn-custom-set">Apply</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Presets Gallery -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <span>Preset Gallery</span>
+          </div>
+          <span class="panel-info-badge" title="Curated aesthetic shaders">ⓘ</span>
+        </div>
+
+        <div class="panel-body">
+          <div class="preset-tabs">
+            <button type="button" class="preset-tab active" id="tabPresetAll">All</button>
+            <button type="button" class="preset-tab" id="tabPresetFav">♡ Favourites</button>
+          </div>
+
+          <div class="presets-gallery mt-3" id="presetsGallery">
+            <!-- Preset 1: Cyber Matrix -->
+            <button type="button" class="preset-card active" data-preset="cyberMatrix">
+              <div class="preset-swatch swatch-matrix">01_HEX</div>
+              <span class="preset-label">Cyber Matrix</span>
+            </button>
+
+            <!-- Preset 2: Retro Terminal -->
+            <button type="button" class="preset-card" data-preset="retroTerminal">
+              <div class="preset-swatch swatch-retro">VT100</div>
+              <span class="preset-label">Retro Terminal</span>
+            </button>
+
+            <!-- Preset 3: Minimal Monochrome -->
+            <button type="button" class="preset-card" data-preset="minimalMono">
+              <div class="preset-swatch swatch-minimal">· : •</div>
+              <span class="preset-label">Minimal Mono</span>
+            </button>
+
+            <!-- Preset 4: Dense Dither -->
+            <button type="button" class="preset-card" data-preset="denseDither">
+              <div class="preset-swatch swatch-dither">▒▓█</div>
+              <span class="preset-label">Dense Dither</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- CENTER CANVAS: Live High-Performance ASCII Viewport -->
+    <section class="studio-canvas-container" id="canvasContainer">
+      <!-- HUD Top Badges -->
+      <div class="canvas-top-badge">
+        <span class="status-dot matrix-green" id="canvasStatusDot"></span>
+        <span id="canvasStatusText">ASCII Studio Engine v3.2 · Live 60 FPS</span>
+      </div>
+
+      <div class="canvas-top-right-badge">
+        <span class="fps-counter" id="fpsCounter">60 FPS</span>
+        <span class="grid-dimensions" id="gridDimensions">128 × 72</span>
+      </div>
+
+      <!-- Hint Overlay -->
+      <div class="canvas-hint-overlay">
+        <span>Move cursor to ripple typography · Click viewport to pulse</span>
+      </div>
+
+      <!-- Canvas Bottom Toolbar -->
+      <div class="canvas-bottom-toolbar">
+        <button type="button" class="btn-toolbar" id="btnTogglePlay" title="Pause or Resume Real-time Animation">
+          <span id="playIcon">⏸</span>
+          <span id="playLabel">Pause</span>
+        </button>
+        <button type="button" class="btn-toolbar active" id="btnToolbarScanlines" title="Toggle CRT Phosphor Scanlines">
+          <span>📺</span>
+          <span>CRT Lines</span>
+        </button>
+        <button type="button" class="btn-toolbar active" id="btnToolbarRipple" title="Toggle Mouse Distortion Ripple">
+          <span>〰️</span>
+          <span>Ripple FX</span>
+        </button>
+        <button type="button" class="btn-toolbar" id="btnCameraFeed" title="Stream live webcam video into ASCII">
+          <span>📹</span>
+          <span>Webcam</span>
+        </button>
+      </div>
+
+      <!-- Center ASCII Render Canvas -->
+      <canvas id="asciiCanvas"></canvas>
+
+      <!-- CRT Scanline & Phosphor Bloom Layer -->
+      <div class="crt-overlay enabled" id="crtOverlay"></div>
+    </section>
+
+    <!-- RIGHT SIDEBAR: Sliders, Color Modes & Export Actions -->
+    <aside class="studio-sidebar studio-sidebar-right">
+      
+      <!-- Locked Pro Banner -->
+      <div class="banner-pro">
+        <span class="banner-pro-text">Export Vector SVG & 4K ASCII Animations</span>
+        <a href="../../index.html#pricing" class="banner-pro-link">Upgrade to unlock →</a>
+      </div>
+
+      <!-- Card: Typography & Optical Parameters -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="4" y1="21" x2="4" y2="14"></line>
+              <line x1="4" y1="10" x2="4" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12" y2="3"></line>
+              <line x1="20" y1="21" x2="20" y2="16"></line>
+              <line x1="20" y1="12" x2="20" y2="3"></line>
+              <line x1="1" y1="14" x2="7" y2="14"></line>
+              <line x1="9" y1="8" x2="15" y2="8"></line>
+              <line x1="17" y1="16" x2="23" y2="16"></line>
+            </svg>
+            <span>Shader Parameters</span>
+          </div>
+          <div class="panel-header-actions">
+            <span class="panel-info-badge" title="Tweak font cell grid resolution, luminance mapping, and phosphor bloom">ⓘ</span>
+            <button type="button" class="btn-icon-reset" id="btnResetParams" title="Reset all parameters to preset defaults">⟲</button>
+          </div>
+        </div>
+
+        <div class="panel-body controls-list">
+          <!-- Parameter 1: Cell Size (4px - 28px) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderCellSize">Cell Resolution</label>
+              <span class="slider-val" id="valCellSize">10px</span>
+            </div>
+            <input type="range" id="sliderCellSize" min="4" max="28" step="1" value="10" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 2: Contrast (0.5 - 2.5) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderContrast">Contrast</label>
+              <span class="slider-val" id="valContrast">1.40</span>
+            </div>
+            <input type="range" id="sliderContrast" min="0.5" max="2.5" step="0.05" value="1.40" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 3: Brightness (-50 to +50) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderBrightness">Brightness</label>
+              <span class="slider-val" id="valBrightness">0</span>
+            </div>
+            <input type="range" id="sliderBrightness" min="-50" max="50" step="1" value="0" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 4: Glow / Bloom (0 - 100%) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderBloom">Phosphor Bloom</label>
+              <span class="slider-val" id="valBloom">60%</span>
+            </div>
+            <input type="range" id="sliderBloom" min="0" max="100" step="5" value="60" class="studio-slider" />
+          </div>
+
+          <!-- Toggle: Invert Colors -->
+          <div class="control-row">
+            <label class="control-label" for="toggleInvert">Invert Luminance</label>
+            <label class="switch-control">
+              <input type="checkbox" id="toggleInvert" />
+              <span class="switch-slider"></span>
+            </label>
+          </div>
+
+          <!-- Toggle: CRT Scanlines -->
+          <div class="control-row">
+            <label class="control-label" for="toggleScanlines">CRT Scanlines</label>
+            <label class="switch-control">
+              <input type="checkbox" id="toggleScanlines" checked />
+              <span class="switch-slider"></span>
+            </label>
+          </div>
+
+          <!-- Toggle: CRT Curvature Vignette -->
+          <div class="control-row">
+            <label class="control-label" for="toggleCurvature">CRT Curvature</label>
+            <label class="switch-control">
+              <input type="checkbox" id="toggleCurvature" checked />
+              <span class="switch-slider"></span>
+            </label>
+          </div>
+
+          <!-- Toggle: Mouse Wave Ripple -->
+          <div class="control-row">
+            <label class="control-label" for="toggleRipple">Mouse Warp Ripple</label>
+            <label class="switch-control">
+              <input type="checkbox" id="toggleRipple" checked />
+              <span class="switch-slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card: Color Mode Selector -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+              <path d="M2 12h20"></path>
+            </svg>
+            <span>Color Palette</span>
+          </div>
+          <span class="panel-info-badge" title="Phosphor color simulation and RGB sampling">ⓘ</span>
+        </div>
+
+        <div class="panel-body">
+          <div class="color-modes-grid">
+            <!-- Mode 1: Matrix Green (Default) -->
+            <button type="button" class="color-mode-card active" data-color="matrixGreen">
+              <span class="color-mode-dot dot-matrix"></span>
+              <span class="color-mode-label">Matrix Green</span>
+            </button>
+
+            <!-- Mode 2: Retro Amber -->
+            <button type="button" class="color-mode-card" data-color="retroAmber">
+              <span class="color-mode-dot dot-amber"></span>
+              <span class="color-mode-label">Retro Amber</span>
+            </button>
+
+            <!-- Mode 3: Full RGB Sampling -->
+            <button type="button" class="color-mode-card" data-color="rgbSampling">
+              <span class="color-mode-dot dot-rgb"></span>
+              <span class="color-mode-label">RGB Sample</span>
+            </button>
+
+            <!-- Mode 4: Paper White -->
+            <button type="button" class="color-mode-card" data-color="paperWhite">
+              <span class="color-mode-dot dot-white"></span>
+              <span class="color-mode-label">Paper White</span>
+            </button>
+
+            <!-- Mode 5: Cyber Cyan -->
+            <button type="button" class="color-mode-card" data-color="cyberCyan" style="grid-column: span 2;">
+              <span class="color-mode-dot dot-cyan"></span>
+              <span class="color-mode-label">Cyber Cyan (Neon)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action & Export Controls (Bottom) -->
+      <div class="studio-actions-card">
+        <div class="actions-split-row">
+          <button type="button" class="btn-action-split" id="btnExportSnapshot">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Snapshot PNG</span>
+          </button>
+          <button type="button" class="btn-action-split" id="btnSaveFavorite">
+            <span id="favHeart">♡ Save favourite</span>
+          </button>
+        </div>
+
+        <button type="button" class="btn-action-full mt-2" id="btnCopyLink">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+          <span>Copy link</span>
+        </button>
+
+        <button type="button" class="btn-action-primary mt-2" id="btnCopyPrompt">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Copy ASCII prompt</span>
+        </button>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="studioToast" class="toast hidden">Copied ASCII shader prompt to clipboard!</div>
+
+  <!-- Studio High-Performance Engine Logic -->
+  <script src="ascii-studio.js"></script>
+</body>
+</html>
