@@ -649,10 +649,12 @@ body {
 
 .card-media-wrap {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  background: #000;
+  aspect-ratio: 960 / 684;
+  background: #050507;
   position: relative;
   overflow: hidden;
+  border-radius: 14px 14px 0 0;
+  isolation: isolate;
 }
 
 .card-img {

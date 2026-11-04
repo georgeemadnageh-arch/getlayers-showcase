@@ -1,5 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
   const data = window.GETLAYERS_DATA || [];
+
+  // High-Performance Viewport Autoplay Observer (Matches GetLayers native continuous loop engine)
+  const viewportVideoObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const video = entry.target;
+      const wrap = video.closest('.card-media-wrap');
+      if (entry.isIntersecting) {
+        video.muted = true;
+        video.defaultMuted = true;
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {});
+        }
+      } else {
+        video.pause();
+        if (wrap) {
+          wrap.classList.remove('is-playing');
+          wrap.classList.remove('is-buffering');
+        }
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '150px 0px 150px 0px', // Preload smoothly before entering screen
+    threshold: 0.15
+  });
   const cardsGrid = document.getElementById('cardsGrid');
   const searchInput = document.getElementById('searchInput');
   const categoryTabs = document.getElementById('categoryTabs');
@@ -213,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
       mediaHtml += `<img class="card-img" src="${escapeHtml(previewImg)}" alt="${escapeHtml(item.title)}" loading="lazy" />`;
     }
     if (hasVideo) {
-      mediaHtml += `<video class="card-video" src="${escapeHtml(previewVid)}" loop muted playsinline preload="none"></video>`;
+      mediaHtml += `<video class="card-video" src="${escapeHtml(previewVid)}" loop muted playsinline preload="metadata"></video>`;
     }
     mediaHtml += `</div>`;
 
@@ -236,47 +262,32 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
     `;
 
-    // Zero-Flicker Smooth Video Behavior (GetLayers native feel)
+    // Continuous Viewport Autoplay Engine (Native GetLayers 60fps Experience)
     if (hasVideo) {
       const wrap = card.querySelector('.card-media-wrap');
       const video = card.querySelector('.card-video');
-      let isHovered = false;
+
+      if (video && viewportVideoObserver) {
+        viewportVideoObserver.observe(video);
+      }
 
       video.addEventListener('playing', () => {
-        if (isHovered) {
-          wrap.classList.remove('is-buffering');
-          wrap.classList.add('is-playing');
-        }
+        wrap.classList.remove('is-buffering');
+        wrap.classList.add('is-playing');
       });
 
       video.addEventListener('waiting', () => {
-        if (isHovered && !wrap.classList.contains('is-playing')) {
+        if (!wrap.classList.contains('is-playing')) {
           wrap.classList.add('is-buffering');
         }
       });
 
+      // Hover focus: ensure playing and prevent pausing while hovering
       card.addEventListener('mouseenter', () => {
-        isHovered = true;
         if (video) {
-          if (!wrap.classList.contains('is-playing')) {
-            wrap.classList.add('is-buffering');
-          }
+          video.muted = true;
           const p = video.play();
-          if (p !== undefined) {
-            p.catch(() => {
-              wrap.classList.remove('is-buffering');
-            });
-          }
-        }
-      });
-
-      card.addEventListener('mouseleave', () => {
-        isHovered = false;
-        wrap.classList.remove('is-buffering');
-        wrap.classList.remove('is-playing');
-        if (video) {
-          video.pause();
-          video.currentTime = 0;
+          if (p !== undefined) p.catch(() => {});
         }
       });
     }
