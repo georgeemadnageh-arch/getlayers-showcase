@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SVG to 3D Extruder — Interactive 3D Vector Geometry | GetLayers</title>
+  <meta name="description" content="Extrude any vector SVG path, logo, or typography into a photorealistic 3D mesh with real-time Three.js WebGL lighting, bevel physics, and PBR materials." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="svg-to-3d.css" />
+  <!-- Three.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- SVGLoader & OrbitControls addons -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/SVGLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body class="studio-body">
+
+  <!-- Top Navigation Bar (Identical to GetLayers Header) -->
+  <header class="header studio-header">
+    <div class="header-container">
+      
+      <!-- Brand & Search -->
+      <div class="header-left">
+        <a href="../../index.html" class="brand" aria-label="getlayers — home">
+          <svg class="logo-svg" viewBox="0 0 28 28" fill="none">
+            <defs>
+              <linearGradient id="brand-grad" x1="3" y1="2" x2="25" y2="26" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="50%" stop-color="#818cf8" />
+                <stop offset="100%" stop-color="#c084fc" />
+              </linearGradient>
+            </defs>
+            <path d="M14 16 24.5 21 14 26 3.5 21Z" fill="url(#brand-grad)" fill-opacity="0.3"></path>
+            <path d="M14 9 24.5 14 14 19 3.5 14Z" fill="url(#brand-grad)" fill-opacity="0.6"></path>
+            <path d="M14 2 24.5 7 14 12 3.5 7Z" fill="url(#brand-grad)"></path>
+          </svg>
+          <span class="logo-word"><span class="logo-word-dim">get</span>layers</span>
+        </a>
+
+        <div class="search-pill-nav">
+          <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" placeholder="Search..." readonly onclick="window.location.href='../../index.html'" />
+          <kbd class="shortcut-badge">/</kbd>
+        </div>
+      </div>
+
+      <!-- Main Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="../../index.html#library" class="nav-link">Library</a>
+        <a href="../../index.html#tools" class="nav-link active nav-link-tools">
+          Tools
+          <span class="new-badge">New</span>
+        </a>
+        <a href="../../index.html#pricing" class="nav-link">Pricing</a>
+        <a href="../../index.html#docs" class="nav-link">Docs</a>
+        <a href="../../index.html#affiliate" class="nav-link">Affiliate</a>
+        <a href="../../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- External Actions -->
+      <div class="header-right">
+        <button type="button" class="btn-nav-action btn-mcp" onclick="window.location.href='../../index.html#mcp'">
+          <span class="sparkle-symbol">✦</span>
+          <span>MCP</span>
+        </button>
+
+        <button type="button" class="btn-nav-action btn-figma" onclick="window.open('https://figma.com/@getlayers', '_blank')">
+          <svg class="figma-svg" width="10" height="15" viewBox="0 0 38 57" fill="none">
+            <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0Z" fill="#1ABCFE"></path>
+            <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0Z" fill="#0ACF83"></path>
+            <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19Z" fill="#F24E1E"></path>
+            <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5Z" fill="#FF7262"></path>
+            <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5Z" fill="#A259FF"></path>
+          </svg>
+          <span>Figma</span>
+          <span class="new-badge">New</span>
+        </button>
+
+        <button type="button" class="btn-signin" onclick="window.location.href='../../index.html#signin'">
+          <span class="avatar-ring">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </span>
+          <span>Sign in</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 3-Column Studio Workspace -->
+  <main class="studio-workspace">
+    
+    <!-- LEFT SIDEBAR: SVG Input & Presets -->
+    <aside class="studio-sidebar studio-sidebar-left">
+      
+      <!-- Panel 1: SVG Source Upload Drop-Zone -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+            <span>Vector SVG Source</span>
+          </div>
+          <span class="panel-info-badge" title="Drop an SVG icon or logo to convert into 3D mesh">ⓘ</span>
+        </div>
+
+        <div class="panel-body">
+          <!-- Drop Zone -->
+          <label class="drop-zone" id="svgDropZone">
+            <input type="file" id="svgFileInput" accept=".svg,image/svg+xml" class="hidden" />
+            <div class="drop-zone-content">
+              <svg class="upload-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span class="drop-label">Drop custom .svg file</span>
+              <span class="drop-hint">or click to browse from device</span>
+            </div>
+          </label>
+
+          <!-- Active Asset Slot -->
+          <div class="asset-slot" id="activeAssetSlot">
+            <div class="asset-thumb-preview" id="assetThumb">
+              <svg viewBox="0 0 100 100" fill="currentColor">
+                <path d="M50 8 L85 24 L50 40 L15 24 Z"></path>
+                <path d="M50 38 L85 54 L50 70 L15 54 Z"></path>
+                <path d="M50 68 L85 84 L50 100 L15 84 Z"></path>
+              </svg>
+            </div>
+            <div class="asset-info">
+              <span class="asset-name" id="assetName">Geometric Cube</span>
+              <span class="asset-meta" id="assetMeta">Preset SVG · Layered 3D</span>
+            </div>
+            <button type="button" class="btn-remove-asset" id="btnResetAsset" title="Restore default preset">✕</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Built-in Vector Presets Gallery -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span>Vector Presets</span>
+          </div>
+          <span class="panel-info-badge" title="Select a procedural vector shape">5 Presets</span>
+        </div>
+
+        <div class="panel-body presets-grid-vertical" id="vectorPresetsList">
+          <!-- Preset 1: GetLayers Geometric Cube -->
+          <button type="button" class="vector-preset-card active" data-preset="cube">
+            <div class="vector-preset-icon">
+              <svg viewBox="0 0 100 100">
+                <path d="M50 8 L85 24 L50 40 L15 24 Z"></path>
+                <path d="M50 38 L85 54 L50 70 L15 54 Z"></path>
+                <path d="M50 68 L85 84 L50 100 L15 84 Z"></path>
+              </svg>
+            </div>
+            <div class="vector-preset-meta">
+              <span class="vector-preset-title">Geometric Cube</span>
+              <span class="vector-preset-sub">GetLayers Triple Plate</span>
+            </div>
+          </button>
+
+          <!-- Preset 2: Cyber Star -->
+          <button type="button" class="vector-preset-card" data-preset="star">
+            <div class="vector-preset-icon">
+              <svg viewBox="0 0 100 100">
+                <path d="M50 5 L63 37 L95 50 L63 63 L50 95 L37 63 L5 50 L37 37 Z M50 32 L64 50 L50 68 L36 50 Z"></path>
+              </svg>
+            </div>
+            <div class="vector-preset-meta">
+              <span class="vector-preset-title">Cyber Star</span>
+              <span class="vector-preset-sub">8-Point Faceted Prism</span>
+            </div>
+          </button>
+
+          <!-- Preset 3: Abstract Monogram -->
+          <button type="button" class="vector-preset-card" data-preset="monogram">
+            <div class="vector-preset-icon">
+              <svg viewBox="0 0 100 100">
+                <path d="M25 15 L75 15 C85 15 90 22 90 32 L90 40 L68 40 L68 32 C68 28 66 26 62 26 L38 26 C30 26 26 30 26 38 L26 62 C26 70 30 74 38 74 L65 74 C70 74 74 70 74 65 L74 54 L52 54 L52 42 L86 42 L86 68 C86 80 78 86 65 86 L32 86 C18 86 12 78 12 65 L12 35 C12 22 18 15 25 15 Z"></path>
+              </svg>
+            </div>
+            <div class="vector-preset-meta">
+              <span class="vector-preset-title">Abstract Monogram</span>
+              <span class="vector-preset-sub">Typography Intertwine</span>
+            </div>
+          </button>
+
+          <!-- Preset 4: Infinite Torus Knot -->
+          <button type="button" class="vector-preset-card" data-preset="knot">
+            <div class="vector-preset-icon">
+              <svg viewBox="0 0 100 100">
+                <path d="M50 50 C62 30 80 25 90 35 C100 45 100 55 90 65 C80 75 62 70 50 50 C38 30 20 25 10 35 C0 45 0 55 10 65 C20 75 38 70 50 50 Z M50 50 C40 64 26 68 18 60 C10 52 10 48 18 40 C26 32 40 36 50 50 C60 64 74 68 82 60 C90 52 90 48 82 40 C74 32 60 36 50 50 Z"></path>
+              </svg>
+            </div>
+            <div class="vector-preset-meta">
+              <span class="vector-preset-title">Infinite Torus Knot</span>
+              <span class="vector-preset-sub">Curved Möbius Ribbon</span>
+            </div>
+          </button>
+
+          <!-- Preset 5: Shield Badge -->
+          <button type="button" class="vector-preset-card" data-preset="shield">
+            <div class="vector-preset-icon">
+              <svg viewBox="0 0 100 100">
+                <path d="M50 8 L88 22 L88 54 C88 76 50 94 50 94 C50 94 12 76 12 54 L12 22 Z M50 20 L24 30 L24 52 C24 69 50 82 50 82 C50 82 76 69 76 52 L76 30 Z M50 36 L62 48 L56 64 L50 56 L44 64 L38 48 Z"></path>
+              </svg>
+            </div>
+            <div class="vector-preset-meta">
+              <span class="vector-preset-title">Shield Badge</span>
+              <span class="vector-preset-sub">Cyber Heraldic Emblem</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Panel 3: Material Presets Selector -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="m4.93 4.93 4.24 4.24M14.83 14.83l4.24 4.24M14.83 9.17l4.24-4.24M4.93 19.07l4.24-4.24"></path>
+            </svg>
+            <span>Material Presets</span>
+          </div>
+          <span class="panel-info-badge" title="PBR surface shader configuration">PBR</span>
+        </div>
+
+        <div class="panel-body material-presets-grid" id="materialPresetsList">
+          <button type="button" class="material-preset-btn active" data-material="chrome">
+            <div class="material-swatch swatch-chrome"></div>
+            <span class="material-label">Liquid Chrome</span>
+          </button>
+
+          <button type="button" class="material-preset-btn" data-material="gold">
+            <div class="material-swatch swatch-gold"></div>
+            <span class="material-label">Molten Gold</span>
+          </button>
+
+          <button type="button" class="material-preset-btn" data-material="glass">
+            <div class="material-swatch swatch-glass"></div>
+            <span class="material-label">Frosted Glass</span>
+          </button>
+
+          <button type="button" class="material-preset-btn" data-material="obsidian">
+            <div class="material-swatch swatch-obsidian"></div>
+            <span class="material-label">Obsidian Clay</span>
+          </button>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- CENTER CANVAS: Interactive Three.js 3D Viewport -->
+    <section class="studio-canvas-container" id="canvasContainer">
+      
+      <!-- Top Engine Badge -->
+      <div class="canvas-top-badge">
+        <span class="status-dot"></span>
+        <span id="canvasStatsText">Three.js SVGLoader · 60 FPS · PBR Physical Shader</span>
+      </div>
+
+      <!-- Floating Canvas Action Toolbar -->
+      <div class="canvas-action-toolbar">
+        <button type="button" class="toolbar-btn" id="btnResetCamera" title="Reset camera to default view">
+          <span>⟲</span>
+          <span>Camera</span>
+        </button>
+
+        <button type="button" class="toolbar-btn" id="btnAutoSpin" title="Toggle automatic turntable rotation">
+          <span>↻</span>
+          <span>Auto-Spin</span>
+        </button>
+
+        <button type="button" class="toolbar-btn" id="btnWireframe" title="Toggle wireframe topology overlay">
+          <span>⬡</span>
+          <span>Wireframe</span>
+        </button>
+
+        <div class="toolbar-divider"></div>
+
+        <button type="button" class="toolbar-btn" id="btnViewFront" title="View from front">Front</button>
+        <button type="button" class="toolbar-btn" id="btnViewTop" title="View from top">Top</button>
+        <button type="button" class="toolbar-btn active" id="btnViewIso" title="Isometric 3/4 view">Iso</button>
+      </div>
+
+      <!-- 3D WebGL Canvas -->
+      <canvas id="threeCanvas"></canvas>
+
+      <!-- Bottom Interaction Hint Overlay -->
+      <div class="canvas-hint-overlay">
+        <span>Drag to rotate · Scroll to zoom · Right-click or Shift+drag to pan · Drop SVG anywhere</span>
+      </div>
+
+    </section>
+
+    <!-- RIGHT SIDEBAR: Sliders, Pickers & Action Controls -->
+    <aside class="studio-sidebar studio-sidebar-right">
+      
+      <!-- Panel 1: Geometric Extrusion Controls -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            </svg>
+            <span>Extrusion Geometry</span>
+          </div>
+          <div class="panel-header-actions">
+            <span class="panel-info-badge" title="Controls 3D thickness and bevel smoothing physics">ⓘ</span>
+            <button type="button" class="btn-icon-reset" id="btnResetGeometry" title="Reset geometry parameters">⟲</button>
+          </div>
+        </div>
+
+        <div class="panel-body controls-list">
+          <!-- Parameter 1: Extrusion Depth (1 - 100) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderDepth">Extrusion Depth</label>
+              <span class="slider-val" id="valDepth">24</span>
+            </div>
+            <input type="range" id="sliderDepth" min="1" max="100" step="1" value="24" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 2: Bevel Size (0 - 12) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderBevelSize">Bevel Size</label>
+              <span class="slider-val" id="valBevelSize">4.0</span>
+            </div>
+            <input type="range" id="sliderBevelSize" min="0" max="12" step="0.5" value="4.0" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 3: Bevel Segments (1 - 8) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderBevelSegments">Bevel Segments</label>
+              <span class="slider-val" id="valBevelSegments">4</span>
+            </div>
+            <input type="range" id="sliderBevelSegments" min="1" max="8" step="1" value="4" class="studio-slider" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: PBR Material & Lighting Optics -->
+      <div class="studio-panel">
+        <div class="panel-header">
+          <div class="panel-header-title">
+            <svg class="panel-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+            <span>PBR Optics & Lighting</span>
+          </div>
+          <div class="panel-header-actions">
+            <span class="panel-info-badge" title="Specular reflectance, metalness, and rim lighting">ⓘ</span>
+            <button type="button" class="btn-icon-reset" id="btnResetMaterial" title="Reset material to preset default">⟲</button>
+          </div>
+        </div>
+
+        <div class="panel-body controls-list">
+          <!-- Parameter 1: Base Color -->
+          <div class="control-row">
+            <label class="control-label">Base Color</label>
+            <div class="color-picker-wrap">
+              <input type="color" id="inputBaseColorPicker" value="#e2e8f0" />
+              <input type="text" id="inputBaseColorHex" value="#e2e8f0" spellcheck="false" />
+            </div>
+          </div>
+
+          <!-- Parameter 2: Light / Rim Color -->
+          <div class="control-row">
+            <label class="control-label">Rim Light Color</label>
+            <div class="color-picker-wrap">
+              <input type="color" id="inputRimColorPicker" value="#38bdf8" />
+              <input type="text" id="inputRimColorHex" value="#38bdf8" spellcheck="false" />
+            </div>
+          </div>
+
+          <!-- Parameter 3: Roughness (0.0 - 1.0) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderRoughness">Roughness</label>
+              <span class="slider-val" id="valRoughness">0.08</span>
+            </div>
+            <input type="range" id="sliderRoughness" min="0" max="1" step="0.01" value="0.08" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 4: Metalness (0.0 - 1.0) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderMetalness">Metalness</label>
+              <span class="slider-val" id="valMetalness">0.98</span>
+            </div>
+            <input type="range" id="sliderMetalness" min="0" max="1" step="0.01" value="0.98" class="studio-slider" />
+          </div>
+
+          <!-- Parameter 5: Glow / Bloom Intensity (0.0 - 0.5) -->
+          <div class="control-row-slider">
+            <div class="slider-header">
+              <label class="control-label" for="sliderGlow">Glow / Rim Intensity</label>
+              <span class="slider-val" id="valGlow">0.15</span>
+            </div>
+            <input type="range" id="sliderGlow" min="0" max="0.5" step="0.01" value="0.15" class="studio-slider" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Action & Export Controls (Bottom) -->
+      <div class="studio-actions-card">
+        <div class="actions-split-row">
+          <button type="button" class="btn-action-split" id="btnResetParams">
+            <span>⟲ Reset parameters</span>
+          </button>
+          <button type="button" class="btn-action-split" id="btnSaveFavorite">
+            <span id="favHeart">♡ Save to favourites</span>
+          </button>
+        </div>
+
+        <button type="button" class="btn-action-full mt-2" id="btnCopyLink">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+          </svg>
+          <span>Copy link</span>
+        </button>
+
+        <button type="button" class="btn-action-primary mt-2" id="btnCopyPrompt">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>Copy 3D Extrude AI prompt</span>
+        </button>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="studioToast" class="toast hidden">Copied 3D Extrude AI prompt to clipboard!</div>
+
+  <!-- Studio 3D WebGL Application Logic -->
+  <script src="svg-to-3d.js"></script>
+</body>
+</html>
