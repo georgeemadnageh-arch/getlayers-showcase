@@ -128,6 +128,9 @@
       <button class="filter-tab tab-tools-trigger" data-category="tools">
         Tools <span class="new-badge new-badge-sm">New</span> <span class="tab-count" id="count-tools">13</span>
       </button>
+      <button class="filter-tab tab-favourites" data-category="favourites">
+        ♡ Favourites <span class="tab-count" id="count-favourites">0</span>
+      </button>
     </div>
   </nav>
 
@@ -203,22 +206,57 @@
             <span class="modal-badge" id="modalCategory">Category</span>
             <h2 class="modal-title" id="modalTitle">Title</h2>
           </div>
-          <div class="modal-likes" id="modalLikes">♡ 42</div>
+          <button type="button" class="modal-likes" id="modalLikes" aria-label="Toggle favourite" title="Save to Favourites">♡ 42</button>
         </div>
         <p class="modal-desc" id="modalDesc">Description goes here.</p>
         
-        <div class="modal-prompt-box">
-          <div class="prompt-header">
-            <span>AI Prompt Specification</span>
-            <button class="btn-copy" id="btnCopyPrompt">
+        <!-- 3-Tab Drawer: AI System Prompt, React 19 / TSX Code, Performance & Audit -->
+        <div class="modal-drawer-container">
+          <div class="modal-drawer-tabs" id="modalDrawerTabs" role="tablist" aria-label="Asset Specifications and Code Drawer">
+            <button type="button" class="modal-drawer-tab active" data-drawer-tab="prompt" role="tab" aria-selected="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+              </svg>
+              <span>AI System Prompt</span>
+            </button>
+            <button type="button" class="modal-drawer-tab" data-drawer-tab="code" role="tab" aria-selected="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <span>React 19 / TSX Code</span>
+            </button>
+            <button type="button" class="modal-drawer-tab" data-drawer-tab="audit" role="tab" aria-selected="false">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Performance & Audit</span>
+            </button>
+            <button class="btn-copy" id="btnCopyPrompt" type="button" title="Copy Content">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                 <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
               </svg>
-              <span>Copy Prompt</span>
+              <span id="copyBtnText">Copy Prompt</span>
             </button>
           </div>
-          <pre class="prompt-content" id="modalPromptText"></pre>
+
+          <div class="modal-drawer-content">
+            <!-- 1. AI Prompt Specification Pane -->
+            <div class="drawer-pane" id="drawerPanePrompt">
+              <pre class="prompt-content" id="modalPromptText"></pre>
+            </div>
+
+            <!-- 2. React 19 / TSX Code Pane -->
+            <div class="drawer-pane hidden" id="drawerPaneCode">
+              <pre class="prompt-content code-content" id="modalCodeText"></pre>
+            </div>
+
+            <!-- 3. Performance & Audit Scorecard Pane -->
+            <div class="drawer-pane hidden" id="drawerPaneAudit">
+              <div class="modal-audit-view" id="modalAuditView"></div>
+            </div>
+          </div>
         </div>
 
         <div class="modal-actions">
